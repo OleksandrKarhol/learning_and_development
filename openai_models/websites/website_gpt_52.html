@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grain & Form — Furniture Studio</title>
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config (CDN-friendly) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'],
+            display: ['ui-serif', 'Georgia', 'Times New Roman', 'serif']
+          },
+          colors: {
+            oak: {
+              50:  '#fbf7f0',
+              100: '#f5ead7',
+              200: '#ead5b0',
+              300: '#ddba82',
+              400: '#d1a05d',
+              500: '#b9833f',
+              600: '#94662f',
+              700: '#6e4b22',
+              800: '#4a3217',
+              900: '#2b1d0d'
+            },
+            ink: '#0b0f14'
+          },
+          boxShadow: {
+            soft: '0 18px 60px rgba(0,0,0,.18)',
+            glow: '0 0 0 1px rgba(255,255,255,.08), 0 30px 100px rgba(0,0,0,.45)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Non-standard, industry-specific design elements:
+       - "Material swatches" (wood grain chip + finish labels)
+       - "Blueprint grid" overlay + measurement ticks
+       - "Joinery sparkle" micro-interaction on hover
+    */
+    :root { color-scheme: dark; }
+    .blueprint-grid {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(255,255,255,.08) 1px, transparent 0),
+        linear-gradient(to right, rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size: 18px 18px, 90px 90px, 90px 90px;
+      background-position: 0 0, 0 0, 0 0;
+      mask-image: radial-gradient(ellipse at 20% 10%, black 30%, transparent 70%);
+      opacity: .35;
+    }
+    .woodgrain {
+      background:
+        linear-gradient(120deg, rgba(255,255,255,.12), rgba(255,255,255,0)),
+        repeating-linear-gradient(
+          90deg,
+          rgba(245, 234, 215, .12) 0 8px,
+          rgba(234, 213, 176, .10) 8px 16px,
+          rgba(209, 160, 93, .08) 16px 22px
+        );
+    }
+    .joinery-sparkle:before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      background: radial-gradient(circle at var(--x, 30%) var(--y, 30%), rgba(255,255,255,.35), transparent 45%);
+      opacity: 0;
+      transition: opacity .25s ease;
+      pointer-events: none;
+      border-radius: inherit;
+    }
+    .joinery-sparkle:hover:before { opacity: 1; }
+    .measure-ticks {
+      background-image:
+        repeating-linear-gradient(to right, rgba(255,255,255,.12) 0 1px, transparent 1px 14px);
+      background-size: 100% 16px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+    }
+    /* Nice focus ring for accessibility */
+    .focus-ring:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(209,160,93,.35), 0 0 0 1px rgba(255,255,255,.12);
+    }
+  </style>
+</head>
+
+<body class="bg-ink text-white/90 font-sans">
+  <!-- App wrapper -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/70 backdrop-blur">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="#home" data-route="home" class="group flex items-center gap-3 focus-ring rounded-xl px-2 py-1">
+          <!-- Simple inline "logo" -->
+          <div class="relative h-9 w-9 rounded-xl woodgrain border border-white/10 shadow-soft overflow-hidden">
+            <div class="absolute inset-0 blueprint-grid"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-2 bg-white/10"></div>
+          </div>
+          <div class="leading-tight">
+            <div class="font-semibold tracking-wide">Grain & Form</div>
+            <div class="text-xs text-white/60 group-hover:text-white/80 transition">Furniture Studio</div>
+          </div>
+        </a>
+
+        <nav class="flex items-center gap-1">
+          <a class="nav-link focus-ring rounded-xl px-4 py-2 text-sm text-white/75 hover:text-white hover:bg-white/5 active:scale-[.98] transition"
+             href="#home" data-route="home">Home</a>
+          <a class="nav-link focus-ring rounded-xl px-4 py-2 text-sm text-white/75 hover:text-white hover:bg-white/5 active:scale-[.98] transition"
+             href="#about" data-route="about">About</a>
+          <a class="nav-link focus-ring rounded-xl px-4 py-2 text-sm text-white/75 hover:text-white hover:bg-white/5 active:scale-[.98] transition"
+             href="#contact" data-route="contact">Contact</a>
+
+          <button id="themeShift"
+            class="ml-2 focus-ring rounded-xl px-4 py-2 text-sm bg-white/5 hover:bg-white/10 border border-white/10 active:scale-[.98] transition"
+            type="button">
+            Shift Grain
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1">
+      <!-- HOME -->
+      <section id="page-home" class="page">
+        <div class="relative overflow-hidden">
+          <div class="absolute inset-0 woodgrain opacity-30"></div>
+          <div class="absolute inset-0 blueprint-grid"></div>
+
+          <div class="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+              <div>
+                <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+                  <span class="h-2 w-2 rounded-full bg-oak-400 shadow-[0_0_0_3px_rgba(209,160,93,.12)]"></span>
+                  Crafted. Calibrated. Delivered.
+                </p>
+
+                <h1 class="mt-5 font-display text-4xl md:text-5xl leading-[1.05] text-white">
+                  Furniture built like <span class="text-oak-300">joinery</span>,<br/>
+                  presented like <span class="text-oak-300">art</span>.
+                </h1>
+
+                <p class="mt-5 text-white/70 max-w-xl">
+                  We design and sell modern hardwood furniture—tables, seating, storage—using precision cuts,
+                  responsible sourcing, and finish systems tuned for real life.
+                </p>
+
+                <div class="mt-7 flex flex-wrap items-center gap-3">
+                  <a href="#contact" data-route="contact"
+                     class="focus-ring joinery-sparkle relative rounded-2xl bg-oak-500 text-ink font-semibold px-5 py-3 shadow-glow hover:bg-oak-400 active:scale-[.98] transition">
+                    Request a Quote
+                  </a>
+                  <button id="shuffleBtn" type="button"
+                    class="focus-ring joinery-sparkle relative rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10 active:scale-[.98] transition">
+                    Shuffle Featured Pieces
+                  </button>
+                </div>
+
+                <!-- Dynamic content: rotating featured product + live shop stats -->
+                <div class="mt-10 grid sm:grid-cols-2 gap-4">
+                  <div class="measure-ticks rounded-2xl border border-white/10 bg-gradient-to-b from-white/6 to-white/0 p-5 shadow-soft">
+                    <div class="flex items-start justify-between gap-4">
+                      <div>
+                        <div class="text-xs text-white/60">Featured piece</div>
+                        <div id="featuredName" class="mt-1 text-lg font-semibold">—</div>
+                        <div id="featuredDesc" class="mt-2 text-sm text-white/70">—</div>
+                      </div>
+                      <div class="shrink-0 text-right">
+                        <div class="text-xs text-white/60">From</div>
+                        <div id="featuredPrice" class="mt-1 text-lg font-semibold text-oak-300">$—</div>
+                      </div>
+                    </div>
+                    <div class="mt-4 flex items-center gap-2 text-xs text-white/60">
+                      <span class="inline-block h-2 w-2 rounded-full bg-emerald-400"></span>
+                      <span id="availability">Availability: —</span>
+                    </div>
+                  </div>
+
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-soft">
+                    <div class="text-xs text-white/60">Workshop pulse</div>
+                    <div class="mt-3 grid grid-cols-3 gap-3">
+                      <div class="rounded-xl bg-black/20 border border-white/10 p-3">
+                        <div class="text-xs text-white/60">Orders</div>
+                        <div id="statOrders" class="mt-1 text-xl font-semibold">—</div>
+                      </div>
+                      <div class="rounded-xl bg-black/20 border border-white/10 p-3">
+                        <div class="text-xs text-white/60">Lead time</div>
+                        <div id="statLead" class="mt-1 text-xl font-semibold">—</div>
+                      </div>
+                      <div class="rounded-xl bg-black/20 border border-white/10 p-3">
+                        <div class="text-xs text-white/60">In finish</div>
+                        <div id="statFinish" class="mt-1 text-xl font-semibold">—</div>
+                      </div>
+                    </div>
+
+                    <!-- Material swatches (industry-specific element) -->
+                    <div class="mt-5">
+                      <div class="text-xs text-white/60 mb-2">Material swatches</div>
+                      <div class="flex flex-wrap gap-2" id="swatches">
+                        <!-- injected by JS -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right visual: "product card stack" -->
+              <div class="relative">
+                <div class="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-oak-500/20 blur-2xl"></div>
+
+                <div class="grid gap-4">
+                  <div class="joinery-sparkle relative rounded-3xl border border-white/10 bg-gradient-to-b from-white/8 to-white/0 p-5 shadow-soft overflow-hidden">
+                    <div class="absolute inset-0 blueprint-grid"></div>
+                    <div class="relative">
+                      <div class="flex items-center justify-between">
+                        <div class="text-sm font-semibold">Precision Joinery</div>
+                        <button type="button" class="chip focus-ring rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 hover:bg-white/10 active:scale-[.98] transition"
+                          data-chip="Joinery">
+                          Tap
+                        </button>
+                      </div>
+                      <p class="mt-2 text-sm text-white/70">
+                        Hidden fasteners, domino alignment, and tolerance checks—built for decades of use.
+                      </p>
+                      <div class="mt-4 flex items-center gap-2 text-xs text-white/60">
+                        <span class="inline-block h-1.5 w-10 rounded-full bg-oak-400/70"></span>
+                        <span>±0.5 mm fit targets</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="joinery-sparkle relative rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft">
+                    <div class="flex items-center justify-between">
+                      <div class="text-sm font-semibold">Finish System</div>
+                      <button type="button" class="chip focus-ring rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 hover:bg-white/10 active:scale-[.98] transition"
+                        data-chip="Finish">
+                        Tap
+                      </button>
+                    </div>
+                    <p class="mt-2 text-sm text-white/70">
+                      Low-VOC oils & hardwax blends tuned per wood species to keep grain tactile.
+                    </p>
+                    <div class="mt-4 flex gap-2">
+                      <span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Matte</span>
+                      <span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Satin</span>
+                      <span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/70">Natural</span>
+                    </div>
+                  </div>
+
+                  <div class="joinery-sparkle relative rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft">
+                    <div class="flex items-center justify-between">
+                      <div class="text-sm font-semibold">Shipping Geometry</div>
+                      <button type="button" class="chip focus-ring rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 hover:bg-white/10 active:scale-[.98] transition"
+                        data-chip="Shipping">
+                        Tap
+                      </button>
+                    </div>
+                    <p class="mt-2 text-sm text-white/70">
+                      Flat-pack where it makes sense, crate when it doesn’t—optimized for damage-free arrival.
+                    </p>
+                    <div class="mt-4 text-xs text-white/60">Corner blocks + foam rails + humidity barrier</div>
+                  </div>
+                </div>
+
+                <div id="toast"
+                     class="pointer-events-none fixed bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-2 transition duration-200
+                            rounded-2xl border border-white/10 bg-black/70 backdrop-blur px-4 py-3 text-sm text-white/90 shadow-soft">
+                  <!-- JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured grid -->
+        <div class="mx-auto max-w-6xl px-4 pb-16">
+          <div class="flex items-end justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-semibold">Popular builds</h2>
+              <p class="mt-1 text-sm text-white/65">Hover to reveal build notes. Click to “pin” for later.</p>
+            </div>
+            <button id="pinClear" type="button"
+              class="focus-ring rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 hover:bg-white/10 active:scale-[.98] transition">
+              Clear pins
+            </button>
+          </div>
+
+          <div id="productGrid" class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- injected by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="page-about" class="page hidden">
+        <div class="mx-auto max-w-6xl px-4 py-14">
+          <div class="grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-7">
+              <h1 class="font-display text-4xl text-white">About Grain & Form</h1>
+              <p class="mt-4 text-white/70 leading-relaxed">
+                We’re a furniture company focused on durable hardwood pieces with clean geometry and honest materials.
+                Our process blends cabinetmaker discipline with modern design workflows—prototypes, stress points, finish tests,
+                and repeatable jigs to keep quality consistent.
+              </p>
+
+              <div class="mt-8 grid md:grid-cols-2 gap-4">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-soft joinery-sparkle relative">
+                  <div class="text-sm font-semibold">Sourcing</div>
+                  <p class="mt-2 text-sm text-white/70">
+                    FSC-aligned suppliers when available, preference for local mills, and transparency on species + origin.
+                  </p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-soft joinery-sparkle relative">
+                  <div class="text-sm font-semibold">Build philosophy</div>
+                  <p class="mt-2 text-sm text-white/70">
+                    Fewer parts, smarter joints, serviceable hardware—so your piece is repairable instead of disposable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-8 rounded-3xl border border-white/10 bg-gradient-to-b from-white/8 to-white/0 p-6 shadow-soft overflow-hidden">
+                <div class="absolute pointer-events-none"></div>
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <div class="text-sm font-semibold">“Blueprint to living room”</div>
+                    <p class="mt-2 text-sm text-white/70">
+                      A cutting-edge, furniture-specific UI motif: specs and tolerances presented like a micro blueprint.
+                    </p>
+                  </div>
+                  <div class="hidden sm:block rounded-2xl border border-white/10 bg-black/20 p-4">
+                    <div class="text-xs text-white/60">Tolerance</div>
+                    <div class="mt-1 text-2xl font-semibold text-oak-300">±0.5mm</div>
+                  </div>
+                </div>
+                <div class="mt-5 h-24 rounded-2xl border border-white/10 bg-black/20 blueprint-grid"></div>
+              </div>
+            </div>
+
+            <aside class="lg:col-span-5">
+              <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
+                <div class="flex items-center justify-between">
+                  <h2 class="text-lg font-semibold">Capabilities</h2>
+                  <button id="capShuffle" type="button"
+                    class="focus-ring rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/80 hover:bg-white/10 active:scale-[.98] transition">
+                    Reorder
+                  </button>
+                </div>
+                <ul id="capList" class="mt-4 space-y-3 text-sm text-white/75">
+                  <!-- JS -->
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="page-contact" class="page hidden">
+        <div class="mx-auto max-w-6xl px-4 py-14">
+          <div class="grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-6">
+              <h1 class="font-display text-4xl text-white">Contact</h1>
+              <p class="mt-4 text-white/70">
+                Tell us what you’re building—dimensions, wood preference, finish, and timeline. We’ll reply with a quote and lead time.
+              </p>
+
+              <div class="mt-6 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
+                <div class="text-sm font-semibold">Studio</div>
+                <p class="mt-2 text-sm text-white/70">123 Workshop Lane, Suite B<br/>Somewhere, ST 00000</p>
+                <div class="mt-4 text-sm text-white/70">
+                  <div><span class="text-white/60">Email:</span> hello@grainandform.example</div>
+                  <div><span class="text-white/60">Phone:</span> (555) 012-3456</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6">
+              <form id="contactForm" class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/8 to-white/0 p-6 shadow-soft">
+                <div class="grid md:grid-cols-2 gap-4">
+                  <label class="block">
+                    <span class="text-xs text-white/60">Name</span>
+                    <input class="mt-2 w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-white/30 focus-ring"
+                           placeholder="Your name" required />
+                  </label>
+                  <label class="block">
+                    <span class="text-xs text-white/60">Email</span>
+                    <input type="email" class="mt-2 w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-white/30 focus-ring"
+                           placeholder="you@domain.com" required />
+                  </label>
+                </div>
+
+                <label class="block mt-4">
+                  <span class="text-xs text-white/60">What do you want to make?</span>
+                  <select class="mt-2 w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white focus-ring">
+                    <option>Dining table</option>
+                    <option>Coffee table</option>
+                    <option>Bookshelf / storage</option>
+                    <option>Seating</option>
+                    <option>Custom</option>
+                  </select>
+                </label>
+
+                <label class="block mt-4">
+                  <span class="text-xs text-white/60">Message</span>
+                  <textarea class="mt-2 w-full min-h-[140px] rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-white/30 focus-ring"
+                            placeholder="Share dimensions, wood preference, finish, and any inspiration links." required></textarea>
+                </label>
+
+                <div class="mt-5 flex flex-wrap items-center gap-3">
+                  <button type="submit"
+                    class="focus-ring joinery-sparkle relative rounded-2xl bg-oak-500 text-ink font-semibold px-5 py-3 hover:bg-oak-400 active:scale-[.98] transition">
+                    Send Message
+                  </button>
+                  <button type="button" id="prefill"
+                    class="focus-ring rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10 active:scale-[.98] transition">
+                    Prefill Example
+                  </button>
+                  <span id="formStatus" class="text-sm text-white/65"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-black/30">
+      <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <!-- Logo repeat -->
+          <div class="relative h-10 w-10 rounded-2xl woodgrain border border-white/10 overflow-hidden">
+            <div class="absolute inset-0 blueprint-grid"></div>
+          </div>
+          <div>
+            <div class="font-semibold">Grain & Form</div>
+            <div class="text-xs text-white/60">Modern hardwood furniture</div>
+          </div>
+        </div>
+        <div class="text-sm text-white/60">
+          <span id="copyright"></span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // ---------- Simple router (Home/About/Contact) ----------
+    const pages = {
+      home: document.getElementById('page-home'),
+      about: document.getElementById('page-about'),
+      contact: document.getElementById('page-contact')
+    };
+
+    function setActiveRoute(route) {
+      Object.entries(pages).forEach(([k, el]) => el.classList.toggle('hidden', k !== route));
+      document.querySelectorAll('.nav-link').forEach(a => {
+        const active = a.dataset.route === route;
+        a.classList.toggle('text-white', active);
+        a.classList.toggle('bg-white/5', active);
+        a.classList.toggle('text-white/75', !active);
+      });
+      // Update hash without jumping
+      if (location.hash !== '#' + route) history.replaceState(null, '', '#' + route);
+    }
+
+    function routeFromHash() {
+      const r = (location.hash || '#home').replace('#', '');
+      return pages[r] ? r : 'home';
+    }
+
+    window.addEventListener('hashchange', () => setActiveRoute(routeFromHash()));
+    document.querySelectorAll('[data-route]').forEach(el => {
+      el.addEventListener('click', () => setActiveRoute(el.dataset.route));
+    });
+
+    // ---------- Dynamic content (Home) ----------
+    const featured = [
+      {
+        name: 'Arcline Dining Table',
+        desc: 'Solid white oak, softened corners, undercut edge for a lighter silhouette.',
+        price: 1890,
+        availability: 'Build slot opens in ~2 weeks'
+      },
+      {
+        name: 'Cantilever Coffee Table',
+        desc: 'Balanced massing with a hidden steel spine—stable, minimal, tactile.',
+        price: 740,
+        availability: 'In-stock small batch (3)'
+      },
+      {
+        name: 'Gridline Bookshelf',
+        desc: 'Modular bays with adjustable pin-less shelves (magnetic indexing).',
+        price: 1290,
+        availability: 'Made to order (4–6 weeks)'
+      }
+    ];
+
+    const materials = [
+      { label: 'White Oak', tone: 'bg-oak-200/20', ring: 'ring-oak-300/40' },
+      { label: 'Walnut', tone: 'bg-[#4b3527]/35', ring: 'ring-white/15' },
+      { label: 'Ash', tone: 'bg-[#d9d3c6]/15', ring: 'ring-white/15' },
+      { label: 'Ebonized', tone: 'bg-black/40', ring: 'ring-white/15' }
+    ];
+
+    const products = [
+      { title: 'Trestle Desk', note: 'Cable channel + friction-fit drawer runners.', tag: 'Work', price: '$980' },
+      { title: 'Loop Back Chair', note: 'Steam-bent back rail; durable woven seat.', tag: 'Seating', price: '$420' },
+      { title: 'Lowline Credenza', note: 'Soft-close hardware; bookmatched doors.', tag: 'Storage', price: '$1,650' },
+      { title: 'Nightstand Pair', note: 'Floating top shadow gap; easy-grab notch.', tag: 'Bedroom', price: '$640' },
+      { title: 'Bench No. 2', note: 'Through tenons; replaceable top slats.', tag: 'Entry', price: '$390' },
+      { title: 'Wall Shelf Set', note: 'Hidden cleat; level micro-adjustment.', tag: 'Shelving', price: '$220' }
+    ];
+
+    const pinsKey = 'gf_pins';
+    const toast = document.getElementById('toast');
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 1500);
+    }
+
+    function formatMoney(n) {
+      return new Intl.NumberFormat(undefined, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n);
+    }
+
+    function setFeatured(idx) {
+      const item = featured[idx % featured.length];
+      document.getElementById('featuredName').textContent = item.name;
+      document.getElementById('featuredDesc').textContent = item.desc;
+      document.getElementById('featuredPrice').textContent = formatMoney(item.price);
+      document.getElementById('availability').textContent = 'Availability: ' + item.availability;
+    }
+
+    function randomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function refreshStats() {
+      document.getElementById('statOrders').textContent = randomInt(6, 18);
+      document.getElementById('statLead').textContent = randomInt(10, 28) + ' days';
+      document.getElementById('statFinish').textContent = randomInt(1, 7);
+    }
+
+    function renderSwatches() {
+      const wrap = document.getElementById('swatches');
+      wrap.innerHTML = '';
+      materials.forEach(m => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = `focus-ring ${m.tone} ring-1 ${m.ring} rounded-2xl px-3 py-2 text-xs text-white/80 hover:brightness-110 active:scale-[.98] transition`;
+        b.textContent = m.label;
+        b.addEventListener('click', () => showToast('Swatch selected: ' + m.label));
+        wrap.appendChild(b);
+      });
+    }
+
+    function getPins() {
+      try { return JSON.parse(localStorage.getItem(pinsKey) || '[]'); }
+      catch { return []; }
+    }
+    function setPins(arr) {
+      localStorage.setItem(pinsKey, JSON.stringify(arr));
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      const pins = new Set(getPins());
+      grid.innerHTML = '';
+
+      products.forEach((p) => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className =
+          'text-left joinery-sparkle relative rounded-3xl border border-white/10 bg-white/5 p-5 shadow-soft ' +
+          'hover:bg-white/10 active:scale-[.99] transition focus-ring overflow-hidden';
+
+        // "Pinned" state
+        if (pins.has(p.title)) {
+          card.classList.add('ring-1', 'ring-oak-300/50');
+        }
+
+        card.innerHTML = `
+          <div class="absolute inset-0 blueprint-grid opacity-25"></div>
+          <div class="relative flex items-start justify-between gap-4">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs text-white/60">
+                <span class="h-2 w-2 rounded-full bg-oak-400"></span>
+                <span>${p.tag}</span>
+              </div>
+              <div class="mt-2 text-lg font-semibold text-white">${p.title}</div>
+              <div class="mt-2 text-sm text-white/70">${p.note}</div>
+            </div>
+            <div class="shrink-0 text-right">
+              <div class="text-xs text-white/60">Est.</div>
+              <div class="mt-1 font-semibold text-oak-300">${p.price}</div>
+            </div>
+          </div>
+          <div class="relative mt-4 flex items-center justify-between text-xs text-white/60">
+            <span class="opacity-0 group-hover:opacity-100"></span>
+            <span class="rounded-full border border-white/10 bg-black/20 px-3 py-1">Click to ${pins.has(p.title) ? 'unpin' : 'pin'}</span>
+          </div>
+        `;
+
+        // pointer-tracked sparkle
+        card.addEventListener('pointermove', (e) => {
+          const r = card.getBoundingClientRect();
+          const x = ((e.clientX - r.left) / r.width) * 100;
+          const y = ((e.clientY - r.top) / r.height) * 100;
+          card.style.setProperty('--x', x + '%');
+          card.style.setProperty('--y', y + '%');
+        });
+
+        card.addEventListener('click', () => {
+          const pinsArr = getPins();
+          const idx = pinsArr.indexOf(p.title);
+          if (idx >= 0) {
+            pinsArr.splice(idx, 1);
+            showToast('Unpinned: ' + p.title);
+          } else {
+            pinsArr.push(p.title);
+            showToast('Pinned: ' + p.title);
+          }
+          setPins(pinsArr);
+          renderProducts();
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    // Shuffle featured content button
+    let featuredIndex = 0;
+    document.getElementById('shuffleBtn').addEventListener('click', () => {
+      featuredIndex = (featuredIndex + 1) % featured.length;
+      setFeatured(featuredIndex);
+      refreshStats();
+      showToast('Featured updated');
+    });
+
+    // Clear pins
+    document.getElementById('pinClear').addEventListener('click', () => {
+      setPins([]);
+      renderProducts();
+      showToast('Pins cleared');
+    });
+
+    // Chips in hero cards
+    document.querySelectorAll('.chip').forEach(btn => {
+      btn.addEventListener('click', () => showToast(btn.dataset.chip + ' notes opened'));
+    });
+
+    // "Shift Grain" (micro-theme shift)
+    document.getElementById('themeShift').addEventListener('click', () => {
+      // Toggle a subtle hue via CSS filter on body to feel "material" rather than light/dark.
+      const b = document.body;
+      const on = b.dataset.shift === '1';
+      b.dataset.shift = on ? '0' : '1';
+      b.style.filter = on ? 'none' : 'hue-rotate(-10deg) saturate(1.1)';
+      showToast(on ? 'Grain reset' : 'Grain shifted');
+    });
+
+    // ---------- About page interactions ----------
+    const capabilities = [
+      'Custom sizing + shop drawings for approval',
+      'Hardwood selection (oak, walnut, ash) + finish sampling',
+      'Hardware integration (soft-close, concealed supports)',
+      'Shipping + white-glove delivery coordination'
+    ];
+
+    function renderCaps(list) {
+      const ul = document.getElementById('capList');
+      ul.innerHTML = '';
+      list.forEach(c => {
+        const li = document.createElement('li');
+        li.className = 'rounded-2xl border border-white/10 bg-black/20 px-4 py-3 hover:bg-black/10 transition';
+        li.textContent = c;
+        ul.appendChild(li);
+      });
+    }
+
+    document.getElementById('capShuffle').addEventListener('click', () => {
+      const copy = [...capabilities].sort(() => Math.random() - 0.5);
+      renderCaps(copy);
+      showToast('Capabilities reordered');
+    });
+
+    // ---------- Contact form interactions ----------
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+
+    document.getElementById('prefill').addEventListener('click', () => {
+      const inputs = form.querySelectorAll('input, textarea, select');
+      inputs[0].value = 'Alex Morgan';
+      inputs[1].value = 'alex@domain.com';
+      inputs[2].value = 'Dining table';
+      inputs[3].value = 'Looking for a 72" x 38" white oak dining table, matte finish, delivery in ~6 weeks. Prefer rounded corners and a light undercut edge.';
+      showToast('Example filled in');
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      statusEl.textContent = 'Sent (demo). We’ll reply soon.';
+      showToast('Message sent');
+      setTimeout(() => statusEl.textContent = '', 2500);
+      form.reset();
+    });
+
+    // ---------- Pointer sparkle on joinery cards ----------
+    document.querySelectorAll('.joinery-sparkle').forEach(el => {
+      el.addEventListener('pointermove', (e) => {
+        const r = el.getBoundingClientRect();
+        const x = ((e.clientX - r.left) / r.width) * 100;
+        const y = ((e.clientY - r.top) / r.height) * 100;
+        el.style.setProperty('--x', x + '%');
+        el.style.setProperty('--y', y + '%');
+      });
+    });
+
+    // ---------- Init ----------
+    document.getElementById('copyright').textContent =
+      `© ${new Date().getFullYear()} Grain & Form. All rights reserved.`;
+
+    setActiveRoute(routeFromHash());
+    setFeatured(featuredIndex);
+    refreshStats();
+    renderSwatches();
+    renderProducts();
+    renderCaps(capabilities);
+
+    // Update stats periodically for dynamic home feel
+    setInterval(() => {
+      if (!pages.home.classList.contains('hidden')) refreshStats();
+    }, 6000);
+  </script>
+</body>
+</html>

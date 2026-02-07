@@ -1,0 +1,5 @@
+1. High verbosity -> almost no change from the website build without specifying verbosity level
+2. Medium -> produced same results as high with same number of rows. 
+3. Low -> slightly less rows, but visuallu no difference
+
+Seems like if the prompt is very detailed, verbosity parameter makes no sence.

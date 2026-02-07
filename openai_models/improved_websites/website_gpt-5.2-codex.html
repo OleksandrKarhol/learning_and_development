@@ -1,0 +1,292 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atelier Grove — Modern Heirloom Furniture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; }
+    body { font-family: 'Inter', sans-serif; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#F7F5F2] text-[#2B2B2B] antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[#F7F5F2]/90 backdrop-blur border-b border-[#E6E1DA]">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 text-lg font-semibold tracking-wide">
+        <span class="w-8 h-8 rounded-full border border-[#8A7B6E] flex items-center justify-center text-[#8A7B6E]">AG</span>
+        Atelier Grove
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#home" class="relative py-3 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#8A7B6E] after:transition-all after:duration-200 hover:after:w-full">Home</a>
+        <a href="#about" class="relative py-3 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#8A7B6E] after:transition-all after:duration-200 hover:after:w-full">About</a>
+        <a href="#contact" class="relative py-3 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#8A7B6E] after:transition-all after:duration-200 hover:after:w-full">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center justify-center h-11 px-5 rounded-full bg-[#8A7B6E] text-white text-sm transition hover:bg-[#6F6258] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]">Book a Visit</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-10 space-y-20">
+    <!-- Home Page -->
+    <section id="home" data-page="home" class="page space-y-20">
+      <!-- Hero -->
+      <section class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6">
+          <p class="text-sm uppercase tracking-[0.2em] text-[#8A7B6E]">Modern Heirloom Furniture</p>
+          <h1 class="text-4xl md:text-5xl leading-tight">Crafted for quiet rooms and lasting lives.</h1>
+          <p class="text-lg text-[#5A5652]">Atelier Grove designs and builds refined hardwood furniture with thoughtful proportions and timeless joinery.</p>
+          <div class="flex gap-4">
+            <a href="#contact" class="inline-flex items-center justify-center h-11 px-6 rounded-full bg-[#2B2B2B] text-white text-sm transition hover:bg-[#1D1D1D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2B2B2B]">Request a Consultation</a>
+            <a href="#about" class="inline-flex items-center justify-center h-11 px-6 rounded-full border border-[#2B2B2B] text-sm transition hover:bg-[#2B2B2B] hover:text-white">Our Story</a>
+          </div>
+        </div>
+        <div class="relative">
+          <img class="w-full h-[420px] object-cover rounded-xl shadow-sm" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80" alt="Modern wooden chair and table in a serene room">
+          <div class="absolute -bottom-6 left-6 bg-[#F7F5F2] border border-[#E6E1DA] px-4 py-2 rounded-full text-xs uppercase tracking-widest text-[#8A7B6E]">Hand-finished in the studio</div>
+        </div>
+      </section>
+
+      <!-- Value Proposition -->
+      <section class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white/60 transition hover:-translate-y-1 hover:shadow-sm">
+          <h3 class="text-xl mb-2">Sustainably Sourced</h3>
+          <p class="text-sm text-[#5A5652]">Hardwoods from responsibly managed forests, selected for grain clarity.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white/60 transition hover:-translate-y-1 hover:shadow-sm">
+          <h3 class="text-xl mb-2">Measured Precision</h3>
+          <p class="text-sm text-[#5A5652]">Joinery refined by hand for tight tolerances and quiet strength.</p>
+        </div>
+        <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white/60 transition hover:-translate-y-1 hover:shadow-sm">
+          <h3 class="text-xl mb-2">Lifetime Care</h3>
+          <p class="text-sm text-[#5A5652]">Maintenance guidance and touch-up service for lasting beauty.</p>
+        </div>
+      </section>
+
+      <!-- Product Highlights -->
+      <section class="space-y-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-3xl">Featured Collections</h2>
+          <p class="text-sm text-[#8A7B6E]">Limited runs, built to order</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="rounded-xl overflow-hidden border border-[#E6E1DA] bg-white transition hover:shadow-md">
+            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80" alt="Minimalist oak dining table">
+            <div class="p-5 space-y-2">
+              <h3 class="text-xl">Alder Dining</h3>
+              <p class="text-sm text-[#5A5652]">Extended tabletops with soft chamfered edges.</p>
+            </div>
+          </article>
+          <article class="rounded-xl overflow-hidden border border-[#E6E1DA] bg-white transition hover:shadow-md">
+            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=1200&q=80" alt="Walnut lounge chair in warm light">
+            <div class="p-5 space-y-2">
+              <h3 class="text-xl">Sable Lounge</h3>
+              <p class="text-sm text-[#5A5652]">Low-profile seating with sculpted back rests.</p>
+            </div>
+          </article>
+          <article class="rounded-xl overflow-hidden border border-[#E6E1DA] bg-white transition hover:shadow-md">
+            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80" alt="Maple storage cabinet with simple lines">
+            <div class="p-5 space-y-2">
+              <h3 class="text-xl">Harbor Storage</h3>
+              <p class="text-sm text-[#5A5652]">Quiet cabinets with hidden finger pulls.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Craft Detail -->
+      <section class="grid lg:grid-cols-[1fr_auto] gap-8 items-center">
+        <div class="space-y-4">
+          <h2 class="text-3xl">Joinery as Signature</h2>
+          <p class="text-[#5A5652]">Each piece features exposed dovetails and floating tenons—subtle reminders of the hands that shaped it. We allow the grain to lead, ensuring every seam aligns with the wood’s natural rhythm.</p>
+        </div>
+        <div aria-hidden="true" class="flex justify-center">
+          <svg width="140" height="40" viewBox="0 0 140 40" class="text-[#8A7B6E]">
+            <path d="M0 20h20l10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10h20" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- Material Swatches -->
+      <section class="space-y-6">
+        <h2 class="text-3xl">Material Swatches</h2>
+        <div class="flex flex-wrap gap-3">
+          <button class="h-11 px-5 rounded-full border border-[#E6E1DA] bg-white text-sm transition hover:border-[#8A7B6E] hover:text-[#8A7B6E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]">Walnut</button>
+          <button class="h-11 px-5 rounded-full border border-[#E6E1DA] bg-white text-sm transition hover:border-[#8A7B6E] hover:text-[#8A7B6E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]">Ash</button>
+          <button class="h-11 px-5 rounded-full border border-[#E6E1DA] bg-white text-sm transition hover:border-[#8A7B6E] hover:text-[#8A7B6E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]">Oak</button>
+          <button class="h-11 px-5 rounded-full border border-[#E6E1DA] bg-white text-sm transition hover:border-[#8A7B6E] hover:text-[#8A7B6E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]">Maple</button>
+        </div>
+      </section>
+
+      <!-- Social Proof -->
+      <section class="space-y-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-3xl">Client Notes</h2>
+          <p class="text-sm text-[#8A7B6E]">Rotating testimonials</p>
+        </div>
+        <div id="testimonial-card" class="p-6 rounded-xl border border-[#E6E1DA] bg-white/70 transition hover:shadow-sm">
+          <p class="text-lg leading-relaxed" id="testimonial-quote">“The walnut table feels like it has always belonged in our home. The grain matching is exquisite.”</p>
+          <p class="mt-4 text-sm text-[#8A7B6E]" id="testimonial-author">— Eleni R., Boston</p>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="space-y-4">
+        <h2 class="text-3xl">Studio Notes</h2>
+        <p class="text-sm text-[#5A5652]">Seasonal releases and care guidance.</p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-lg">
+          <input type="email" required placeholder="Email address" class="h-11 px-4 rounded-full border border-[#E6E1DA] bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]" />
+          <button class="h-11 px-6 rounded-full bg-[#8A7B6E] text-white text-sm transition hover:bg-[#6F6258] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]">Subscribe</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" data-page="about" class="page hidden space-y-16">
+      <section class="space-y-6">
+        <h1 class="text-4xl">Our Craft</h1>
+        <div class="grid md:grid-cols-2 gap-8 text-[#5A5652]">
+          <p>Atelier Grove began as a two-person workshop focused on making furniture that feels contemporary yet enduring. Every design starts with a proportion study and ends with a tactile finish applied by hand.</p>
+          <p>We source hardwoods from local mills and small forest cooperatives. Each board is selected for stability and grain character, then rested before milling to ensure quiet longevity.</p>
+        </div>
+      </section>
+
+      <!-- Process Timeline -->
+      <section class="space-y-6">
+        <h2 class="text-3xl">Process</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white">
+            <h3 class="text-xl mb-2">01 — Design</h3>
+            <p class="text-sm text-[#5A5652]">Sketches, scale models, and proportions tuned to the room.</p>
+          </div>
+          <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white">
+            <h3 class="text-xl mb-2">02 — Build</h3>
+            <p class="text-sm text-[#5A5652]">Hand-cut joinery and careful grain alignment.</p>
+          </div>
+          <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white">
+            <h3 class="text-xl mb-2">03 — Finish</h3>
+            <p class="text-sm text-[#5A5652]">Natural oils and waxes for depth and repairability.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Studio Image -->
+      <section class="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+        <img class="w-full h-[360px] object-cover rounded-xl border border-[#E6E1DA]" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80" alt="Woodworking studio with tools and light">
+        <div class="space-y-3">
+          <p class="text-sm uppercase tracking-[0.2em] text-[#8A7B6E]">Atelier Studio</p>
+          <p class="text-[#5A5652]">Our light-filled studio is set within a converted mill, where traditional hand tools sit alongside modern precision.</p>
+          <p class="text-xs text-[#8A7B6E]">Caption: Morning light on the assembly bench.</p>
+        </div>
+      </section>
+
+      <!-- Sustainability Callout -->
+      <section class="p-6 rounded-xl border border-[#E6E1DA] bg-white/70">
+        <h3 class="text-xl mb-2">Sustainability Commitment</h3>
+        <p class="text-sm text-[#5A5652]">We maintain a transparent sourcing ledger, offset offcuts through local reuse programs, and favor water-based finishes wherever possible.</p>
+      </section>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" data-page="contact" class="page hidden space-y-16">
+      <section class="grid lg:grid-cols-2 gap-10">
+        <!-- Contact Form -->
+        <form class="space-y-4 p-6 rounded-xl border border-[#E6E1DA] bg-white">
+          <h1 class="text-3xl">Contact Atelier Grove</h1>
+          <div class="space-y-2">
+            <label class="text-sm" for="name">Name</label>
+            <input id="name" type="text" required class="h-11 w-full px-4 rounded-full border border-[#E6E1DA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm" for="email">Email</label>
+            <input id="email" type="email" required class="h-11 w-full px-4 rounded-full border border-[#E6E1DA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm" for="message">Message</label>
+            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-2xl border border-[#E6E1DA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8A7B6E]"></textarea>
+          </div>
+          <button class="h-11 px-6 rounded-full bg-[#2B2B2B] text-white text-sm transition hover:bg-[#1D1D1D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2B2B2B]">Send Inquiry</button>
+        </form>
+
+        <!-- Contact Details -->
+        <div class="space-y-6">
+          <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white/70">
+            <h2 class="text-2xl mb-3">Studio Details</h2>
+            <p class="text-sm text-[#5A5652]">Phone: (617) 555-0148</p>
+            <p class="text-sm text-[#5A5652]">Email: hello@ateliergrove.com</p>
+            <p class="text-sm text-[#5A5652]">Address: 214 Grove Lane, Boston, MA</p>
+          </div>
+          <div class="p-6 rounded-xl border border-[#E6E1DA] bg-white/70">
+            <h3 class="text-xl mb-2">Hours</h3>
+            <p class="text-sm text-[#5A5652]">Mon–Fri: 10am–6pm</p>
+            <p class="text-sm text-[#5A5652]">Showroom visits by appointment only.</p>
+          </div>
+          <div class="p-6 rounded-xl border border-dashed border-[#8A7B6E] bg-[#F7F5F2]">
+            <h3 class="text-xl mb-2">Map</h3>
+            <p class="text-sm text-[#5A5652]">Map placeholder — detailed directions provided upon scheduling.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#E6E1DA] bg-[#F7F5F2]">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-sm">
+        <span class="w-7 h-7 rounded-full border border-[#8A7B6E] flex items-center justify-center text-[#8A7B6E]">AG</span>
+        Atelier Grove
+      </div>
+      <p class="text-xs text-[#5A5652]">© 2024 Atelier Grove. All rights reserved. Crafted goods may vary naturally in grain and tone.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Client-side routing
+    const pages = document.querySelectorAll('[data-page]');
+    const navLinks = document.querySelectorAll('nav a');
+
+    function showPage(hash) {
+      const target = (hash && hash.replace('#', '')) || 'home';
+      pages.forEach(p => p.classList.toggle('hidden', p.dataset.page !== target));
+      navLinks.forEach(a => a.classList.toggle('text-[#8A7B6E]', a.getAttribute('href') === `#${target}`));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('hashchange', () => showPage(location.hash));
+    showPage(location.hash);
+
+    // Rotating testimonials
+    const testimonials = [
+      { quote: "“The walnut table feels like it has always belonged in our home. The grain matching is exquisite.”", author: "— Eleni R., Boston" },
+      { quote: "“Our credenza arrived impeccably finished. The joinery is a quiet detail we notice every day.”", author: "— Marcus & Ana, Portland" }
+    ];
+    let idx = 0;
+    const quoteEl = document.getElementById('testimonial-quote');
+    const authorEl = document.getElementById('testimonial-author');
+    const card = document.getElementById('testimonial-card');
+    let intervalId;
+
+    function rotateTestimonial() {
+      idx = (idx + 1) % testimonials.length;
+      quoteEl.textContent = testimonials[idx].quote;
+      authorEl.textContent = testimonials[idx].author;
+    }
+
+    function startRotation() {
+      intervalId = setInterval(rotateTestimonial, 5000);
+    }
+    function stopRotation() {
+      clearInterval(intervalId);
+    }
+
+    card.addEventListener('mouseenter', stopRotation);
+    card.addEventListener('mouseleave', startRotation);
+    startRotation();
+  </script>
+</body>
+</html>
+```

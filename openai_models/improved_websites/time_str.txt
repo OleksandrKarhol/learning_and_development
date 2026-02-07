@@ -1,0 +1,8 @@
+gpt-5.2: 231.04383897781372 seconds - really nice resuls with beatutiful UI and responsive design. Some images are missing
+gpt-5-mini: 140.63982605934143 seconds - almost as perfect as gpt-5.2, but way more modest results. Could be useful for simpler front-end tasks. Almost no images work. 
+gpt-5-nano: 91.0880298614502 seconds - way simpler design with bad padding and margins, selected images are not relevant
+gpt-5.2-codex: 75.8780779838562 seconds - quite similar to 5.2 and 5-mini. Impressive time. All images selected well
+gpt-5.1-codex-max: 38.10020089149475 seconds - same as 5-2 codex, slightly worse image selection
+
+
+Conclusion - with right prompt, all modern models are capable of doing great stuff. However gpt-5.2 is still the most impressive one with highest level of detail and most advanced design. But it's also the slowest.

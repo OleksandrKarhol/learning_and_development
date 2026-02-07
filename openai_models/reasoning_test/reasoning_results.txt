@@ -1,0 +1,5 @@
+1. High -> same as without using reasoning parameter. Very visually appealing website. Maybe slightly better than without reasoning
+2. Mediun -> same as high
+3. Lowe -> same as high and medium visually, but slightly less code (-100 rows)
+
+Conclusion: no difference if a prompt is well-written

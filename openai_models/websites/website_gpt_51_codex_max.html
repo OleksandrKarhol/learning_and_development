@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form &amp; Function — Modern Furniture</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom enhancements */
+    :root {
+      --glass-bg: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.2);
+    }
+    body {
+      background: radial-gradient(circle at 10% 20%, #0f1624, #0b1020 35%, #080d19 70%, #060a14 100%);
+      color: #e5e7eb;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    /* Glassmorphism card */
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(18px);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+    }
+    /* Hover glow effect */
+    .hover-glow:hover {
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.08),
+        0 15px 60px rgba(99, 102, 241, 0.3);
+      transform: translateY(-4px) scale(1.01);
+    }
+    /* Click ripple */
+    .ripple {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .ripple::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, rgba(255,255,255,0.35) 10%, transparent 10.01%);
+      opacity: 0;
+      transform: scale(10);
+      transition: transform 0.6s, opacity 0.8s;
+    }
+    .ripple:active::after {
+      opacity: 0.3;
+      transform: scale(0);
+      transition: 0s;
+    }
+    /* Floating accent blobs */
+    .blob {
+      position: absolute;
+      filter: blur(80px);
+      opacity: 0.38;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="relative overflow-x-hidden">
+  <!-- Background blobs -->
+  <div class="blob w-72 h-72 rounded-full bg-indigo-500 top-[-60px] left-[-40px]"></div>
+  <div class="blob w-64 h-64 rounded-full bg-emerald-500 bottom-20 right-[-60px]"></div>
+  <div class="blob w-56 h-56 rounded-full bg-purple-500 top-1/3 right-10"></div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-gradient-to-b from-[#0f1624]/90 to-[#0f1624]/40 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-5 py-4">
+      <a href="#home" class="flex items-center gap-3 group">
+        <!-- Logo -->
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-purple-500 to-emerald-500 flex items-center justify-center text-white font-bold tracking-tight shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition">
+          F&F
+        </div>
+        <span class="text-lg font-semibold tracking-tight text-slate-100 group-hover:text-white transition">Form &amp; Function</span>
+      </a>
+      <nav class="flex items-center gap-6 text-sm font-medium text-slate-200">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
+      <button class="hidden sm:inline-flex ripple px-4 py-2 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:shadow-[0_10px_40px_rgba(99,102,241,0.35)] transition">
+        View Collection
+      </button>
+    </div>
+  </header>
+
+  <!-- Home / Hero -->
+  <section id="home" class="relative z-10 max-w-6xl mx-auto px-5 pt-16 pb-24 space-y-16">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <p class="text-sm uppercase tracking-[0.35em] text-indigo-200">Modern Furniture Craft</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-white">
+          Design‑led furniture that
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-300">defines</span>
+          your space.
+        </h1>
+        <p class="text-base text-slate-200/80 max-w-xl">
+          We fuse artisan craftsmanship with sustainable materials, bringing elevated comfort and sculptural forms to contemporary interiors.
+        </p>
+        <div class="flex items-center gap-4">
+          <button class="ripple px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-emerald-500 text-white font-semibold hover:shadow-[0_15px_45px_rgba(16,185,129,0.35)] transition">
+            Shop Best Sellers
+          </button>
+          <button class="ripple px-5 py-3 rounded-xl border border-white/30 text-white font-semibold hover:bg-white/5 transition">
+            Book a Design Call
+          </button>
+        </div>
+        <div class="flex items-center gap-4 text-xs text-slate-300/80 pt-2">
+          <div class="flex -space-x-2">
+            <img class="w-8 h-8 rounded-full border border-white/20" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=200&q=80" alt="client1">
+            <img class="w-8 h-8 rounded-full border border-white/20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="client2">
+            <img class="w-8 h-8 rounded-full border border-white/20" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="client3">
+          </div>
+          <span>Trusted by interior designers &amp; boutique hotels worldwide.</span>
+        </div>
+      </div>
+      <div class="relative h-[420px]">
+        <div class="absolute inset-0 rounded-3xl glass-card border border-white/10 overflow-hidden">
+          <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80" alt="Furniture Hero">
+        </div>
+        <div class="absolute -left-10 bottom-6 px-4 py-3 rounded-2xl glass-card hover-glow transition">
+          <p class="text-xs uppercase tracking-[0.25em] text-indigo-100">Material</p>
+          <p class="text-base font-semibold text-white">European Oak + Recycled Steel</p>
+        </div>
+        <div class="absolute -right-6 top-6 px-4 py-3 rounded-2xl glass-card hover-glow transition">
+          <p class="text-xs uppercase tracking-[0.25em] text-emerald-100">Finish</p>
+          <p class="text-base font-semibold text-white">Matte Smoke, Hand‑rubbed Oil</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic New Arrivals -->
+    <div class="space-y-3">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold text-white">New Arrivals</h2>
+        <button id="shuffleBtn" class="ripple px-4 py-2 text-sm rounded-full border border-white/20 text-white hover:bg-white/5 transition">
+          Shuffle Selection
+        </button>
+      </div>
+      <div id="arrivalsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="relative z-10 max-w-6xl mx-auto px-5 pb-20 space-y-10">
+    <div class="glass-card rounded-3xl p-10 border border-white/10">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="space-y-5">
+          <p class="text-sm uppercase tracking-[0.25em] text-indigo-200">Our Story</p>
+          <h3 class="text-3xl font-bold text-white">Handcrafted in small batches, designed for the future.</h3>
+          <p class="text-slate-200/85 leading-relaxed">
+            Form &amp; Function was founded by architects and makers who believe furniture should be as enduring as it is beautiful.
+            From modular lounges to sculptural dining pieces, we blend parametric design with a human touch.
+          </p>
+          <div class="flex gap-3 text-sm text-slate-200/80">
+            <div class="glass-card rounded-2xl px-4 py-3 hover-glow transition">
+              <p class="font-semibold text-white">42</p>
+              <p class="text-xs uppercase tracking-[0.15em] text-indigo-100">Prototypes</p>
+            </div>
+            <div class="glass-card rounded-2xl px-4 py-3 hover-glow transition">
+              <p class="font-semibold text-white">12</p>
+              <p class="text-xs uppercase tracking-[0.15em] text-indigo-100">Countries</p>
+            </div>
+            <div class="glass-card rounded-2xl px-4 py-3 hover-glow transition">
+              <p class="font-semibold text-white">98%</p>
+              <p class="text-xs uppercase tracking-[0.15em] text-indigo-100">Sustainable Materials</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden glass-card border border-white/10">
+          <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80" alt="Workshop">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative z-10 max-w-6xl mx-auto px-5 pb-24">
+    <div class="glass-card rounded-3xl p-10 border border-white/10">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="space-y-4">
+          <p class="text-sm uppercase tracking-[0.25em] text-indigo-200">Get in Touch</p>
+          <h3 class="text-3xl font-bold text-white">Let’s craft something extraordinary.</h3>
+          <p class="text-slate-200/80 leading-relaxed">
+            Whether you’re sourcing for hospitality, crafting a bespoke piece, or refreshing your studio, our designers are here to help.
+          </p>
+          <div class="space-y-3 text-sm text-slate-200/80">
+            <p><span class="text-white font-semibold">Email:</span> hello@formfunction.com</p>
+            <p><span class="text-white font-semibold">Phone:</span> +1 (212) 555-0147</p>
+            <p><span class="text-white font-semibold">Studio:</span> 145 Mercer St, New York, NY</p>
+          </div>
+        </div>
+        <form class="space-y-4">
+          <div class="grid md:grid-cols-2 gap-4">
+            <input required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none" type="text" placeholder="Full Name" />
+            <input required class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none" type="email" placeholder="Email" />
+          </div>
+          <input class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none" type="text" placeholder="Project Type (Hospitality, Residential...)" />
+          <textarea rows="4" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/15 text-white placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none" placeholder="Tell us about your project"></textarea>
+          <button type="submit" class="ripple w-full px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-500 text-white font-semibold hover:shadow-[0_15px_45px_rgba(79,70,229,0.35)] transition">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-white/10 bg-[#0b0f1c]/90 backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-5 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-purple-500 to-emerald-500 flex items-center justify-center text-white font-bold tracking-tight">F&F</div>
+        <div>
+          <p class="text-white font-semibold">Form &amp; Function</p>
+          <p class="text-xs text-slate-300/80">© 2024 Form &amp; Function. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-sm text-slate-300/80">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic content script -->
+  <script>
+    const arrivals = [
+      {
+        title: "Atlas Lounge Chair",
+        img: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80",
+        tag: "Recycled Steel Frame"
+      },
+      {
+        title: "Cove Modular Sofa",
+        img: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80",
+        tag: "Performance Linen"
+      },
+      {
+        title: "Miro Coffee Table",
+        img: "https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=900&q=80",
+        tag: "Solid Oak + Glass"
+      },
+      {
+        title: "Aria Dining Set",
+        img: "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=900&q=80",
+        tag: "Walnut, Hand-rubbed Oil"
+      },
+      {
+        title: "Halo Pendant Trio",
+        img: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=80",
+        tag: "Anodized Aluminum"
+      },
+      {
+        title: "Arc Bench",
+        img: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80",
+        tag: "Bent Plywood"
+      }
+    ];
+
+    const grid = document.getElementById("arrivalsGrid");
+    const shuffleBtn = document.getElementById("shuffleBtn");
+
+    function renderArrivals() {
+      grid.innerHTML = "";
+      // Randomly pick 3 items
+      const shuffled = [...arrivals].sort(() => 0.5 - Math.random()).slice(0, 3);
+      shuffled.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "glass-card hover-glow transition rounded-2xl overflow-hidden border border-white/10";
+        card.innerHTML = `
+          <div class="h-44 overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="${item.img}" alt="${item.title}">
+          </div>
+          <div class="p-4 space-y-2">
+            <p class="text-xs uppercase tracking-[0.22em] text-indigo-200">${item.tag}</p>
+            <h4 class="text-lg font-semibold text-white">${item.title}</h4>
+            <button class="ripple px-4 py-2 mt-2 rounded-full border border-white/20 text-white text-sm hover:bg-white/5 transition">View Details</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    renderArrivals();
+    shuffleBtn.addEventListener("click", renderArrivals);
+  </script>
+</body>
+</html>

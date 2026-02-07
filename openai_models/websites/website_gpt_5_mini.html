@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timber & Thread — Modern Furniture</title>
+
+  <!-- Tailwind config before loading CDN to extend theme -->
+  <script>
+    tailwind = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f6fbfb',
+              100: '#eaf7f6',
+              300: '#6dd3c7',
+              500: '#00bfa5',
+              700: '#008f78'
+            },
+            accent: '#ff7a60'
+          },
+          boxShadow: {
+            glass: '0 8px 30px rgba(13, 38, 60, 0.12)',
+            floating: '0 16px 50px rgba(2,12,20,0.15)'
+          },
+          transitionProperty: {
+            'height-width': 'height, width'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --glass: rgba(255,255,255,0.06);
+      --glass-weak: rgba(255,255,255,0.03);
+      --accent: #ff7a60;
+    }
+    html,body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,#06121a 0%,#071826 36%,#0b1f2b 100%); color: #e6f1ef; }
+    /* glass panel */
+    .glass {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      backdrop-filter: blur(8px) saturate(120%);
+      -webkit-backdrop-filter: blur(8px) saturate(120%);
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    /* soft neumorphic card */
+    .soft-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+      box-shadow: 8px 8px 24px rgba(2,8,12,0.6), -8px -8px 24px rgba(255,255,255,0.02);
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    /* tilt effect preserve-3d container */
+    .tilt {
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform .18s cubic-bezier(.2,.9,.2,1), box-shadow .18s ease;
+    }
+    /* subtle ripple for buttons */
+    .ripple {
+      position: relative;
+      overflow: hidden;
+    }
+    .ripple span {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      animation: ripple 0.6s ease-out;
+    }
+    @keyframes ripple {
+      from { width: 0; height: 0; opacity: 0.9; }
+      to { width: 300px; height: 300px; opacity: 0; }
+    }
+    /* diagonal separators */
+    .diagonal {
+      clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+    }
+    /* product image overlay gradient */
+    .img-overlay {
+      background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(2,8,12,0.45));
+    }
+    /* minimal loader */
+    .dotloader > div {
+      width: 8px;
+      height: 8px;
+      margin: 4px;
+      background: #fff;
+      border-radius: 999px;
+      display: inline-block;
+      animation: loader 1s infinite ease-in-out;
+      opacity: .9;
+    }
+    .dotloader > div:nth-child(2) { animation-delay: .12s; }
+    .dotloader > div:nth-child(3) { animation-delay: .24s; }
+    @keyframes loader {
+      0%,100% { transform: translateY(0); opacity: .4; }
+      50% { transform: translateY(-6px); opacity: 1; }
+    }
+    /* card hover outline accent (material feeling) */
+    .material-outline {
+      box-shadow: inset 0 0 0 0 rgba(255,255,255,0.06);
+      transition: box-shadow .28s ease, transform .18s ease;
+    }
+    .material-outline:hover {
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.03), 0 12px 40px rgba(2,12,20,0.45);
+      transform: translateY(-6px) scale(1.01);
+    }
+    /* small 3D product reflection */
+    .reflection:after {
+      content: "";
+      position: absolute; left: 10px; right: 10px; bottom: 6px; height: 36%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.00));
+      transform: skewY(-8deg);
+      pointer-events: none;
+      border-radius: 10px;
+    }
+    /* container for parallax background on hero */
+    .hero-bg {
+      background-size: cover;
+      background-position: center;
+      transition: background-position 12s ease;
+    }
+    /* responsive small tweaks */
+    @media (max-width: 640px) {
+      .diagonal { clip-path: none; }
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-50">
+
+  <!-- NAV -->
+  <header class="glass fixed top-4 left-4 right-4 z-40 rounded-2xl px-4 py-3 flex items-center justify-between gap-4 shadow-glass">
+    <div class="flex items-center gap-3">
+      <!-- inline SVG logo -->
+      <a href="#" id="brand" class="flex items-center gap-3" data-route="home">
+        <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow">
+          <rect x="3" y="12" width="42" height="26" rx="4" fill="url(#g1)"/>
+          <path d="M6 12L24 4L42 12" stroke="#fff" stroke-opacity=".08" stroke-width="1.5"/>
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="48" y2="48">
+              <stop offset="0" stop-color="#00bfa5"/>
+              <stop offset="1" stop-color="#6dd3c7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div>
+          <div class="text-sm font-semibold leading-none">Timber & Thread</div>
+          <div class="text-[10px] opacity-70 -mt-1">Modern furniture studio</div>
+        </div>
+      </a>
+    </div>
+
+    <nav class="hidden sm:flex items-center gap-3">
+      <a class="navlink px-3 py-2 rounded-md text-sm hover:bg-white/3 transition" href="#" data-route="home">Home</a>
+      <a class="navlink px-3 py-2 rounded-md text-sm hover:bg-white/3 transition" href="#" data-route="about">About</a>
+      <a class="navlink px-3 py-2 rounded-md text-sm hover:bg-white/3 transition" href="#" data-route="contact">Contact</a>
+      <button id="themeBtn" class="ml-3 px-3 py-2 rounded-md text-sm glass hover:scale-105 transition">Swatches</button>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="#" class="rounded-full p-1 hover:scale-105 transition" title="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3h2l1 7h11l2-5H6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="10" cy="20" r="1.6"></circle><circle cx="18" cy="20" r="1.6"></circle></svg>
+      </a>
+      <button id="menuMobile" class="sm:hidden p-2 rounded-md glass">☰</button>
+    </div>
+  </header>
+
+  <!-- MAIN: sections as SPA style -->
+  <main class="pt-28 px-4 max-w-8xl mx-auto">
+
+    <!-- HOME -->
+    <section id="home" class="route-section mb-16">
+      <!-- Hero -->
+      <div class="relative overflow-hidden rounded-2xl diagonal glass hero-bg p-8 sm:p-12" id="hero" style="min-height:360px;">
+        <div class="absolute inset-0 img-overlay rounded-2xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <span class="inline-block bg-gradient-to-r from-primary-300 to-primary-500 text-black px-3 py-1 rounded-full text-xs font-bold mb-3">Handcrafted · Sustainable</span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-3 tracking-tight">
+              Furniture that tells a story — crafted for life
+            </h1>
+            <p class="text-slate-200/80 mb-6 max-w-xl">Bespoke sofas, solid wood tables and ambient lighting designed with material intelligence. Explore our latest collections and interactive swatches below.</p>
+
+            <div class="flex gap-3 items-center">
+              <button id="shopNow" class="ripple px-5 py-3 rounded-xl bg-primary-500 hover:bg-primary-700 text-black font-semibold shadow-floating transition transform">Shop Collections</button>
+              <a href="#" class="px-4 py-3 rounded-xl glass border border-white/6 text-sm">Explore Materials</a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <!-- featured product carousel -->
+            <div class="soft-card overflow-hidden relative reflection material-outline" style="min-height:240px;">
+              <div id="carousel" class="h-64 md:h-72 w-full relative">
+                <!-- slides inserted by JS -->
+                <div id="carouselSlides" class="absolute inset-0"></div>
+                <!-- controls -->
+                <div class="absolute bottom-4 left-4 flex gap-2 z-20" id="swatchesContainer"></div>
+                <div class="absolute bottom-4 right-4 flex gap-2 z-20 items-center">
+                  <div id="carouselPause" class="dotloader hidden"><div></div><div></div><div></div></div>
+                  <button id="prevSlide" class="glass p-2 rounded-md">‹</button>
+                  <button id="nextSlide" class="glass p-2 rounded-md">›</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- micro info card -->
+            <div class="mt-4 glass p-3 rounded-xl flex items-center justify-between">
+              <div>
+                <div class="text-sm opacity-80">Material spotlight</div>
+                <div id="materialName" class="font-semibold text-lg">Oak – Warm Grain</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full border border-white/6" id="materialPreview"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Featured grid -->
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="p-6 soft-card tilt material-outline relative overflow-hidden">
+          <div class="absolute inset-0 hero-bg rounded-md" style="background-image: url('https://source.unsplash.com/collection/466244/800x600?sofa'); opacity:.9"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-md"></div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold">Boulder Modular Sofa</h3>
+            <p class="mt-2 text-sm opacity-80">Modular pieces for custom layouts. Kiln-dried oak legs, premium upholstery.</p>
+            <div class="mt-4 flex items-center gap-3">
+              <button class="ripple px-3 py-2 rounded-lg bg-white/6">View</button>
+              <button class="ripple px-3 py-2 rounded-lg glass">Add to wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-6 soft-card tilt material-outline relative overflow-hidden">
+          <div class="absolute inset-0 hero-bg rounded-md" style="background-image: url('https://source.unsplash.com/collection/1114848/800x600?chair'); opacity:.95"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-md"></div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold">Luna Lounge Chair</h3>
+            <p class="mt-2 text-sm opacity-80">Curved plywood, hand-stitched seams, memory foam cushion.</p>
+            <div class="mt-4 flex items-center gap-3">
+              <button class="ripple px-3 py-2 rounded-lg bg-white/6">View</button>
+              <button class="ripple px-3 py-2 rounded-lg glass">Add to wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="p-6 soft-card tilt material-outline relative overflow-hidden">
+          <div class="absolute inset-0 hero-bg rounded-md" style="background-image: url('https://source.unsplash.com/collection/888146/800x600?wood-table'); opacity:.95"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-md"></div>
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold">Hearth Dining Table</h3>
+            <p class="mt-2 text-sm opacity-80">Single-slab top, live-edge, sustainably sourced hardwood.</p>
+            <div class="mt-4 flex items-center gap-3">
+              <button class="ripple px-3 py-2 rounded-lg bg-white/6">View</button>
+              <button class="ripple px-3 py-2 rounded-lg glass">Add to wishlist</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="route-section hidden mb-16">
+      <div class="glass rounded-2xl p-8 md:p-12 diagonal">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-3xl font-extrabold mb-4">Our Story</h2>
+            <p class="text-slate-200/80 mb-4">Since 2012, Timber & Thread has been fusing craftsmanship with material intelligence. Each collection reflects an interest in structure, comfort, and sustainable sourcing — from FSC-certified timber to low-emission finishes.</p>
+            <ul class="space-y-3">
+              <li class="flex gap-3 items-start">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-primary-500 text-black font-bold">01</div>
+                <div>
+                  <div class="font-semibold">Material intelligence</div>
+                  <div class="text-sm opacity-80">We choose materials for durability and tactile comfort, testing for longevity before production.</div>
+                </div>
+              </li>
+              <li class="flex gap-3 items-start">
+                <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-primary-500 text-black font-bold">02</div>
+                <div>
+                  <div class="font-semibold">Human-centered design</div>
+                  <div class="text-sm opacity-80">Our pieces are ergonomically considered, ensuring long-term comfort without sacrificing aesthetics.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="soft-card p-6">
+            <h3 class="font-bold text-lg mb-3">Studio & Workshop</h3>
+            <p class="text-sm mb-4 opacity-80">A peek at our workshop: hybrid production with traditional joinery and modern CNC precision. We maintain low-waste policies and repurpose offcuts into accent pieces.</p>
+            <div class="grid grid-cols-2 gap-3">
+              <img class="rounded-md w-full h-28 object-cover" src="https://source.unsplash.com/collection/1103088/400x300?carpentry" alt="Workshop">
+              <img class="rounded-md w-full h-28 object-cover" src="https://source.unsplash.com/collection/875776/400x300?woodgrain" alt="Wood grain">
+              <img class="rounded-md w-full h-28 object-cover" src="https://source.unsplash.com/collection/139386/400x300?joinery" alt="Joinery">
+              <img class="rounded-md w-full h-28 object-cover" src="https://source.unsplash.com/collection/1114848/400x300?chair" alt="Chair">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="soft-card p-6">
+          <h4 class="font-bold mb-2">Sustainability</h4>
+          <p class="text-sm opacity-80">We prioritize chain-of-custody and low-VOC finishes.</p>
+        </div>
+        <div class="soft-card p-6">
+          <h4 class="font-bold mb-2">Warranty</h4>
+          <p class="text-sm opacity-80">10-year structural warranty on core pieces.</p>
+        </div>
+        <div class="soft-card p-6">
+          <h4 class="font-bold mb-2">Custom Work</h4>
+          <p class="text-sm opacity-80">Commission a piece tailored to your space and material preferences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="route-section hidden mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass soft-card p-6">
+          <h2 class="text-2xl font-extrabold mb-3">Get in touch</h2>
+          <p class="text-sm opacity-80 mb-4">Questions about a piece, custom work, or wholesale? Send us a note.</p>
+
+          <form id="contactForm" class="space-y-4">
+            <div>
+              <label class="block text-xs opacity-80 mb-1">Name</label>
+              <input required class="w-full px-4 py-3 rounded-lg glass border border-white/6" name="name" placeholder="Your name">
+            </div>
+            <div>
+              <label class="block text-xs opacity-80 mb-1">Email</label>
+              <input type="email" required class="w-full px-4 py-3 rounded-lg glass border border-white/6" name="email" placeholder="you@domain.com">
+            </div>
+            <div>
+              <label class="block text-xs opacity-80 mb-1">Message</label>
+              <textarea required class="w-full px-4 py-3 rounded-lg glass border border-white/6" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button type="submit" class="ripple px-5 py-3 rounded-xl bg-primary-500 text-black font-semibold">Send Message</button>
+              <button type="button" id="clearBtn" class="px-4 py-3 rounded-xl glass">Clear</button>
+            </div>
+            <div id="contactStatus" class="text-sm opacity-80 hidden mt-2"></div>
+          </form>
+        </div>
+
+        <div class="soft-card p-6">
+          <h3 class="font-bold mb-2">Visit the showroom</h3>
+          <p class="text-sm opacity-80 mb-4">123 Timber Lane, Suite 5 — Open Tue–Sat 10am–6pm</p>
+
+          <div class="h-48 rounded-lg overflow-hidden shadow-glass">
+            <img alt="Showroom" class="w-full h-full object-cover" src="https://source.unsplash.com/1200x800/?interior,showroom,furniture">
+          </div>
+
+          <div class="mt-4 text-sm opacity-80">
+            <div class="flex items-center gap-2"><strong>Email:</strong> <span>hello@timberandthread.com</span></div>
+            <div class="flex items-center gap-2 mt-2"><strong>Phone:</strong> <span>+1 (555) 529-8810</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-12 glass mx-4 md:mx-12 rounded-2xl py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <!-- logo small -->
+      <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="12" width="42" height="26" rx="4" fill="url(#g2)"/>
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="48" y2="48">
+            <stop offset="0" stop-color="#00bfa5"/>
+            <stop offset="1" stop-color="#6dd3c7"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div>
+        <div class="font-semibold">Timber & Thread</div>
+        <div class="text-xs opacity-70" id="copyrightText"></div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="#" class="text-sm hover:underline">Privacy</a>
+      <a href="#" class="text-sm hover:underline">Terms</a>
+      <a href="#" class="text-sm hover:underline">Careers</a>
+    </div>
+  </footer>
+
+  <!-- Modal product detail -->
+  <div id="modal" class="fixed inset-0 bg-black/60 hidden z-50 items-center justify-center p-4">
+    <div class="bg-white/5 rounded-2xl p-6 max-w-2xl w-full glass soft-card relative">
+      <button id="modalClose" class="absolute right-4 top-4 glass p-2 rounded-md">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script>
+    // SPA routing (simple)
+    const routes = ['home','about','contact'];
+    function showRoute(route) {
+      routes.forEach(r => {
+        const el = document.getElementById(r);
+        if (!el) return;
+        if (r === route) el.classList.remove('hidden');
+        else el.classList.add('hidden');
+      });
+      // highlight nav
+      document.querySelectorAll('.navlink').forEach(a => {
+        a.classList.toggle('bg-white/3', a.dataset.route === route);
+      });
+      // scroll to top of main
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+    document.querySelectorAll('[data-route]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        showRoute(a.dataset.route);
+        history.pushState({page: a.dataset.route}, '', '#'+a.dataset.route);
+      });
+    });
+    // initial route
+    const initial = location.hash ? location.hash.replace('#','') : 'home';
+    showRoute(routes.includes(initial) ? initial : 'home');
+
+    // dynamic copyright year
+    document.getElementById('copyrightText').textContent = '© ' + new Date().getFullYear() + ' Timber & Thread — All rights reserved.';
+
+    // HERO: set random hero image from Unsplash (furniture related) and subtle pan
+    const hero = document.getElementById('hero');
+    const heroQueries = ['modern-furniture','wood-furniture','living-room','interior-design','scandinavian-furniture'];
+    function setHeroBackground() {
+      const q = heroQueries[Math.floor(Math.random()*heroQueries.length)];
+      const url = `https://source.unsplash.com/1600x900/?${encodeURIComponent(q)}`;
+      hero.style.backgroundImage = `linear-gradient(180deg, rgba(2,8,12,0.15), rgba(2,8,12,0.36)), url('${url}')`;
+    }
+    setHeroBackground();
+    // pan every 12s
+    setInterval(() => {
+      const posX = Math.floor(Math.random()*20)+40;
+      hero.style.backgroundPosition = `${posX}% center`;
+    }, 12000);
+
+    // CAROUSEL: dynamic featured slides using unsplash queries
+    const featuredQueries = [
+      {q:'scandinavian-sofa', title: 'Boulder Modular Sofa', material:'Oak – Warm Grain'},
+      {q:'lounge-chair', title: 'Luna Lounge Chair', material:'Walnut – Dark'},
+      {q:'wooden-dining-table', title: 'Hearth Dining Table', material:'Reclaimed Elm'}
+    ];
+    const slidesContainer = document.getElementById('carouselSlides');
+    const swatchesContainer = document.getElementById('swatchesContainer');
+    let current = 0;
+    let carouselTimer = null;
+    function buildSlides() {
+      slidesContainer.innerHTML = '';
+      swatchesContainer.innerHTML = '';
+      featuredQueries.forEach((f, i) => {
+        const url = `https://source.unsplash.com/1200x900/?${encodeURIComponent(f.q)}`;
+        const slide = document.createElement('div');
+        slide.className = 'absolute inset-0 transition-opacity duration-700';
+        slide.style.backgroundImage = `url('${url}')`;
+        slide.style.backgroundSize = 'cover';
+        slide.style.backgroundPosition = 'center';
+        slide.style.opacity = i === current ? '1' : '0';
+        slide.style.transform = 'scale(' + (i === current ? '1' : '1.03') + ')';
+        slide.setAttribute('data-index', i);
+        slidesContainer.appendChild(slide);
+
+        const dot = document.createElement('button');
+        dot.className = 'w-3 h-3 rounded-full bg-white/60 hover:bg-white transition';
+        dot.dataset.index = i;
+        dot.title = f.title;
+        dot.addEventListener('click', () => { goToSlide(i); });
+        swatchesContainer.appendChild(dot);
+      });
+      updateMaterialDisplay();
+    }
+    function goToSlide(i) {
+      current = i;
+      Array.from(slidesContainer.children).forEach((s, idx) => {
+        s.style.opacity = idx === current ? '1' : '0';
+        s.style.transform = idx === current ? 'scale(1)' : 'scale(1.03)';
+      });
+      updateMaterialDisplay();
+      resetTimer();
+    }
+    function nextSlide() { goToSlide((current+1) % featuredQueries.length); }
+    function prevSlide() { goToSlide((current-1+featuredQueries.length) % featuredQueries.length); }
+    function resetTimer() {
+      if (carouselTimer) clearInterval(carouselTimer);
+      carouselTimer = setInterval(nextSlide, 4000);
+    }
+    function updateMaterialDisplay() {
+      const m = featuredQueries[current].material;
+      document.getElementById('materialName').textContent = m;
+      const preview = document.getElementById('materialPreview');
+      // map material to color roughly
+      const map = {
+        'Oak – Warm Grain':'#b07a4b',
+        'Walnut – Dark':'#3b2b23',
+        'Reclaimed Elm':'#8a6e51'
+      };
+      preview.style.background = map[m] || '#b07a4b';
+    }
+    document.getElementById('nextSlide').addEventListener('click', nextSlide);
+    document.getElementById('prevSlide').addEventListener('click', prevSlide);
+    document.getElementById('carouselPause').addEventListener('click', () => {
+      if (carouselTimer) { clearInterval(carouselTimer); carouselTimer = null; document.getElementById('carouselPause').classList.add('hidden'); }
+      else { resetTimer(); document.getElementById('carouselPause').classList.remove('hidden'); }
+    });
+
+    buildSlides();
+    resetTimer();
+
+    // PRODUCT CARD tilt micro-interaction
+    function applyTilt(el) {
+      el.addEventListener('pointermove', (ev) => {
+        const r = el.getBoundingClientRect();
+        const px = (ev.clientX - r.left) / r.width;
+        const py = (ev.clientY - r.top) / r.height;
+        const rx = (py - 0.5) * 8;
+        const ry = (px - 0.5) * -12;
+        el.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;
+        el.style.boxShadow = '0 18px 48px rgba(2,12,20,0.45)';
+      });
+      el.addEventListener('pointerleave', () => {
+        el.style.transform = '';
+        el.style.boxShadow = '';
+      });
+    }
+    document.querySelectorAll('.tilt').forEach(applyTilt);
+
+    // Buttons ripple
+    document.addEventListener('click', function(e){
+      const btn = e.target.closest('.ripple');
+      if (!btn) return;
+      const span = document.createElement('span');
+      const rect = btn.getBoundingClientRect();
+      span.style.left = (e.clientX - rect.left) + 'px';
+      span.style.top = (e.clientY - rect.top) + 'px';
+      btn.appendChild(span);
+      setTimeout(() => span.remove(), 650);
+    });
+
+    // Modal for product details (sample)
+    document.querySelectorAll('.material-outline button').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const title = btn.closest('.material-outline')?.querySelector('h3')?.textContent || 'Product';
+        openModal(`<h3 class="text-2xl font-bold mb-2">${title}</h3><p class="opacity-80">This is a quick product preview. Click customize to change materials and see interactive swatches. For production, we offer custom sizing and finish options.</p><div class="mt-4 flex gap-2"><button class="ripple px-4 py-2 rounded-lg bg-primary-500 text-black" id="modalCustomize">Customize</button><button class="ripple px-4 py-2 rounded-lg glass" id="modalCloseBtn">Close</button></div>`);
+        // close event for modal's internal buttons
+        setTimeout(() => {
+          document.getElementById('modalCloseBtn')?.addEventListener('click', closeModal);
+          document.getElementById('modalCustomize')?.addEventListener('click', () => {
+            alert('Material customizer coming soon — this demo shows an interactive concept.');
+          });
+        }, 50);
+      });
+    });
+
+    function openModal(html) {
+      document.getElementById('modalContent').innerHTML = html;
+      const m = document.getElementById('modal');
+      m.classList.remove('hidden');
+      m.style.display = 'flex';
+    }
+    function closeModal() {
+      const m = document.getElementById('modal');
+      m.classList.add('hidden');
+      m.style.display = 'none';
+    }
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    document.getElementById('modal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+
+    // CONTACT form (fake submit)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById('contactStatus');
+      status.classList.remove('hidden');
+      status.textContent = 'Sending…';
+      setTimeout(() => {
+        status.textContent = 'Thanks! Your message has been received. We’ll reply within 2 business days.';
+        e.target.reset();
+      }, 900);
+    });
+    document.getElementById('clearBtn').addEventListener('click', () => document.getElementById('contactForm').reset());
+
+    // theme swatches toggle - demonstrate dynamic variables (non-standard industry-specific: material swatches)
+    const materialSwatches = [
+      {name:'Oak – Warm Grain', color:'#b07a4b'},
+      {name:'Walnut – Dark', color:'#3b2b23'},
+      {name:'Ash – Pale', color:'#d9c9b8'},
+      {name:'Slate Upholstery', color:'#59606a'}
+    ];
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      // show quick floating palette
+      const palette = document.createElement('div');
+      palette.className = 'fixed right-6 top-20 glass p-4 rounded-xl shadow-floating z-50';
+      palette.innerHTML = '<div class="font-semibold mb-2">Material Swatches</div>';
+      materialSwatches.forEach(m => {
+        const b = document.createElement('button');
+        b.className = 'flex items-center gap-3 w-full p-2 rounded-md hover:bg-white/4 transition';
+        b.innerHTML = `<div style="width:36px;height:28px;background:${m.color};border-radius:6px;border:1px solid rgba(255,255,255,0.06)"></div><div class="text-sm">${m.name}</div>`;
+        b.addEventListener('click', () => {
+          // apply to preview elements: hero accent and product preview
+          document.querySelectorAll('.soft-card, .glass').forEach(el => {
+            el.style.borderColor = 'rgba(255,255,255,0.04)';
+          });
+          document.querySelectorAll('button, .primary-apply').forEach(el => {
+            // set accent where appropriate (subtle)
+          });
+          document.getElementById('materialPreview').style.background = m.color;
+          document.getElementById('materialName').textContent = m.name;
+          document.body.style.setProperty('--accent', m.color);
+          palette.remove();
+        });
+        palette.appendChild(b);
+      });
+      const close = document.createElement('div');
+      close.className = 'mt-3 text-xs opacity-70 text-right';
+      close.innerHTML = '<a href="#" id="closePalette" class="underline">Close</a>';
+      palette.appendChild(close);
+      document.body.appendChild(palette);
+      document.getElementById('closePalette').addEventListener('click', (ev) => { ev.preventDefault(); palette.remove(); });
+    });
+
+    // mobile menu simple
+    const menuMobile = document.getElementById('menuMobile');
+    menuMobile.addEventListener('click', () => {
+      const m = document.createElement('div');
+      m.className = 'fixed inset-0 bg-black/50 z-50 flex items-start justify-end p-6';
+      m.innerHTML = `<div class="w-60 bg-white/5 rounded-xl p-4 glass">
+        <a href="#" class="block py-2" data-route="home">Home</a>
+        <a href="#" class="block py-2" data-route="about">About</a>
+        <a href="#" class="block py-2" data-route="contact">Contact</a>
+        <div class="mt-4"><button id="closeMobile" class="w-full py-2 rounded-lg glass">Close</button></div>
+      </div>`;
+      document.body.appendChild(m);
+      m.addEventListener('click', (ev) => {
+        if (ev.target === m) m.remove();
+      });
+      m.querySelectorAll('[data-route]').forEach(a => {
+        a.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          showRoute(a.dataset.route);
+          m.remove();
+        });
+      });
+      m.querySelector('#closeMobile').addEventListener('click', () => m.remove());
+    });
+
+    // small enhancement: allow arrow keys to change carousel
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    // make nav links reactive (hover)
+    document.querySelectorAll('.navlink').forEach(link => {
+      link.addEventListener('mouseenter', () => link.classList.add('scale-105'));
+      link.addEventListener('mouseleave', () => link.classList.remove('scale-105'));
+    });
+
+    // enhance product cards to open modal when View clicked
+    document.querySelectorAll('article .ripple').forEach(b => {
+      if (b.textContent.trim().toLowerCase() === 'view') {
+        b.addEventListener('click', (ev) => {
+          const title = b.closest('article')?.querySelector('h3')?.textContent || 'Product Preview';
+          openModal(`<h3 class="text-2xl font-bold mb-2">${title}</h3><p class="opacity-80">Rich product detail modal. Includes material swatches and quick customization preview in a production build.</p><div class="mt-4 flex gap-2"><button class="ripple px-4 py-2 rounded-lg bg-primary-500 text-black">Customize</button><button class="ripple px-4 py-2 rounded-lg glass" onclick="closeModal()">Close</button></div>`);
+        });
+      }
+    });
+
+    // Progressive enhancement: fade-in sections
+    document.querySelectorAll('.route-section').forEach(s => {
+      s.style.opacity = 0;
+      s.style.transition = 'opacity .7s ease';
+    });
+    function fadeVisible() {
+      document.querySelectorAll('.route-section').forEach(s => {
+        if (!s.classList.contains('hidden')) s.style.opacity = 1;
+        else s.style.opacity = 0;
+      });
+    }
+    fadeVisible();
+    // watch for route changes via popstate
+    window.addEventListener('popstate', (ev) => {
+      const route = (ev.state && ev.state.page) || (location.hash ? location.hash.replace('#','') : 'home');
+      showRoute(route);
+      fadeVisible();
+    });
+
+    // small accessibility: focus states
+    document.querySelectorAll('button, a, input, textarea').forEach(el => {
+      el.classList.add('focus:outline-none');
+      el.addEventListener('focus', () => el.classList.add('ring-2', 'ring-primary-300'));
+      el.addEventListener('blur', () => el.classList.remove('ring-2', 'ring-primary-300'));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arc & Grain Furniture</title>
+
+  <!-- Tailwind (Play CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Tailwind config for a more "non-standard" look -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['ui-sans-serif', 'system-ui', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            ink: '#0B0F1A',
+            haze: '#A7B0C0',
+            accent: '#7CFFCB',
+            accent2: '#A78BFA',
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(124,255,203,.35), 0 0 40px rgba(167,139,250,.18)',
+          },
+          keyframes: {
+            floaty: {
+              '0%,100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+          animation: {
+            floaty: 'floaty 7s ease-in-out infinite',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Glass + noise-ish overlay (lightweight, no external assets) */
+    .noise {
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(124,255,203,.12), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(167,139,250,.14), transparent 45%),
+        radial-gradient(circle at 70% 80%, rgba(255,255,255,.06), transparent 40%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+    }
+    .glass {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    /* Subtle “scanline” accent for cutting-edge aesthetic */
+    .scanlines {
+      background-image: linear-gradient(
+        rgba(255,255,255,.06) 1px,
+        transparent 1px
+      );
+      background-size: 100% 10px;
+      mask-image: radial-gradient(circle at 50% 20%, black 30%, transparent 70%);
+      opacity: .35;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body class="bg-ink text-white font-display selection:bg-accent selection:text-ink">
+  <!-- Top gradient background -->
+  <div class="fixed inset-0 -z-10 noise"></div>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50">
+    <div class="glass">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="group flex items-center gap-3">
+          <!-- Simple inline “logo” -->
+          <div class="relative h-10 w-10 rounded-xl bg-white/10 grid place-items-center shadow-glow transition-transform duration-300 group-hover:rotate-6 group-hover:scale-105">
+            <span class="text-accent font-black tracking-tight">A/G</span>
+            <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 text-[10px] text-haze/80">studio</span>
+          </div>
+          <div class="leading-tight">
+            <div class="font-semibold tracking-wide">Arc & Grain</div>
+            <div class="text-xs text-haze">Furniture • Crafted + Sold</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-2">
+          <button data-route="home" class="navbtn px-4 py-2 rounded-xl text-sm text-haze hover:text-white hover:bg-white/10 active:scale-[.98] transition">
+            Home
+          </button>
+          <button data-route="about" class="navbtn px-4 py-2 rounded-xl text-sm text-haze hover:text-white hover:bg-white/10 active:scale-[.98] transition">
+            About
+          </button>
+          <button data-route="contact" class="navbtn px-4 py-2 rounded-xl text-sm text-haze hover:text-white hover:bg-white/10 active:scale-[.98] transition">
+            Contact
+          </button>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <button id="themePulse"
+            class="rounded-xl px-3 py-2 text-sm bg-white/10 hover:bg-white/15 active:scale-[.98] transition shadow-glow">
+            Pulse UI
+          </button>
+          <button id="mobileMenuBtn"
+            class="md:hidden rounded-xl px-3 py-2 text-sm bg-white/10 hover:bg-white/15 active:scale-[.98] transition">
+            Menu
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+        <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2">
+          <button data-route="home" class="navbtn text-left px-4 py-3 rounded-xl text-sm text-haze hover:text-white hover:bg-white/10 active:scale-[.98] transition">
+            Home
+          </button>
+          <button data-route="about" class="navbtn text-left px-4 py-3 rounded-xl text-sm text-haze hover:text-white hover:bg-white/10 active:scale-[.98] transition">
+            About
+          </button>
+          <button data-route="contact" class="navbtn text-left px-4 py-3 rounded-xl text-sm text-haze hover:text-white hover:bg-white/10 active:scale-[.98] transition">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <!-- Route: HOME -->
+    <section id="page-home" class="route">
+      <div class="relative overflow-hidden rounded-3xl glass p-6 md:p-10 shadow-glow">
+        <div class="scanlines absolute inset-0"></div>
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs text-haze border border-white/10">
+              <span class="h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+              <span>New drop every Friday • Micro-batches</span>
+            </div>
+
+            <h1 class="mt-6 text-4xl md:text-5xl font-semibold tracking-tight">
+              Furniture that feels <span class="text-accent">alive</span>.
+              <span class="block text-haze text-xl md:text-2xl mt-3">
+                Crafted with ergonomic geometry and modern joinery.
+              </span>
+            </h1>
+
+            <p class="mt-5 text-haze leading-relaxed">
+              Arc & Grain designs and sells modern wood furniture—made to last, tuned to your space, and
+              finished with a soft-touch matte coat.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-3">
+              <button id="shuffleBtn"
+                class="group rounded-2xl px-5 py-3 bg-accent text-ink font-semibold hover:brightness-110 active:scale-[.98] transition shadow-glow">
+                Shuffle Featured Pieces
+                <span class="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
+              </button>
+              <button data-route="contact"
+                class="navbtn rounded-2xl px-5 py-3 bg-white/10 hover:bg-white/15 active:scale-[.98] transition border border-white/10">
+                Request a Quote
+              </button>
+            </div>
+
+            <!-- Dynamic content: rotating “studio stats” -->
+            <div class="mt-8 grid grid-cols-3 gap-3">
+              <div class="glass rounded-2xl p-4 border border-white/10 hover:border-accent/50 transition">
+                <div class="text-xs text-haze">Lead Time</div>
+                <div id="statLead" class="mt-1 text-lg font-semibold">—</div>
+              </div>
+              <div class="glass rounded-2xl p-4 border border-white/10 hover:border-accent/50 transition">
+                <div class="text-xs text-haze">Wood</div>
+                <div id="statWood" class="mt-1 text-lg font-semibold">—</div>
+              </div>
+              <div class="glass rounded-2xl p-4 border border-white/10 hover:border-accent/50 transition">
+                <div class="text-xs text-haze">Finish</div>
+                <div id="statFinish" class="mt-1 text-lg font-semibold">—</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero image (Unsplash) -->
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-accent/25 via-white/5 to-accent2/25 blur-2xl"></div>
+            <figure class="relative overflow-hidden rounded-3xl border border-white/10 shadow-glow">
+              <img
+                class="h-[420px] w-full object-cover scale-[1.02] hover:scale-[1.06] transition duration-700"
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80"
+                alt="Modern living room with furniture"
+              />
+              <figcaption class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                <div class="text-sm">
+                  <span class="text-white font-semibold">Studio Note:</span>
+                  <span class="text-haze"> Rounded edges, sharp presence.</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured products (dynamic) -->
+      <div class="mt-10">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">Featured Pieces</h2>
+            <p class="text-haze mt-1">Click a card to “inspect” details with a micro-interaction.</p>
+          </div>
+          <div class="text-xs text-haze">Tip: hover for tilt + glow</div>
+        </div>
+
+        <div id="productGrid" class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+    </section>
+
+    <!-- Route: ABOUT -->
+    <section id="page-about" class="route hidden">
+      <div class="grid lg:grid-cols-2 gap-6 items-start">
+        <div class="glass rounded-3xl p-6 md:p-8 border border-white/10 shadow-glow">
+          <h2 class="text-3xl font-semibold tracking-tight">About Arc & Grain</h2>
+          <p class="mt-4 text-haze leading-relaxed">
+            We’re a small furniture studio blending traditional woodworking with
+            parametric design. Our “non-standard” design language: soft arcs, exposed joinery,
+            and modular silhouettes that adapt to modern living.
+          </p>
+
+          <div class="mt-6 grid gap-3">
+            <div class="rounded-2xl p-4 bg-white/5 border border-white/10 hover:border-accent/40 transition">
+              <div class="text-sm font-semibold">Material-first design</div>
+              <div class="text-sm text-haze mt-1">Every curve follows grain direction to reduce waste and boost strength.</div>
+            </div>
+            <div class="rounded-2xl p-4 bg-white/5 border border-white/10 hover:border-accent/40 transition">
+              <div class="text-sm font-semibold">Micro-batch production</div>
+              <div class="text-sm text-haze mt-1">Limited runs with rapid iteration—like software, but in wood.</div>
+            </div>
+            <div class="rounded-2xl p-4 bg-white/5 border border-white/10 hover:border-accent/40 transition">
+              <div class="text-sm font-semibold">Repairable by design</div>
+              <div class="text-sm text-haze mt-1">Parts are replaceable; finishes are easy to refresh.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid gap-4">
+          <figure class="overflow-hidden rounded-3xl border border-white/10 shadow-glow">
+            <img class="h-64 w-full object-cover hover:scale-105 transition duration-700"
+                 src="https://images.unsplash.com/photo-1582582429416-7888c67c9a71?auto=format&fit=crop&w=1400&q=80"
+                 alt="Woodworking tools on a bench" />
+          </figure>
+
+          <div class="glass rounded-3xl p-6 border border-white/10">
+            <h3 class="text-xl font-semibold">Design System: “Arc Logic”</h3>
+            <p class="mt-2 text-haze">
+              We use a curve-and-grid system that creates visual calm while keeping load paths strong.
+              It’s furniture that looks experimental—but behaves predictably.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-white/10 text-xs border border-white/10 hover:border-accent/40 transition">Mortise + tenon</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 text-xs border border-white/10 hover:border-accent/40 transition">CNC-assisted shaping</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 text-xs border border-white/10 hover:border-accent/40 transition">Low-VOC finishes</span>
+              <span class="px-3 py-1 rounded-full bg-white/10 text-xs border border-white/10 hover:border-accent/40 transition">Modular hardware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Route: CONTACT -->
+    <section id="page-contact" class="route hidden">
+      <div class="grid lg:grid-cols-2 gap-6 items-start">
+        <div class="glass rounded-3xl p-6 md:p-8 border border-white/10 shadow-glow">
+          <h2 class="text-3xl font-semibold tracking-tight">Contact</h2>
+          <p class="mt-3 text-haze">
+            Tell us what you’re building. We’ll respond within 1–2 business days.
+          </p>
+
+          <form id="contactForm" class="mt-6 grid gap-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="grid gap-2">
+                <span class="text-xs text-haze">Name</span>
+                <input required type="text" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/40 transition"
+                  placeholder="Your name" />
+              </label>
+              <label class="grid gap-2">
+                <span class="text-xs text-haze">Email</span>
+                <input required type="email" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/40 transition"
+                  placeholder="you@domain.com" />
+              </label>
+            </div>
+
+            <label class="grid gap-2">
+              <span class="text-xs text-haze">Project Type</span>
+              <select class="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/40 transition">
+                <option>Custom table</option>
+                <option>Seating</option>
+                <option>Shelving</option>
+                <option>Built-in / storage</option>
+                <option>Bulk / hospitality</option>
+              </select>
+            </label>
+
+            <label class="grid gap-2">
+              <span class="text-xs text-haze">Message</span>
+              <textarea required rows="5" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/40 focus:border-accent/40 transition"
+                placeholder="Dimensions, wood preference, timeline, budget..."></textarea>
+            </label>
+
+            <button class="rounded-2xl px-5 py-3 bg-accent text-ink font-semibold hover:brightness-110 active:scale-[.98] transition shadow-glow">
+              Send Message
+            </button>
+
+            <div id="formToast" class="hidden rounded-2xl p-4 bg-white/10 border border-white/10 text-sm text-haze">
+              Thanks! This demo form doesn’t actually send—wire it to your backend/email service.
+            </div>
+          </form>
+        </div>
+
+        <div class="grid gap-4">
+          <figure class="overflow-hidden rounded-3xl border border-white/10 shadow-glow">
+            <img class="h-64 w-full object-cover hover:scale-105 transition duration-700"
+                 src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=80"
+                 alt="Modern sofa and living room setup" />
+          </figure>
+
+          <div class="glass rounded-3xl p-6 border border-white/10">
+            <h3 class="text-xl font-semibold">Studio Info</h3>
+            <div class="mt-3 grid gap-2 text-sm text-haze">
+              <div class="flex items-center justify-between gap-4">
+                <span>Showroom</span><span class="text-white">By appointment</span>
+              </div>
+              <div class="flex items-center justify-between gap-4">
+                <span>Email</span><span class="text-white">hello@arcandgrain.example</span>
+              </div>
+              <div class="flex items-center justify-between gap-4">
+                <span>Phone</span><span class="text-white">+1 (555) 014-7732</span>
+              </div>
+            </div>
+
+            <button id="copyEmail"
+              class="mt-5 w-full rounded-2xl px-5 py-3 bg-white/10 hover:bg-white/15 active:scale-[.98] transition border border-white/10">
+              Copy Email
+            </button>
+            <div id="copyToast" class="hidden mt-3 text-xs text-accent">Copied to clipboard.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-10 border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6 items-center">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-xl bg-white/10 grid place-items-center shadow-glow">
+          <span class="text-accent font-black tracking-tight">A/G</span>
+        </div>
+        <div>
+          <div class="font-semibold">Arc & Grain Furniture</div>
+          <div class="text-xs text-haze">Crafted + Sold • Modern Wood Studio</div>
+        </div>
+      </div>
+
+      <div class="text-sm text-haze md:text-center">
+        © <span id="year"></span> Arc & Grain. All rights reserved.
+      </div>
+
+      <div class="flex md:justify-end gap-2">
+        <a class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 active:scale-[.98] transition border border-white/10 text-sm"
+           href="#home" data-route="home">Home</a>
+        <a class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 active:scale-[.98] transition border border-white/10 text-sm"
+           href="#about" data-route="about">About</a>
+        <a class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 active:scale-[.98] transition border border-white/10 text-sm"
+           href="#contact" data-route="contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: routing + dynamic content + interactions -->
+  <script>
+    // --- Simple SPA routing (Home/About/Contact) ---
+    const routes = ['home', 'about', 'contact'];
+
+    function showRoute(route) {
+      routes.forEach(r => {
+        document.getElementById('page-' + r).classList.toggle('hidden', r !== route);
+      });
+
+      // Highlight nav buttons
+      document.querySelectorAll('.navbtn').forEach(btn => {
+        const isActive = btn.dataset.route === route;
+        btn.classList.toggle('bg-white/10', isActive);
+        btn.classList.toggle('text-white', isActive);
+        btn.classList.toggle('text-haze', !isActive);
+      });
+
+      // Close mobile menu
+      document.getElementById('mobileMenu').classList.add('hidden');
+      // Update hash
+      location.hash = route;
+      // Smooth scroll to top of main
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function initRouteFromHash() {
+      const hash = (location.hash || '#home').replace('#', '');
+      showRoute(routes.includes(hash) ? hash : 'home');
+    }
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-route]');
+      if (!btn) return;
+      e.preventDefault();
+      showRoute(btn.dataset.route);
+    });
+
+    window.addEventListener('hashchange', initRouteFromHash);
+
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // --- Dynamic Home content: featured products shuffle + studio stats ---
+    const products = [
+      {
+        name: 'Helix Lounge Chair',
+        price: '$690',
+        tag: 'Ergo-arc shell',
+        img: 'https://images.unsplash.com/photo-1549187774-b4e9b0445b41?auto=format&fit=crop&w=1400&q=80',
+        desc: 'Curved backrest, floating seat pan, and silent felt glides.'
+      },
+      {
+        name: 'Orbit Coffee Table',
+        price: '$520',
+        tag: 'Soft radius edge',
+        img: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1400&q=80',
+        desc: 'Low-profile top with a tri-leg stance for stability.'
+      },
+      {
+        name: 'Spline Shelf System',
+        price: 'From $340',
+        tag: 'Modular',
+        img: 'https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1400&q=80',
+        desc: 'Reconfigurable bays; tool-free expandability.'
+      },
+      {
+        name: 'Vector Dining Table',
+        price: '$1,290',
+        tag: 'Knife-edge look',
+        img: 'https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1400&q=80',
+        desc: 'A thin visual profile with a reinforced under-structure.'
+      },
+      {
+        name: 'Arc Night Stand',
+        price: '$290',
+        tag: 'Hidden pull',
+        img: 'https://images.unsplash.com/photo-1616627450921-68f6f6c1e3d2?auto=format&fit=crop&w=1400&q=80',
+        desc: 'Soft-close drawer and cable pass-through.'
+      },
+      {
+        name: 'Flux Bench',
+        price: '$410',
+        tag: 'Entry-ready',
+        img: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80',
+        desc: 'Sculpted seat contour with resilient joinery.'
+      },
+    ];
+
+    const stats = {
+      leadTime: ['2–3 weeks', '3–4 weeks', '10–14 days', 'Made-to-order'],
+      wood: ['White Oak', 'Walnut', 'Ash', 'Maple'],
+      finish: ['Matte oil', 'Hardwax oil', 'Low-VOC lacquer', 'Satin oil'],
+    };
+
+    function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+    function renderStats() {
+      document.getElementById('statLead').textContent = pick(stats.leadTime);
+      document.getElementById('statWood').textContent = pick(stats.wood);
+      document.getElementById('statFinish').textContent = pick(stats.finish);
+    }
+
+    function productCard(p, idx) {
+      return `
+        <article
+          class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition shadow-glow
+                 hover:-translate-y-1 active:translate-y-0 cursor-pointer"
+          data-product="${idx}"
+          tabindex="0"
+        >
+          <div class="absolute -inset-10 bg-gradient-to-tr from-accent/0 via-accent2/0 to-accent/0 group-hover:from-accent/10 group-hover:via-accent2/10 group-hover:to-accent/10 blur-2xl transition"></div>
+
+          <div class="relative">
+            <img src="${p.img}" alt="${p.name}" class="h-44 w-full object-cover group-hover:scale-105 transition duration-700" />
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-3 py-1 rounded-full text-xs bg-black/40 border border-white/15 backdrop-blur">${p.tag}</span>
+            </div>
+            <div class="absolute top-3 right-3">
+              <span class="px-3 py-1 rounded-full text-xs bg-black/40 border border-white/15 backdrop-blur">${p.price}</span>
+            </div>
+          </div>
+
+          <div class="relative p-5">
+            <h3 class="text-lg font-semibold tracking-tight">${p.name}</h3>
+            <p class="mt-2 text-sm text-haze leading-relaxed">
+              ${p.desc}
+            </p>
+
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs text-haze">Click to inspect</span>
+              <span class="text-accent text-sm font-semibold group-hover:translate-x-1 transition">View →</span>
+            </div>
+
+            <!-- "Inspection" panel (revealed on click via JS by toggling hidden) -->
+            <div class="inspect hidden mt-4 rounded-2xl p-4 bg-black/25 border border-white/10">
+              <div class="text-xs text-haze">Inspection</div>
+              <div class="mt-2 grid grid-cols-3 gap-2 text-xs">
+                <div class="rounded-xl bg-white/5 border border-white/10 p-2 hover:border-accent/40 transition">
+                  <div class="text-haze">Joinery</div>
+                  <div class="text-white mt-1">Locked</div>
+                </div>
+                <div class="rounded-xl bg-white/5 border border-white/10 p-2 hover:border-accent/40 transition">
+                  <div class="text-haze">Edges</div>
+                  <div class="text-white mt-1">R12</div>
+                </div>
+                <div class="rounded-xl bg-white/5 border border-white/10 p-2 hover:border-accent/40 transition">
+                  <div class="text-haze">Feel</div>
+                  <div class="text-white mt-1">Soft-matte</div>
+                </div>
+              </div>
+              <button class="mt-3 w-full rounded-2xl px-4 py-2 bg-white/10 hover:bg-white/15 active:scale-[.99] transition border border-white/10 text-sm">
+                Add to Inquiry
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function shuffle(array) {
+      const a = array.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      const items = shuffle(products).slice(0, 6);
+      grid.innerHTML = items.map((p, i) => productCard(p, i)).join('');
+    }
+
+    // Click-to-inspect interaction
+    document.addEventListener('click', (e) => {
+      const card = e.target.closest('article[data-product]');
+      if (!card) return;
+      const inspect = card.querySelector('.inspect');
+      inspect.classList.toggle('hidden');
+      card.classList.toggle('ring-2');
+      card.classList.toggle('ring-accent/40');
+    });
+
+    // Keyboard accessibility for cards (Enter toggles)
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter') return;
+      const card = document.activeElement?.closest?.('article[data-product]');
+      if (!card) return;
+      const inspect = card.querySelector('.inspect');
+      inspect.classList.toggle('hidden');
+      card.classList.toggle('ring-2');
+      card.classList.toggle('ring-accent/40');
+    });
+
+    document.getElementById('shuffleBtn').addEventListener('click', () => {
+      renderStats();
+      renderProducts();
+    });
+
+    // --- UI "Pulse" (non-standard interaction) ---
+    document.getElementById('themePulse').addEventListener('click', () => {
+      document.body.classList.toggle('selection:bg-accent2');
+      // Quick ambient flash
+      document.body.animate(
+        [{ filter: 'brightness(1)' }, { filter: 'brightness(1.08)' }, { filter: 'brightness(1)' }],
+        { duration: 450, easing: 'ease-out' }
+      );
+    });
+
+    // Contact form toast (demo)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const toast = document.getElementById('formToast');
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 3500);
+      e.target.reset();
+    });
+
+    // Copy email interaction
+    document.getElementById('copyEmail').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('hello@arcandgrain.example');
+        document.getElementById('copyToast').classList.remove('hidden');
+        setTimeout(() => document.getElementById('copyToast').classList.add('hidden'), 2000);
+      } catch {
+        alert('Clipboard permission denied.');
+      }
+    });
+
+    // Init
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderStats();
+    renderProducts();
+    initRouteFromHash();
+  </script>
+</body>
+</html>

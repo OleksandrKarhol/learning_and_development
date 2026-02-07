@@ -1,0 +1,806 @@
+```html
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier Grove — Modern Heirloom Furniture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --off:#fbfaf7;
+      --char:#141414;
+      --muted:#6b6258;
+      --accent:#8a6b52;
+    }
+    body{ background:var(--off); color:var(--char); }
+    .font-serif{ font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+    .font-sans{ font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    /* Underline animation for nav */
+    .navlink{ position:relative; }
+    .navlink::after{
+      content:"";
+      position:absolute;
+      left:0; right:100%;
+      bottom:-6px;
+      height:1px;
+      background: currentColor;
+      opacity:.65;
+      transition: right 220ms ease;
+    }
+    .navlink:hover::after, .navlink[aria-current="page"]::after{ right:0; }
+    /* Wood-grain micro motif */
+    .grain{
+      background:
+        linear-gradient(90deg, rgba(20,20,20,.08), rgba(20,20,20,.02) 45%, rgba(20,20,20,.08)),
+        repeating-linear-gradient(90deg, rgba(138,107,82,.20) 0 1px, rgba(138,107,82,0) 1px 10px);
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+  </style>
+</head>
+
+<body class="font-sans selection:bg-[rgba(138,107,82,.25)] selection:text-[var(--char)]">
+  <!-- Skip link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:shadow-lg focus:ring-2 focus:ring-[rgba(138,107,82,.45)]">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-black/10 bg-[rgba(251,250,247,.86)] backdrop-blur-md">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex h-16 items-center justify-between gap-3">
+        <a href="#/" class="group inline-flex items-center gap-3 py-2" aria-label="Atelier Grove home">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white shadow-sm transition duration-200 group-hover:shadow">
+            <span class="h-4 w-4 rounded-[5px] border border-black/30 bg-[rgba(138,107,82,.18)]"></span>
+          </span>
+          <span class="leading-none">
+            <span class="block font-serif text-[15px] tracking-wide">Atelier Grove</span>
+            <span class="block text-[11px] text-black/60">Modern heirloom furniture</span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary" class="hidden md:block">
+          <ul class="flex items-center gap-8 text-sm">
+            <li><a class="navlink inline-flex h-11 items-center text-black/80 transition duration-200 hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" href="#/" data-route-link>Home</a></li>
+            <li><a class="navlink inline-flex h-11 items-center text-black/80 transition duration-200 hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" href="#/about" data-route-link>About</a></li>
+            <li><a class="navlink inline-flex h-11 items-center text-black/80 transition duration-200 hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" href="#/contact" data-route-link>Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="#/contact" class="hidden sm:inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white px-5 text-sm text-black/90 shadow-sm transition duration-200 hover:shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" data-route-link>
+            Request a consult
+          </a>
+
+          <button id="menuBtn" class="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-black/80 shadow-sm transition duration-200 hover:shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M3 5h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden pb-4">
+        <div class="rounded-2xl border border-black/10 bg-white/70 p-2 backdrop-blur">
+          <a class="block h-11 rounded-xl px-4 text-sm leading-[44px] text-black/85 transition hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)]" href="#/" data-route-link>Home</a>
+          <a class="block h-11 rounded-xl px-4 text-sm leading-[44px] text-black/85 transition hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)]" href="#/about" data-route-link>About</a>
+          <a class="block h-11 rounded-xl px-4 text-sm leading-[44px] text-black/85 transition hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)]" href="#/contact" data-route-link>Contact</a>
+          <a class="mt-1 block h-11 rounded-xl bg-[rgba(138,107,82,.14)] px-4 text-sm leading-[44px] text-black/90 transition hover:bg-[rgba(138,107,82,.20)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)]" href="#/contact" data-route-link>Request a consult</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="mx-auto max-w-6xl px-4 sm:px-6">
+    <!-- HOME -->
+    <div data-route="home">
+      <!-- Hero -->
+      <section class="pt-10 sm:pt-14">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-5">
+            <p class="text-xs tracking-[0.22em] text-black/60">SUSTAINABLY SOURCED HARDWOODS • MADE TO LAST</p>
+            <h1 class="mt-4 font-serif text-4xl leading-tight tracking-tight text-black sm:text-5xl">
+              Modern heirlooms, built with quiet precision.
+            </h1>
+            <p class="mt-4 max-w-xl text-base leading-relaxed text-black/70">
+              Atelier Grove designs and crafts furniture with disciplined joinery, honest materials, and a measured editorial sensibility—pieces that settle into your home for decades.
+            </p>
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="#/contact" data-route-link class="inline-flex h-11 items-center justify-center rounded-full bg-[var(--char)] px-6 text-sm text-[var(--off)] shadow-sm transition duration-200 hover:translate-y-[-1px] hover:shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                Book a showroom visit
+              </a>
+              <a href="#materials" class="inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-white px-6 text-sm text-black/80 transition duration-200 hover:border-black/25 hover:bg-black/[0.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                Explore materials
+              </a>
+            </div>
+
+            <div class="mt-10 grid grid-cols-2 gap-4">
+              <div class="rounded-2xl border border-black/10 bg-white/60 p-4">
+                <p class="text-xs tracking-[0.18em] text-black/55">LEAD TIME</p>
+                <p class="mt-2 font-serif text-xl text-black">6–10 weeks</p>
+                <p class="mt-1 text-sm text-black/65">Built to order, sized for your space.</p>
+              </div>
+              <div class="rounded-2xl border border-black/10 bg-white/60 p-4">
+                <p class="text-xs tracking-[0.18em] text-black/55">FINISH</p>
+                <p class="mt-2 font-serif text-xl text-black">Low-VOC oils</p>
+                <p class="mt-1 text-sm text-black/65">Hand-rubbed, repairable, warm.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="relative overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80"
+                alt="A calm, modern living room with crafted wooden furniture"
+                class="h-[420px] w-full object-cover sm:h-[520px]"
+                loading="eager"
+              />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/20 via-black/0 to-black/10"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <div class="flex flex-col gap-2 rounded-2xl border border-white/20 bg-white/10 p-4 text-[var(--off)] backdrop-blur">
+                  <p class="text-xs tracking-[0.22em] text-white/75">CURRENT FEATURE</p>
+                  <p class="font-serif text-lg">The Grove Console — tapered legs, floating top, concealed mortise-and-tenon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 h-px w-full grain"></div>
+      </section>
+
+      <!-- Value proposition -->
+      <section class="py-12 sm:py-14">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-4">
+            <h2 class="font-serif text-2xl tracking-tight">A considered approach.</h2>
+            <p class="mt-3 text-sm leading-relaxed text-black/70">
+              Every edge, radius, and proportion is refined to feel inevitable—never loud, always intentional.
+            </p>
+          </div>
+          <div class="lg:col-span-8">
+            <ul class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <li class="group rounded-2xl border border-black/10 bg-white/60 p-5 transition duration-200 hover:bg-white hover:shadow-sm">
+                <p class="text-xs tracking-[0.2em] text-black/55">CRAFT</p>
+                <p class="mt-2 font-serif text-lg">Joinery-first construction</p>
+                <p class="mt-2 text-sm text-black/70">Mortise-and-tenon, dovetails, and tight tolerances where they matter.</p>
+              </li>
+              <li class="group rounded-2xl border border-black/10 bg-white/60 p-5 transition duration-200 hover:bg-white hover:shadow-sm">
+                <p class="text-xs tracking-[0.2em] text-black/55">MATERIAL</p>
+                <p class="mt-2 font-serif text-lg">Sustainably sourced hardwoods</p>
+                <p class="mt-2 text-sm text-black/70">FSC-certified partners and small mills with transparent provenance.</p>
+              </li>
+              <li class="group rounded-2xl border border-black/10 bg-white/60 p-5 transition duration-200 hover:bg-white hover:shadow-sm">
+                <p class="text-xs tracking-[0.2em] text-black/55">SERVICE</p>
+                <p class="mt-2 font-serif text-lg">Made for your home</p>
+                <p class="mt-2 text-sm text-black/70">Sizes, finishes, and details tailored with restraint—and clarity.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product highlights -->
+      <section class="pb-12 sm:pb-14">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="font-serif text-2xl tracking-tight">Featured collections</h2>
+            <p class="mt-2 text-sm text-black/70">Three signatures—quiet forms, expressive grain.</p>
+          </div>
+          <a href="#/contact" data-route-link class="hidden sm:inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm text-black/80 transition duration-200 hover:border-black/25 hover:bg-black/[0.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+            Ask about sizing
+          </a>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-12">
+          <article class="group lg:col-span-7 overflow-hidden rounded-3xl border border-black/10 bg-white/60 transition duration-200 hover:bg-white hover:shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-5">
+              <div class="md:col-span-3">
+                <img
+                  src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=80"
+                  alt="A minimal dining table with warm wood tones"
+                  class="h-64 w-full object-cover md:h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div class="md:col-span-2 p-6">
+                <p class="text-xs tracking-[0.2em] text-black/55">COLLECTION 01</p>
+                <h3 class="mt-2 font-serif text-xl">Arc Dining</h3>
+                <p class="mt-2 text-sm leading-relaxed text-black/70">
+                  Softened edges, disciplined under-bevels, and a quietly confident stance.
+                </p>
+                <div class="mt-5 flex items-center gap-3">
+                  <span class="inline-flex items-center rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-black/70">Tables</span>
+                  <span class="inline-flex items-center rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-black/70">Benches</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="group lg:col-span-5 overflow-hidden rounded-3xl border border-black/10 bg-white/60 transition duration-200 hover:bg-white hover:shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80"
+              alt="A modern sofa beside a wooden side table"
+              class="h-56 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <p class="text-xs tracking-[0.2em] text-black/55">COLLECTION 02</p>
+              <h3 class="mt-2 font-serif text-xl">Field Living</h3>
+              <p class="mt-2 text-sm leading-relaxed text-black/70">
+                Low profiles, crisp reveals, and storage that disappears into the grain.
+              </p>
+            </div>
+          </article>
+
+          <article class="group lg:col-span-4 overflow-hidden rounded-3xl border border-black/10 bg-white/60 transition duration-200 hover:bg-white hover:shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1600&q=80"
+              alt="A serene bedroom with a wooden bed frame"
+              class="h-56 w-full object-cover"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <p class="text-xs tracking-[0.2em] text-black/55">COLLECTION 03</p>
+              <h3 class="mt-2 font-serif text-xl">Hearth Bedroom</h3>
+              <p class="mt-2 text-sm leading-relaxed text-black/70">
+                Balanced proportions, supportive slats, and finishes that age with grace.
+              </p>
+            </div>
+          </article>
+
+          <div class="lg:col-span-8 rounded-3xl border border-black/10 bg-white/50 p-6 sm:p-7">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p class="text-xs tracking-[0.2em] text-black/55">MADE TO ORDER</p>
+                <h3 class="mt-2 font-serif text-xl">A measured palette of details</h3>
+                <p class="mt-2 text-sm text-black/70">Edge radii, leg tapers, pulls, and sheens—selected to suit your space.</p>
+              </div>
+              <a href="#/contact" data-route-link class="inline-flex h-11 items-center justify-center rounded-full bg-[rgba(138,107,82,.14)] px-6 text-sm text-black/90 transition duration-200 hover:bg-[rgba(138,107,82,.20)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                Discuss your piece
+              </a>
+            </div>
+            <div class="mt-6 h-px w-full grain"></div>
+            <p class="mt-4 text-sm leading-relaxed text-black/70">
+              Industry detail: we grain-match adjacent panels and plan for seasonal movement—allowing wood to breathe without telegraphing fasteners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Craft detail -->
+      <section class="pb-12 sm:pb-14">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-5">
+            <h2 class="font-serif text-2xl tracking-tight">Joinery you can feel.</h2>
+            <p class="mt-3 text-sm leading-relaxed text-black/70">
+              We let structure inform form: concealed shoulders, crisp lines, and balanced reveals. Details are meant to be discovered slowly—like a well-set seam.
+            </p>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="rounded-3xl border border-black/10 bg-white/60 p-6 sm:p-7">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <p class="text-xs tracking-[0.2em] text-black/55">DETAIL STUDY</p>
+                  <p class="mt-2 font-serif text-lg">Pinned mortise</p>
+                  <p class="mt-2 text-sm text-black/70">A small contrast dowel, placed with intention.</p>
+                </div>
+                <div class="hidden sm:block h-16 w-32 rounded-2xl border border-black/10 bg-white relative overflow-hidden">
+                  <div class="absolute inset-0 grain opacity-80"></div>
+                  <div class="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full border border-black/25 bg-[rgba(138,107,82,.20)]"></div>
+                </div>
+              </div>
+              <!-- joinery-inspired divider -->
+              <div class="mt-6 flex items-center gap-3" aria-hidden="true">
+                <span class="h-px flex-1 bg-black/15"></span>
+                <span class="h-3 w-3 rotate-45 border border-black/25 bg-white"></span>
+                <span class="h-px flex-1 bg-black/15"></span>
+              </div>
+              <p class="mt-5 text-sm leading-relaxed text-black/70">
+                Our philosophy is simple: durable construction, legible craft, and finishes that remain repairable—so your piece can be maintained, not replaced.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Material swatches -->
+      <section id="materials" class="pb-12 sm:pb-14">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="font-serif text-2xl tracking-tight">Materials</h2>
+            <p class="mt-2 text-sm text-black/70">Select a species to preview its character.</p>
+          </div>
+          <div class="text-sm text-black/70">
+            <span class="mr-2 text-black/50">Selected:</span>
+            <span id="swatchLabel" class="font-medium text-black">Walnut</span>
+          </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-12 lg:items-start">
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl border border-black/10 bg-white/60 p-6">
+              <div class="flex flex-wrap gap-2">
+                <button data-swatch="Walnut" data-tone="Deep, chocolate-brown with subtle purples; reads calm and architectural."
+                  class="swatch inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-[rgba(138,107,82,.18)] px-5 text-sm text-black/90 transition duration-200 hover:border-black/25 hover:bg-[rgba(138,107,82,.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                  Walnut
+                </button>
+                <button data-swatch="Ash" data-tone="Pale with lively cathedral grain; clean, bright, and modern."
+                  class="swatch inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm text-black/80 transition duration-200 hover:border-black/25 hover:bg-black/[0.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                  Ash
+                </button>
+                <button data-swatch="Oak" data-tone="Expressive ray fleck and strength; a classic that holds detail beautifully."
+                  class="swatch inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm text-black/80 transition duration-200 hover:border-black/25 hover:bg-black/[0.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                  Oak
+                </button>
+                <button data-swatch="Maple" data-tone="Fine, even grain with a soft glow; understated and precise."
+                  class="swatch inline-flex h-11 items-center justify-center rounded-full border border-black/15 bg-white px-5 text-sm text-black/80 transition duration-200 hover:border-black/25 hover:bg-black/[0.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                  Maple
+                </button>
+              </div>
+              <p id="swatchTone" class="mt-4 text-sm leading-relaxed text-black/70">
+                Deep, chocolate-brown with subtle purples; reads calm and architectural.
+              </p>
+              <div class="mt-5 rounded-2xl border border-black/10 bg-white p-4">
+                <p class="text-xs tracking-[0.2em] text-black/55">NOTE</p>
+                <p class="mt-2 text-sm text-black/70">Natural variation is expected; we’ll share board selections prior to build.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="relative overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
+              <img id="swatchImage"
+                src="https://images.unsplash.com/photo-1556228724-4b302bd078aa?auto=format&fit=crop&w=1600&q=80"
+                alt="Close-up of wood grain and workshop textures"
+                class="h-[320px] w-full object-cover sm:h-[360px]"
+                loading="lazy"
+              />
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-black/0"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <div class="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[var(--off)] backdrop-blur">
+                  <span class="h-2 w-2 rounded-full bg-[rgba(138,107,82,.9)]"></span>
+                  <span class="text-sm">Hand-selected boards • bookmatched where possible</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social proof (rotating testimonials) -->
+      <section class="pb-12 sm:pb-14">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="font-serif text-2xl tracking-tight">Words from clients</h2>
+            <p class="mt-2 text-sm text-black/70">Two notes, rotated gently.</p>
+          </div>
+          <div class="text-xs tracking-[0.2em] text-black/55">AUTO-ROTATES • PAUSE ON HOVER</div>
+        </div>
+
+        <div id="testimonialRotator" class="mt-6 rounded-3xl border border-black/10 bg-white/60 p-6 sm:p-7 transition duration-200 hover:bg-white hover:shadow-sm" tabindex="0" aria-label="Client testimonial rotator (pauses on hover or focus)">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div class="max-w-2xl">
+              <p class="text-xs tracking-[0.2em] text-black/55">TESTIMONIAL</p>
+              <blockquote class="mt-3 font-serif text-xl leading-relaxed text-black" id="tQuote">
+                “The console feels like it has always belonged here—precise lines, warm grain, and nothing extra.”
+              </blockquote>
+              <p class="mt-4 text-sm text-black/70" id="tMeta">— Mina R., Brooklyn • Grove Console in Walnut</p>
+            </div>
+            <div class="rounded-2xl border border-black/10 bg-white p-4 sm:w-64">
+              <p class="text-xs tracking-[0.2em] text-black/55">DETAIL</p>
+              <p class="mt-2 text-sm text-black/75" id="tDetail">Tight reveals and hand-rubbed oil finish; repairable and forgiving.</p>
+              <div class="mt-4 h-px w-full grain"></div>
+              <p class="mt-3 text-xs text-black/55">Hover / focus to pause</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="pb-14 sm:pb-20">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-5">
+            <h2 class="font-serif text-2xl tracking-tight">Studio notes</h2>
+            <p class="mt-2 text-sm leading-relaxed text-black/70">
+              Occasional updates: new collections, material drops, and behind-the-bench process—kept brief.
+            </p>
+          </div>
+          <div class="lg:col-span-7">
+            <form class="rounded-3xl border border-black/10 bg-white/60 p-6 sm:p-7">
+              <label class="block text-xs tracking-[0.2em] text-black/55" for="email">EMAIL</label>
+              <div class="mt-3 flex flex-col gap-3 sm:flex-row">
+                <input id="email" name="email" type="email" autocomplete="email" required
+                  class="h-11 w-full rounded-full border border-black/15 bg-white px-5 text-sm text-black/90 placeholder:text-black/40 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]"
+                  placeholder="you@domain.com"
+                />
+                <button type="submit"
+                  class="inline-flex h-11 shrink-0 items-center justify-center rounded-full bg-[var(--char)] px-6 text-sm text-[var(--off)] shadow-sm transition duration-200 hover:translate-y-[-1px] hover:shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                  Subscribe
+                </button>
+              </div>
+              <p class="mt-3 text-xs text-black/55">No tracking pixels. Unsubscribe anytime.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT -->
+    <div data-route="about" class="hidden">
+      <section class="pt-10 sm:pt-14">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-5">
+            <p class="text-xs tracking-[0.22em] text-black/60">ABOUT</p>
+            <h1 class="mt-4 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">Craft, sourcing, and restraint.</h1>
+            <p class="mt-4 text-sm leading-relaxed text-black/70">
+              Atelier Grove is a small studio making furniture that privileges structure and proportion. We work in solid hardwoods, designed to weather daily life and remain serviceable for years.
+            </p>
+          </div>
+          <div class="lg:col-span-7">
+            <div class="rounded-3xl border border-black/10 bg-white/60 p-6 sm:p-7">
+              <h2 class="font-serif text-2xl tracking-tight">Story</h2>
+              <div class="mt-4 space-y-4 text-sm leading-relaxed text-black/70">
+                <p>
+                  We began with a simple question: what would a contemporary heirloom look like if every line was earned? The answer became a practice—sketching, prototyping, and refining until the piece feels calm in the room and clear in the hand.
+                </p>
+                <p>
+                  Our hardwoods come from responsible suppliers and small mills with traceable chains of custody. We choose boards for character and stability, then build with joinery that supports movement rather than fighting it.
+                </p>
+              </div>
+              <div class="mt-6 h-px w-full grain"></div>
+              <p class="mt-4 text-sm text-black/70">
+                Micro-detail: we orient grain direction to reduce visual noise across faces, aligning cathedrals and rays for continuity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process timeline -->
+      <section class="py-12 sm:py-14">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="font-serif text-2xl tracking-tight">Process</h2>
+            <p class="mt-2 text-sm text-black/70">Three steps, repeated with care.</p>
+          </div>
+          <p class="text-xs tracking-[0.2em] text-black/55">DESIGN • BUILD • FINISH</p>
+        </div>
+
+        <ol class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-12">
+          <li class="lg:col-span-4 rounded-3xl border border-black/10 bg-white/60 p-6 transition duration-200 hover:bg-white hover:shadow-sm">
+            <p class="text-xs tracking-[0.2em] text-black/55">01</p>
+            <h3 class="mt-2 font-serif text-xl">Design</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black/70">Proportions, clearances, and a measured palette of details—validated with samples.</p>
+          </li>
+          <li class="lg:col-span-4 rounded-3xl border border-black/10 bg-white/60 p-6 transition duration-200 hover:bg-white hover:shadow-sm">
+            <p class="text-xs tracking-[0.2em] text-black/55">02</p>
+            <h3 class="mt-2 font-serif text-xl">Build</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black/70">Milled for stability; joinery cut cleanly. Dry-fits ensure alignment before glue-up.</p>
+          </li>
+          <li class="lg:col-span-4 rounded-3xl border border-black/10 bg-white/60 p-6 transition duration-200 hover:bg-white hover:shadow-sm">
+            <p class="text-xs tracking-[0.2em] text-black/55">03</p>
+            <h3 class="mt-2 font-serif text-xl">Finish</h3>
+            <p class="mt-2 text-sm leading-relaxed text-black/70">Low-VOC oils and waxes, hand-rubbed in thin coats for depth and repairability.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Studio image with caption -->
+      <section class="pb-12 sm:pb-14">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-start">
+          <div class="lg:col-span-7">
+            <figure class="overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1600&q=80"
+                alt="A woodworking studio with tools and workbench"
+                class="h-[360px] w-full object-cover sm:h-[460px]"
+                loading="lazy"
+              />
+              <figcaption class="border-t border-black/10 bg-white/70 p-4 text-sm text-black/70">
+                In-studio: sharpening stations, hand tools, and a clean bench for joinery work.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl border border-black/10 bg-white/60 p-6 sm:p-7">
+              <h2 class="font-serif text-2xl tracking-tight">Sustainability</h2>
+              <p class="mt-3 text-sm leading-relaxed text-black/70">
+                We prioritize FSC-certified and reclaimed stock when appropriate, optimize cut lists to reduce waste, and select finishes with low VOCs. Offcuts are repurposed into small objects or donated to local craft programs.
+              </p>
+              <div class="mt-5 rounded-2xl border border-black/10 bg-[rgba(138,107,82,.10)] p-5">
+                <p class="text-xs tracking-[0.2em] text-black/55">SUBTLE COMMITMENT</p>
+                <p class="mt-2 text-sm text-black/75">
+                  Durability is the most sustainable feature: pieces designed for maintenance, not disposal.
+                </p>
+              </div>
+              <div class="mt-6 h-px w-full grain"></div>
+              <p class="mt-4 text-xs text-black/55">Ask us for material provenance on any build.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT -->
+    <div data-route="contact" class="hidden">
+      <section class="pt-10 sm:pt-14">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-5">
+            <p class="text-xs tracking-[0.22em] text-black/60">CONTACT</p>
+            <h1 class="mt-4 font-serif text-4xl leading-tight tracking-tight sm:text-5xl">Let’s shape a piece for your space.</h1>
+            <p class="mt-4 text-sm leading-relaxed text-black/70">
+              Share dimensions, inspiration, and timeline. We’ll respond with next steps and a clear estimate.
+            </p>
+
+            <div class="mt-8 rounded-3xl border border-black/10 bg-white/60 p-6">
+              <h2 class="font-serif text-xl">Details</h2>
+              <dl class="mt-4 space-y-3 text-sm text-black/75">
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-black/55">Phone</dt>
+                  <dd class="text-right"><a class="underline underline-offset-4 decoration-black/20 hover:decoration-black/50 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" href="tel:+12125550188">(212) 555-0188</a></dd>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-black/55">Email</dt>
+                  <dd class="text-right"><a class="underline underline-offset-4 decoration-black/20 hover:decoration-black/50 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]" href="mailto:studio@ateliergrove.com">studio@ateliergrove.com</a></dd>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-black/55">Studio</dt>
+                  <dd class="text-right">114 Grove Yard Ln<br/>Brooklyn, NY 11222</dd>
+                </div>
+              </dl>
+              <div class="mt-5 h-px w-full grain"></div>
+              <div class="mt-4 text-sm text-black/70">
+                <p><span class="text-black/55">Hours:</span> Tue–Sat, 10:00–18:00</p>
+                <p class="mt-1"><span class="text-black/55">Showroom:</span> by appointment only</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <!-- Contact form -->
+            <section aria-label="Contact form" class="rounded-3xl border border-black/10 bg-white/60 p-6 sm:p-7">
+              <h2 class="font-serif text-2xl tracking-tight">Send a message</h2>
+              <form class="mt-6 grid grid-cols-1 gap-4">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label for="name" class="block text-xs tracking-[0.2em] text-black/55">NAME</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required
+                      class="mt-2 h-11 w-full rounded-2xl border border-black/15 bg-white px-4 text-sm text-black/90 placeholder:text-black/40 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label for="contactEmail" class="block text-xs tracking-[0.2em] text-black/55">EMAIL</label>
+                    <input id="contactEmail" name="email" type="email" autocomplete="email" required
+                      class="mt-2 h-11 w-full rounded-2xl border border-black/15 bg-white px-4 text-sm text-black/90 placeholder:text-black/40 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]"
+                      placeholder="you@domain.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-xs tracking-[0.2em] text-black/55">MESSAGE</label>
+                  <textarea id="message" name="message" rows="6" required
+                    class="mt-2 w-full rounded-2xl border border-black/15 bg-white px-4 py-3 text-sm text-black/90 placeholder:text-black/40 transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]"
+                    placeholder="Tell us what you’re considering (dimensions, wood preference, timeline)."
+                  ></textarea>
+                </div>
+
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <button type="submit"
+                    class="inline-flex h-11 items-center justify-center rounded-full bg-[var(--char)] px-6 text-sm text-[var(--off)] shadow-sm transition duration-200 hover:translate-y-[-1px] hover:shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(138,107,82,.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--off)]">
+                    Submit inquiry
+                  </button>
+                  <p class="text-xs text-black/55">We typically respond within 1–2 business days.</p>
+                </div>
+              </form>
+
+              <!-- Map placeholder -->
+              <section aria-label="Map placeholder" class="mt-8 overflow-hidden rounded-3xl border border-black/10 bg-white">
+                <div class="relative h-56">
+                  <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(20,20,20,.04),rgba(20,20,20,.01)),repeating-linear-gradient(90deg,rgba(138,107,82,.16)_0_1px,transparent_1px_14px)]"></div>
+                  <div class="absolute inset-0 grid place-items-center">
+                    <div class="rounded-2xl border border-black/10 bg-white/85 px-5 py-3 text-center shadow-sm backdrop-blur">
+                      <p class="text-xs tracking-[0.2em] text-black/55">MAP</p>
+                      <p class="mt-1 font-serif text-lg text-black">Atelier Grove Studio</p>
+                      <p class="mt-1 text-sm text-black/70">Brooklyn, NY • By appointment</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-black/10 p-4 text-sm text-black/70">
+                  Nearest transit: G train • private entrance off Grove Yard.
+                </div>
+              </section>
+            </section>
+
+            <!-- Supporting image -->
+            <figure class="mt-6 overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80"
+                alt="Close-up of a wooden chair detail showing craftsmanship"
+                class="h-64 w-full object-cover sm:h-72"
+                loading="lazy"
+              />
+              <figcaption class="border-t border-black/10 bg-white/70 p-4 text-sm text-black/70">
+                Detail: softened arris and clean transitions—comfortable, durable, precise.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-14 sm:pb-20 pt-10">
+        <div class="h-px w-full grain"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-black/10 bg-white/40">
+    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-white shadow-sm">
+            <span class="h-4 w-4 rounded-[5px] border border-black/30 bg-[rgba(138,107,82,.18)]"></span>
+          </span>
+          <div>
+            <p class="font-serif text-sm">Atelier Grove</p>
+            <p class="text-xs text-black/60">Modern heirloom furniture • sustainably sourced hardwoods</p>
+          </div>
+        </div>
+        <div class="text-xs text-black/55">
+          <p>© <span id="year"></span> Atelier Grove. All rights reserved.</p>
+          <p class="mt-1">Made-to-order pieces vary naturally in grain and tone. Terms available upon request.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Routing
+    const routes = {
+      "": "home",
+      "/": "home",
+      "/about": "about",
+      "/contact": "contact",
+    };
+
+    function setActiveNav(routeKey){
+      document.querySelectorAll("[data-route-link]").forEach(a => {
+        const href = a.getAttribute("href") || "";
+        const key = href.replace(/^#/, "") || "/";
+        const isCurrent = (routes[key] || "home") === (routes[routeKey] || "home");
+        a.setAttribute("aria-current", isCurrent ? "page" : "false");
+      });
+    }
+
+    function showRoute() {
+      const hash = (location.hash || "#/").replace(/^#/, "");
+      const key = hash.startsWith("/") ? hash : "/" + hash;
+      const route = routes[key] || "home";
+      document.querySelectorAll("[data-route]").forEach(el => {
+        el.classList.toggle("hidden", el.getAttribute("data-route") !== route);
+      });
+      setActiveNav(key);
+      // Close mobile menu on navigation
+      mobileMenu.classList.add("hidden");
+      menuBtn.setAttribute("aria-expanded", "false");
+      // If navigating with hash, keep top for page changes
+      if (!location.hash.includes("#materials")) window.scrollTo({ top: 0, behavior: "instant" });
+    }
+
+    // Mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => {
+        const isOpen = !mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        menuBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+    }
+
+    window.addEventListener("hashchange", showRoute);
+    document.addEventListener("click", (e) => {
+      const link = e.target.closest("[data-route-link]");
+      if (!link) return;
+      // Let hash navigation proceed, then route
+      setTimeout(showRoute, 0);
+    });
+
+    // Rotating testimonials (pause on hover/focus)
+    const testimonials = [
+      {
+        quote: "“The console feels like it has always belonged here—precise lines, warm grain, and nothing extra.”",
+        meta: "— Mina R., Brooklyn • Grove Console in Walnut",
+        detail: "Tight reveals and hand-rubbed oil finish; repairable and forgiving."
+      },
+      {
+        quote: "“Our dining table arrived flawless. The edges are softened perfectly, and the joinery is quietly beautiful.”",
+        meta: "— Daniel K., Hudson • Arc Dining Table in White Oak",
+        detail: "Board selection shared in advance; subtle ray fleck, balanced tone."
+      }
+    ];
+
+    let tIndex = 0;
+    let tTimer = null;
+    let tPaused = false;
+
+    const tWrap = document.getElementById("testimonialRotator");
+    const tQuote = document.getElementById("tQuote");
+    const tMeta = document.getElementById("tMeta");
+    const tDetail = document.getElementById("tDetail");
+
+    function renderTestimonial(i){
+      if (!tQuote || !tMeta || !tDetail) return;
+      const t = testimonials[i];
+      // Subtle fade swap
+      tWrap.classList.add("opacity-90");
+      setTimeout(() => {
+        tQuote.textContent = t.quote;
+        tMeta.textContent = t.meta;
+        tDetail.textContent = t.detail;
+        tWrap.classList.remove("opacity-90");
+      }, 120);
+    }
+
+    function startTestimonials(){
+      if (!tWrap) return;
+      if (tTimer) clearInterval(tTimer);
+      tTimer = setInterval(() => {
+        if (tPaused) return;
+        tIndex = (tIndex + 1) % testimonials.length;
+        renderTestimonial(tIndex);
+      }, 4800);
+    }
+
+    function setPaused(p){ tPaused = p; }
+
+    if (tWrap){
+      tWrap.addEventListener("mouseenter", () => setPaused(true));
+      tWrap.addEventListener("mouseleave", () => setPaused(false));
+      tWrap.addEventListener("focusin", () => setPaused(true));
+      tWrap.addEventListener("focusout", () => setPaused(false));
+      startTestimonials();
+    }
+
+    // Material swatches
+    const swatchLabel = document.getElementById("swatchLabel");
+    const swatchTone = document.getElementById("swatchTone");
+    const swatchImage = document.getElementById("swatchImage");
+    const swatchImages = {
+      "Walnut": "https://images.unsplash.com/photo-1556228724-4b302bd078aa?auto=format&fit=crop&w=1600&q=80",
+      "Ash": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80",
+      "Oak": "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1600&q=80",
+      "Maple": "https://images.unsplash.com/photo-1519710887722-0c932db9d33b?auto=format&fit=crop&w=1600&q=80"
+    };
+
+    document.querySelectorAll(".swatch").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".swatch").forEach(b => {
+          b.classList.remove("bg-[rgba(138,107,82,.18)]","hover:bg-[rgba(138,107,82,.22)]","text-black/90");
+          b.classList.add("bg-white","text-black/80");
+        });
+        btn.classList.remove("bg-white","text-black/80");
+        btn.classList.add("bg-[rgba(138,107,82,.18)]","text-black/90");
+
+        const name = btn.getAttribute("data-swatch");
+        const tone = btn.getAttribute("data-tone");
+        if (swatchLabel) swatchLabel.textContent = name;
+        if (swatchTone) swatchTone.textContent = tone;
+        if (swatchImage) {
+          swatchImage.src = swatchImages[name] || swatchImage.src;
+          swatchImage.alt = `Close-up character of ${name} wood and studio textures`;
+        }
+      });
+    });
+
+    // Year + initial route
+    document.getElementById("year").textContent = new Date().getFullYear();
+    showRoute();
+  </script>
+</body>
+</html>
+```

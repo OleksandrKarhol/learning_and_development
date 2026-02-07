@@ -1,0 +1,175 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oak & Loom Furniture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Subtle wood-grain effect */
+    .wood-grain {
+      background-image: linear-gradient(90deg, rgba(210,180,140,0.1) 1px, transparent 1px),
+                        linear-gradient(180deg, rgba(210,180,140,0.1) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    /* Glassmorphism cards */
+    .glass {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+  </style>
+</head>
+<body class="bg-neutral-950 text-white font-sans wood-grain">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 z-50 bg-black/50 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+      <div class="flex items-center gap-3">
+        <!-- Logo (SVG icon) -->
+        <svg class="w-8 h-8 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 7h18v2H3V7Zm2 4h14v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6Zm2 2v4h10v-4H7Z"/>
+        </svg>
+        <span class="font-bold tracking-widest">OAK & LOOM</span>
+      </div>
+      <div class="flex gap-6 text-sm">
+        <a href="#home" class="hover:text-amber-400 transition">Home</a>
+        <a href="#about" class="hover:text-amber-400 transition">About</a>
+        <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <section id="home" class="min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-black leading-tight">
+          Crafted for <span class="text-amber-400">living</span>, designed for <span class="text-amber-400">stories</span>.
+        </h1>
+        <p class="mt-4 text-white/80">
+          Handmade furniture that blends sculptural silhouettes with warm, sustainable materials.
+        </p>
+
+        <!-- Dynamic Featured Content -->
+        <div class="mt-8 glass rounded-2xl p-6 hover:scale-[1.01] transition">
+          <p class="text-sm uppercase tracking-widest text-amber-300">Featured Piece</p>
+          <h2 id="featureTitle" class="text-2xl font-bold mt-2">Loomline Lounge Chair</h2>
+          <p id="featureDesc" class="text-white/80 mt-2">
+            A floating silhouette built from ash wood and vegan leather.
+          </p>
+        </div>
+
+        <button class="mt-6 px-6 py-3 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition active:scale-95">
+          Explore Collection
+        </button>
+      </div>
+
+      <div class="relative">
+        <img id="featureImage"
+             src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+             class="rounded-3xl shadow-2xl border border-white/10 hover:scale-[1.02] transition"/>
+        <div class="absolute -bottom-6 -right-6 glass px-4 py-2 rounded-xl text-sm">
+          <span class="text-amber-300">Dynamic Preview</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-neutral-900">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+           class="rounded-3xl shadow-xl hover:scale-[1.02] transition"/>
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Oak & Loom</h2>
+        <p class="text-white/80">
+          We are a boutique furniture studio blending traditional joinery with next‑generation materials. 
+          Every piece is crafted for durability, with smooth ergonomic forms inspired by nature’s geometry.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="glass p-4 rounded-2xl hover:border-amber-400 transition">
+            <p class="font-bold text-amber-300">Sustainable</p>
+            <p class="text-sm text-white/70">Ethically sourced hardwoods</p>
+          </div>
+          <div class="glass p-4 rounded-2xl hover:border-amber-400 transition">
+            <p class="font-bold text-amber-300">Custom Fit</p>
+            <p class="text-sm text-white/70">Designs tailored to your space</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold">Contact Us</h2>
+        <p class="mt-2 text-white/80">Let’s design furniture that fits your lifestyle.</p>
+        <div class="mt-4 space-y-2">
+          <p>📍 128 Timberline Ave, Portland, OR</p>
+          <p>📞 (555) 123-4567</p>
+          <p>✉️ hello@oakandloom.com</p>
+        </div>
+      </div>
+      <form class="glass rounded-3xl p-6 space-y-4">
+        <input type="text" placeholder="Your Name"
+               class="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-400"/>
+        <input type="email" placeholder="Your Email"
+               class="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-400"/>
+        <textarea rows="4" placeholder="Your Message"
+               class="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-400"></textarea>
+        <button class="w-full bg-amber-500 text-black font-semibold py-3 rounded-lg hover:bg-amber-400 transition active:scale-95">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/70 border-t border-white/10 py-6">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg class="w-6 h-6 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 7h18v2H3V7Zm2 4h14v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6Zm2 2v4h10v-4H7Z"/>
+        </svg>
+        <span class="font-semibold">Oak & Loom</span>
+      </div>
+      <p class="text-sm text-white/60">© 2025 Oak & Loom Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Dynamic Content Script -->
+  <script>
+    const features = [
+      {
+        title: "Loomline Lounge Chair",
+        desc: "A floating silhouette built from ash wood and vegan leather.",
+        img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        title: "Sculpted Walnut Table",
+        desc: "A bold centerpiece with live edges and brass inlays.",
+        img: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        title: "Cocoon Coffee Nook",
+        desc: "Compact modular design with woven fiber panels.",
+        img: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80"
+      }
+    ];
+
+    let idx = 0;
+    setInterval(() => {
+      idx = (idx + 1) % features.length;
+      document.getElementById("featureTitle").textContent = features[idx].title;
+      document.getElementById("featureDesc").textContent = features[idx].desc;
+      document.getElementById("featureImage").src = features[idx].img;
+    }, 4000);
+  </script>
+</body>
+</html>
+```

@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NebulaWood Furniture – Home, About, Contact</title>
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#7c3aed',
+            accent: '#22d3ee',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Decorative organic blobs for cutting-edge feel */
+    .blob {
+      position: absolute;
+      filter: blur(60px);
+      opacity: .6;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    #blob1 { width: 540px; height: 540px; background: #7c3aed; top: -180px; left: -120px; }
+    #blob2 { width: 420px; height: 420px; background: #22d3ee; bottom: -120px; right: -120px; opacity:.35; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white antialiased">
+
+  <!-- Header / Nav -->
+  <header class="fixed w-full top-0 z-50 backdrop-blur bg-black/40 border-b border-slate-700">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center space-x-2">
+        <!-- Brand logo (inline SVG) -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-label="NebulaWood Logo">
+          <path d="M4 12l6-6 4 4 6 6-6-2-4 8-6-8 6-2z" fill="url(#grad)"/>
+          <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#7c3aed"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="font-semibold text-lg tracking-tight">NebulaWood</span>
+      </a>
+
+      <ul class="hidden md:flex space-x-6 font-medium text-slate-200">
+        <li><a href="#home" class="hover:text-sky-300">Home</a></li>
+        <li><a href="#about" class="hover:text-sky-300">About</a></li>
+        <li><a href="#contact" class="hover:text-sky-300">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden p-2 rounded bg-slate-700/60 hover:bg-slate-700/80" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-white rounded mb-1"></span>
+        <span class="block w-6 h-0.5 bg-white rounded mb-1"></span>
+        <span class="block w-6 h-0.5 bg-white rounded"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-2">
+      <a href="#home" class="block py-2 hover:bg-slate-700 rounded px-2">Home</a>
+      <a href="#about" class="block py-2 hover:bg-slate-700 rounded px-2">About</a>
+      <a href="#contact" class="block py-2 hover:bg-slate-700 rounded px-2">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-28">
+
+    <!-- Home Page -->
+    <section id="home" class="relative min-h-screen px-6 md:px-12 py-16">
+      <div class="blob" id="blob1"></div>
+      <div class="blob" id="blob2"></div>
+
+      <div class="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-indigo-400 mb-4" style="font-family: ui-sans-serif;">
+            Furniture that transcends trends
+          </h1>
+          <p class="text-lg text-slate-200 mb-6 max-w-xl">
+            We craft modern, sustainable furniture using ethically sourced wood, innovative techniques, and timeless design.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#contact" class="px-6 py-3 bg-sky-500/90 hover:bg-sky-500 rounded-full shadow-lg transition-transform transform hover:scale-105">
+              Get a Quote
+            </a>
+            <a href="#about" class="px-6 py-3 border border-sky-300 rounded-full hover:bg-sky-50/10">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Right: Feature card with image (from Open Source image sources) -->
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 bg-white/5">
+            <!-- Pexels image -->
+            <img src="https://images.pexels.com/photos/1063440/pexels-photo-1063440.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800" alt="Modern wooden furniture" class="w-full h-96 md:h-full object-cover" />
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+              <div class="font-semibold">Nova Console Table</div>
+              <div class="text-sm opacity-90">Hand-finished in a live-edge oak variant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic content: rotating promo and live stats -->
+      <div class="mt-14">
+        <div class="max-w-4xl mx-auto p-6 bg-gradient-to-tr from-slate-900/70 via-slate-800/80 to-slate-900/70 rounded-2xl shadow-xl backdrop-blur-md">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <span class="w-3 h-3 rounded-full bg-green-400"></span>
+              <span class="font-semibold">Current Spotlight</span>
+            </div>
+            <span id="promoTag" class="text-sm text-slate-300"></span>
+          </div>
+          <p id="promoBody" class="mt-2 text-sm text-slate-200"></p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <section class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-4 rounded-xl bg-slate-800/60 hover:bg-slate-700/60 transition-colors border border-slate-700 hover:shadow-2xl">
+          <div class="text-sm text-slate-300">Pieces Shipped</div>
+          <div class="text-3xl font-bold" id="shipCount">0</div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-800/60 hover:bg-slate-700/60 transition-colors border border-slate-700 hover:shadow-2xl">
+          <div class="text-sm text-slate-300">Sustainable Wood Options</div>
+          <div class="text-3xl font-bold" id="woodOptions">0</div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-800/60 hover:bg-slate-700/60 transition-colors border border-slate-700 hover:shadow-2xl">
+          <div class="text-sm text-slate-300">Avg. Delivery Time</div>
+          <div class="text-3xl font-bold" id="deliveryTime">0</div>
+        </div>
+      </section>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="min-h-screen px-6 md:px-12 py-16 bg-gradient-to-b from-slate-950 to-slate-900">
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1">
+            <h2 class="text-3xl font-extrabold mb-4">Who we are</h2>
+            <p class="text-slate-200 mb-4">
+              NebulaWood Furniture is a design-forward studio making furniture that blends artful craftsmanship with sustainable practices.
+            </p>
+            <p class="text-slate-200 mb-4">
+              Our approach uses lifecycle thinking: from forest stewardship to low-emission finishes and modular designs that last.
+            </p>
+            <div class="mt-4 flex space-x-4">
+              <button class="px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500">Our Process</button>
+              <button class="px-4 py-2 border border-slate-400 rounded hover:bg-slate-800/60">Care & Maintenance</button>
+            </div>
+          </div>
+
+          <div class="relative">
+            <!-- Pixabay image (open source) -->
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/wood-1868016_960_720.jpg" alt="Woodworking in studio" class="w-full rounded-2xl shadow-2xl" />
+            <div class="absolute bottom-0 left-0 p-3 bg-black/60 rounded-tr-xl">Crafting studio</div>
+          </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-slate-800/60 p-4 rounded-xl hover:shadow-2xl transition">
+            <div class="text-sm text-slate-300">Ethical Sourcing</div>
+            <div class="text-lg font-semibold">FSC-certified timber</div>
+          </div>
+          <div class="bg-slate-800/60 p-4 rounded-xl hover:shadow-2xl transition">
+            <div class="text-sm text-slate-300">Made to Last</div>
+            <div class="text-lg font-semibold">Lifetime warranty on frames</div>
+          </div>
+          <div class="bg-slate-800/60 p-4 rounded-xl hover:shadow-2xl transition">
+            <div class="text-sm text-slate-300">Custom Finishes</div>
+            <div class="text-lg font-semibold">24 colorways, 12 textures</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="min-h-screen px-6 md:px-12 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-extrabold mb-6">Get in touch</h2>
+        <p class="text-slate-200 mb-6">Have a project in mind? Send us a message and we’ll respond within 24 hours.</p>
+
+        <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Your name" class="p-3 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500" required />
+          <input type="email" placeholder="Email" class="p-3 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500" required />
+          <input type="tel" placeholder="Phone (optional)" class="p-3 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+          <select class="p-3 rounded bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500">
+            <option>Inquiry</option>
+            <option>Custom Furniture</option>
+            <option>Wholesale</option>
+          </select>
+          <textarea placeholder="Your message" class="p-3 rounded bg-slate-800 border border-slate-700 md:col-span-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-sky-500" required></textarea>
+          <div class="md:col-span-2">
+            <button type="submit" class="px-6 py-3 bg-sky-500 rounded hover:bg-sky-600">Send Message</button>
+            <span id="formStatus" class="ml-4 text-sm text-slate-300"></span>
+          </div>
+        </form>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-4 bg-slate-800 rounded-xl hover:shadow-2xl transition">
+            <div class="text-sm text-slate-300">Address</div>
+            <div>123 Nebula Ave, Arts District</div>
+          </div>
+          <div class="p-4 bg-slate-800 rounded-xl hover:shadow-2xl transition">
+            <div class="text-sm text-slate-300">Phone</div>
+            <div>(555) 013-1010</div>
+          </div>
+          <div class="p-4 bg-slate-800 rounded-xl hover:shadow-2xl transition">
+            <div class="text-sm text-slate-300">Email</div>
+            <div>hello@nebula wood.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 text-slate-300">
+    <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <!-- Footer logo (inline SVG) -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-label="NebulaWood Logo">
+          <path d="M4 12l6-6 4 4 6 6-6-2-4 8-6-8 6-2z" fill="url(#grad)"/>
+          <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#7c3aed"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="font-semibold">NebulaWood Furniture</span>
+      </div>
+      <p class="text-sm">&copy; <span id="yearFooter"></span> NebulaWood Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', function() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Year in footer
+    const year = new Date().getFullYear();
+    document.getElementById('yearFooter').textContent = year;
+
+    // Rotating promo on Home
+    const promos = [
+      { tag: 'Sustainable by design', body: 'We design for circularity with modular parts and finish-free edges.'},
+      { tag: 'Custom finishes', body: 'Choose from 24 colorways and 12 textures to match your space.'},
+      { tag: 'Lifetime craftsmanship', body: 'Every piece is hand-finished by our master joiners.'}
+    ];
+    let promoIndex = 0;
+    const updatePromo = () => {
+      const p = promos[promoIndex];
+      document.getElementById('promoTag').textContent = p.tag;
+      document.getElementById('promoBody').textContent = p.body;
+      promoIndex = (promoIndex + 1) % promos.length;
+    };
+    updatePromo();
+    setInterval(updatePromo, 4000);
+
+    // Animated counters when Home is visible
+    function animateValue(id, end, duration = 1200) {
+      const el = document.getElementById(id);
+      const start = 0;
+      const range = end - start;
+      let startTime = null;
+
+      function step(now) {
+        if (!startTime) startTime = now;
+        const progress = Math.min((now - startTime) / duration, 1);
+        el.textContent = Math.floor(start + range * progress).toLocaleString();
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    const homeSection = document.getElementById('home');
+    const countersObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        animateValue('shipCount', 12840);
+        animateValue('woodOptions', 24);
+        animateValue('deliveryTime', 7);
+        countersObserver.disconnect();
+      }
+    }, { threshold: 0.4 });
+    countersObserver.observe(homeSection);
+
+    // Simple mock submit for contact form
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('formStatus').textContent = 'Thank you! We will contact you soon.';
+      form.reset();
+      setTimeout(() => document.getElementById('formStatus').textContent = '', 4000);
+    });
+  </script>
+</body>
+</html>
