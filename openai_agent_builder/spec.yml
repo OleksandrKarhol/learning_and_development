@@ -1,0 +1,40 @@
+meta:
+  name: Movie List Enricher
+  purpose: Transform a personal multilingual movie watchlist with emoji ratings into structured, machine-readable records with standardized titles, directors, and numeric scores
+  trigger: A plain-text movie list file is provided as input
+
+entities:
+  $movie_entry: A single line from the raw watchlist, written in English, Ukrainian, or Russian, optionally containing emoji ratings and freeform comments
+  $enriched_record: A structured representation of one movie containing its original-language title, director, numeric rating, and original comment
+  $movie_list: The complete plain-text file of all movie entries, one per line
+  $results: The collected set of all enriched records, persisted as a JSON file
+
+state:
+  - each $movie_entry in $movie_list must produce exactly one $enriched_record
+  - $enriched_record.name must be the movie title in its original release language (English for non-Ukrainian, non-Polish, non-German, non-Russian films)
+  - $enriched_record.author must be the director's name, or studio name if the director is unknown, or null if neither is available
+  - $enriched_record.rating must equal the count of checkmark emojis in the $movie_entry; zero if no checkmarks are present (unwatched)
+  - $enriched_record.comment must preserve the original text of the $movie_entry as written by the user
+  - if a $movie_entry cannot be parsed, $enriched_record must have all fields set to null except comment, which must explain the issue
+  - $results must be a JSON array containing every $enriched_record in the same order as $movie_list
+  - $results must be written to a JSON file upon completion
+  - each $movie_entry is enriched independently; no enrichment depends on another entry's result
+  - web search is available to the enrichment agent to resolve ambiguous titles or missing directors
+
+failures:
+  - $enriched_record.name is a transliteration rather than the original-language title
+  - $enriched_record.rating does not match the actual count of checkmark emojis in $movie_entry
+  - $enriched_record is missing from $results for a non-empty line in $movie_list
+  - $results contains entries for blank lines
+  - $results is not valid JSON or is not an array
+
+edge_cases:
+  - $movie_entry contains mixed languages within a single line
+  - $movie_entry uses non-standard emojis beyond checkmarks (e.g., crying face, thumbs up, explicit rejection marks)
+  - $movie_entry has no rating emojis, indicating the movie has not been watched yet
+  - $movie_entry includes parenthetical qualifiers scoping the rating (e.g., "within the genre")
+  - $movie_entry references a TV series rather than a film
+  - $movie_entry is a category heading or watchlist reminder rather than a specific title (e.g., "Films by Kubrick (screenshot)")
+  - $movie_entry contains more than three checkmarks, indicating an exceptional rating beyond the standard scale
+  - $movie_entry includes a negative review emoji indicating dislike rather than a positive rating
+  - duplicate movie titles appear in $movie_list with potentially different ratings

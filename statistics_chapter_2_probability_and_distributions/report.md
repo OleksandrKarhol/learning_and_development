@@ -1,31 +1,36 @@
-**Description**
+This report documents a self-directed study session covering probability distributions as part of a broader statistics learning curriculum. The work was conducted in a Jupyter notebook environment with Python, supplemented by external reading and a ChatGPT session for guided explanations.
 
-Personal study of probability and distributions: random variables (discrete and continuous), PMF vs PDF, expected value, and a set of standard distributions. Work was done in a single Jupyter notebook with exercises and small applications. Learning order followed a plan in notes.txt; Uniform was skipped as low practicality, Central Limit Theorem left for later.
+**Objective**
 
-**Methodology and flow**
+To build practical working knowledge of the most important probability distributions used in data science and statistics, with emphasis on when to apply each one and how to compute probabilities in Python.
 
-Foundations: built the probability distribution for the sum of two dice in Python (all 36 outcomes, P(X≥9), P(X even)). Computed expected value from a given table and from a raffle (net gain, probability of winning, E(X)). Skipped formal variance and standard deviation of discrete RVs as highly theoretical.
+**Learning Order and Methodology**
 
-Binomial: used the PMF manually (factorial, then comb) and via scipy.stats.binom. Applied to an Ideals-style expansion case (e.g. P(100 expansions in 1000 accounts), cumulative P(≥100) and P(100–150)) and to a true/false exam (exactly 6 correct, P(≥60%) by guessing). Noted reliability conditions (n·p and n·(1−p) ≥ 10), business use, and that independence is often approximate.
+The session followed a structured order recommended in notes (see [notes.txt](notes.txt)), progressing from foundational concepts to more complex distributions:
 
-Continuous RVs and Normal: introduced density as area under a curve. Implemented the normal PDF from the formula and plotted it; applied the empirical rule (68–95–99.7%). Defined z-scores and standard normal; solved P(60<X<80) with scipy norm.cdf and with a z-table, 90th percentile with norm.ppf, probability that sample mean > 82 (using standard error), and P(X<45). Corrected an earlier attempt that used the PDF instead of the CDF for an area. Uniform: defined and solved the alarm-clock problem (battery fails between 10 p.m. and 6:30 a.m.).
+Random variables and the distinction between discrete and continuous cases were established first. From there, the work moved through PMF and PDF concepts, expected value, and then each major distribution in sequence: Bernoulli, Binomial, Poisson, Normal, Exponential, and Log-normal. The Uniform distribution was intentionally skipped, noted as too simple and of low practical relevance. The session closed with the Central Limit Theorem.
 
-Bernoulli and Poisson: Bernoulli as single-trial success probability (IDeals expansion p); linked to binomial (one trial vs n trials). Poisson: mean = variance = λ, PMF for “9 events,” and note on using rates (e.g. conversion rate → λ for the interval). Exponential: relationship to Poisson (count of events vs time to next event), plotted with seaborn KDE, then CDF and survival function for “wait > 30 s for next call,” adoption-within-3-years and no-adoption-after-5-years (with E(X)=1/λ), and upgrade-within-2-years and after-4-years. Log-normal: “log(X) normal”; applied to salary-like data (log mean/std, P(X>100), P(X<100) via z-scores and normal CDF) and to e-commerce purchase amounts (μ=4.5, σ=1.1 for log; P(>200), P(<20), expected purchase).
+Each distribution was studied by reading a definition, working through at least one numerical example by hand or in code, and verifying results using Python.
 
-**Technology**
+**Technology and Tools**
 
-Python 3, NumPy, SciPy (binom, norm), Matplotlib, Seaborn. All work in main.ipynb; media/ holds figures (e.g. exp_distribution.png, log_normal.png, poisson_mean_and_variance.png).
+All computation was done in [main.ipynb](main.ipynb) using Python with the following libraries: `scipy.stats` (norm, binom), `numpy`, `matplotlib.pyplot`, `seaborn`, and the standard `math` module. Several visualizations were generated and saved to the `media/` directory, including plots for the Poisson distribution's mean and variance relationship, the Exponential distribution curve, and the Log-normal CDF.
+
+**Key Results and Observations**
+
+The Binomial distribution was applied to a true/false exam scenario: P(exactly 6 correct out of 10) = 0.2051, P(score ≥ 60%) = 0.3779. The Normal distribution section was the most extensive, covering z-score standardization, the empirical 68-95-99.7 rule, and inverse lookups via `norm.ppf()` — for example, the 90th percentile of a distribution with μ=80 and σ=10 is x=92.82. The Poisson section calculated P(X=9) = 0.085 using a rate of λ≈7.53. For the Exponential distribution, a call center scenario showed P(wait > 30s) = 0.368 with λ=2 calls/min. The Log-normal section analyzed right-skewed data such as salaries and e-commerce purchases by log-transforming inputs before applying normal distribution methods.
+
+A ChatGPT session (linked in notes.txt) was used during the study to clarify concepts, ask follow-up questions, and get alternative explanations where needed.
 
 **Summary**
 
-Covered random variables, PMF/PDF, expected value, and six distributions (Bernoulli, Binomial, Poisson, Normal, Exponential, Log-normal) with hand calculations and scipy. Emphasized when to use CDF vs PDF and the link between Poisson and exponential. Practical examples included expansion rates, exam guessing, call waiting times, feature adoption, upgrades, salaries, and purchase sizes. Next planned: Central Limit Theorem.
+This session successfully covered eight statistical topics, leaving only Uniform formally skipped. The work produced a functional notebook with reproducible code examples grounded in realistic business scenarios. The most practically valuable insight was the Poisson-Exponential duality: Poisson counts events in an interval, Exponential measures time between events — two sides of the same process.
 
-**Literature and sources**
+**Literature and Sources**
 
-- notes.txt (learning order and links)
-- Saylordotorg: Discrete and continuous random variables (linked in notebook)
-- Medium: Probability distribution functions (PDF, PMF, CDF); Bernoulli distribution
-- DataCamp: Poisson distribution tutorial
-- GeeksforGeeks: Exponential distribution
-- YouTube: Log-normal distribution (linked in notes.txt)
-- ChatGPT session (share link in notes.txt)
+- Probability distribution functions (PDF, PMF, CDF): https://medium.com/@pankajkumardeora/probability-distribution-functions-pdf-pmf-cdf-ed49e7f5c7f2
+- Bernoulli distribution: https://medium.com/@mail2rajivgopinath/key-statistics-terms-18-bernoulli-distribution-47f44c6a5173
+- Poisson distribution tutorial: https://www.datacamp.com/tutorial/poisson-distribution
+- Exponential distribution: https://www.geeksforgeeks.org/data-science/probability-distributions-exponential-distribution/
+- Log-normal distribution (video): https://youtu.be/xtTX69JZ92w
+- ChatGPT session notes: https://chatgpt.com/share/69a07d76-80dc-800a-baa3-a0cf43c5cee2
