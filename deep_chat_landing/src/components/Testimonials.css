@@ -1,0 +1,56 @@
+.testi {
+  background: #fff;
+  padding: 80px 0;
+  border-top: 1px solid var(--light-border);
+}
+
+.testi__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.testi__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testi__text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.75;
+}
+
+.testi__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testi__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  flex-shrink: 0;
+}
+
+.testi__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+.testi__company {
+  font-size: 12px;
+  color: #999;
+}
+
+@media (max-width: 900px) {
+  .testi__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .testi__grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,1001 @@
+uuid,server_id,country,status,type,plan,lifetime_days,created_ts,use_case
+af43543a-490e-45d7-a492-63d1d49d21c8,6,Australia,Closed,Client,Pro,198,2020-10-14 02:16:22.007000 UTC,MASellSide
+1eefd045-5a72-4e6f-8f8f-99ac9cd04d66,6,Australia,Active,Client,Business,651,2024-06-18 00:57:47.830000 UTC,
+c0a87dd1-199c-4b48-a6a3-390b61ff6da0,3,China,Active,Client,Enterprise,1033,2023-06-02 03:57:47.443000 UTC,Licensing
+4522facb-5349-4dc9-8604-be516e8622cb,3,United States,Closed,Client,Business,1369,2020-03-12 05:17:57.230000 UTC,Fundraising
+08dd7817-64d9-f452-6e2e-633501000000,8,United Kingdom,Closed,Trial,Trial,30,2025-04-10 10:06:43.010000 UTC,
+08ddf21d-b6e2-9b27-f651-b14c01000000,8,United Kingdom,Closed,Client,Enterprise,115,2025-09-12 16:59:20.884205 UTC,MABuySide
+b56c7d1b-60dd-44b0-8326-4c7515bdac8c,8,United Kingdom,Closed,Client,Professional,1808,2017-11-12 22:29:19.197000 UTC,LegalExtranet
+8d657d46-c584-4d42-a8dd-c43ae1de47e7,4,United States,Closed,Client,Business,196,2022-11-02 00:14:21.497000 UTC,InternalDocumentRepository
+3fce61fd-63fa-4a14-838d-2a02fbb63006,4,United States,Closed,Client,Business,82,2024-11-21 15:55:33.617000 UTC,MASellSide
+04af9c6c-1814-4c8e-81f6-21c1d8c42db9,4,United States,Closed,Client,Business,173,2024-10-01 14:46:29.997000 UTC,MASellSide
+08dddd35-ecfb-21fc-968f-1c0d01000000,4,Canada,Closed,Trial,Trial,30,2025-08-17 02:29:43.690000 UTC,
+a4cdaa8e-7454-4fcd-a038-e2c72ed146c2,4,United States,Active,Client,Enterprise,468,2024-12-17 20:37:18.300000 UTC,InvestorReporting
+26708fe9-6682-4255-9ced-0ec7549bdb6e,2,Estonia,Closed,Client,Pro,332,2022-06-30 08:18:40.087000 UTC,MASellSide
+0f3290ea-d77b-44ee-a7e0-26f1d009ae23,5,Canada,Closed,Client,Enterprise,171,2023-08-21 18:37:56.730000 UTC,InternalDocumentRepository
+e59544df-75c7-4002-a151-0999e5b7c1d8,9,Germany,Closed,Client,Enterprise,883,2023-09-25 08:54:31.617000 UTC,CorporateReporting
+292f1426-d6d4-4b23-a017-35c3ccc8f009,1,Russian Federation,Closed,Trial,Trial,0,2021-06-18 11:58:10.433000 UTC,MABuySide
+567d6266-91b7-4ca1-b52c-e8a1aa7459a4,8,United Kingdom,Closed,Client,Business,371,2023-03-14 09:50:09.227000 UTC,MASellSide
+ede78c0d-d497-486d-9d89-331c5edf63ab,4,United States,Closed,Client,Pro,753,2020-03-06 03:35:54.447000 UTC,MASellSide
+b7e2a22b-f931-4d31-8bfd-f34c98f77db8,4,United States,Closed,Client,Business,94,2022-09-26 21:22:47.713000 UTC,Fundraising
+50c24752-aff1-45a9-8977-677dcb463338,4,United States,Closed,Client,Business,72,2024-01-04 17:41:36.470000 UTC,MABuySide
+08dde4b7-91a7-1dfd-968f-1c0d01000000,4,Belgium,Active,Client,Enterprise,216,2025-08-26 15:45:23.190000 UTC,MABuySide
+cfee3221-bf1b-4cea-ba52-6e0723ebe4ab,5,Spain,Closed,Client,Enterprise,941,2022-06-17 13:38:31.447000 UTC,CorporateReporting
+29df8c76-073b-440d-9be8-168889ac9e13,7,Brazil,Closed,Trial,Trial,238,2020-07-30 20:19:52.580000 UTC,MABuySide
+65e60feb-2c32-44ca-be3c-b6075db7c78d,6,New Zealand,Closed,Client,Enterprise,175,2019-10-22 02:56:05.417000 UTC,Other
+7a8044cb-81eb-42bf-9bc9-071a7ceacdd3,3,United States,Closed,Client,Enterprise,803,2020-08-21 04:43:51.400000 UTC,Licensing
+bcd97f6b-2776-40b3-b03d-97663cb44390,9,China,Closed,Client,Enterprise,205,2024-07-17 01:06:26.457000 UTC,Other
+f52a936c-e930-41a0-931b-03d6fc6f8cb6,8,United Kingdom,Closed,Client,Business,590,2022-07-18 08:44:55.810000 UTC,MASellSide
+9687e9b8-2fbf-4f16-b065-f716638c2e59,8,India,Active,Client,Enterprise,586,2024-08-21 12:07:50.840000 UTC,
+ac313111-fd58-4b48-bd3a-90da4db1dc06,8,United Kingdom,Closed,Client,Business,131,2021-10-14 15:37:56.077000 UTC,MASellSide
+bad44b8c-103f-4974-9cbf-990f270a452c,8,Kenya,Closed,Client,Business,442,2024-10-28 11:59:39.143000 UTC,RealEstate
+8c16181a-6954-4636-908b-840d9759053a,4,United States,Closed,Client,Professional,360,2019-12-18 15:55:03.853000 UTC,Fundraising
+2a4a8aa5-aa06-4231-94df-b671162f3026,4,United States,Closed,Trial,Trial,56,2021-03-01 22:45:16.867000 UTC,Undefined
+08dd4bb7-6f1c-366c-fef1-133c01000000,4,United States,Closed,Client,Business,123,2025-02-12 22:48:57.397000 UTC,Other
+ea6604c3-b89a-4a6b-9fb0-3e1eec71cc0d,4,United States,Closed,Client,Business,247,2020-06-19 19:49:35.280000 UTC,DebtFinancing
+83423682-4c03-489b-8ffd-c4ed9a1a9961,4,Costa Rica,Closed,Client,Business,400,2022-06-27 21:12:35.650000 UTC,CorporateReporting
+77c14880-ca97-47cc-9ff4-f1cb29afc2ec,2,Switzerland,Closed,Client,Pro,391,2022-07-14 10:46:51.040000 UTC,Fundraising
+8f0ae4b1-c795-4b7d-9f49-88d0797978ac,2,Netherlands,Closed,Client,Professional,301,2020-12-03 11:41:16.053000 UTC,Fundraising
+d07a3130-3c3e-460c-b35d-3ed88c85c91d,2,Italy,Closed,Client,Pro,709,2021-03-01 17:26:08.977000 UTC,Licensing
+5d34ba4d-c3f9-464e-804d-8d40b4453e86,2,Turkey,Closed,Trial,Trial,30,2024-12-02 14:04:57.910000 UTC,
+7c45b7c1-8824-4e87-b869-c23e5f5f9848,5,Netherlands,Closed,Client,Premier,24,2024-09-13 07:32:21.850000 UTC,Bankruptcy
+717014b3-0d0d-43cb-91c3-7e2ea6a9f2e2,5,Belgium,Closed,Client,Business,217,2024-03-19 10:26:44.280000 UTC,MABuySide
+df8b6f0f-631d-453f-9f6f-d7b714a6cf1a,1,Ukraine,Closed,Trial,Trial,32,2020-06-01 10:23:32.653000 UTC,MASellSide
+daf37951-91ba-4ed9-a4b1-9c47a39fa0f9,8,China,Closed,Client,Business,195,2023-06-14 07:45:16.717000 UTC,Licensing
+7ef4df8c-439b-405a-8db9-9463e33ce68b,8,United Kingdom,Closed,Client,Business,429,2023-10-04 07:56:23.810000 UTC,MASellSide
+08de794c-6692-bc2d-466c-78f701000000,8,United Kingdom,Active,Client,Enterprise,27,2026-03-03 17:43:38.861268 UTC,Fundraising
+4b5fd568-d6f5-463c-987e-06091fbe00ce,8,United Kingdom,Closed,Client,Pro,372,2021-03-31 09:25:43.610000 UTC,MASellSide
+08dd8824-dff9-209a-326b-5e7001000000,4,United States,Active,Client,Enterprise,334,2025-04-30 20:23:31.667000 UTC,MASellSide
+56f75e74-08a9-484c-a203-d2d358123e67,2,United States,Active,Client,Business,1543,2022-01-07 14:12:41.037000 UTC,InternalDocumentRepository
+b25bf593-2b92-4a25-994f-fd874a6ecbb7,5,Germany,Closed,Client,Business,159,2023-11-24 11:33:48.493000 UTC,MASellSide
+05024c41-1460-45a9-b3e6-211273b0ef85,6,Australia,Closed,Client,Business,370,2024-10-24 05:54:20.057000 UTC,IntellectualProperty
+08de19c2-2796-f2a5-9af4-a65401000000,3,Malaysia,Closed,Trial,Trial,0,2025-11-02 03:44:41.531916 UTC,
+08dde43a-bdb3-f2b8-968f-1c0d01000000,9,China,Closed,Client,Enterprise,134,2025-08-26 00:51:50.190000 UTC,PortfolioManagement
+fbd770e4-697b-41e9-af27-cfe81829f0f0,8,United Kingdom,Active,Client,Staging,803,2024-01-17 12:58:20.157000 UTC,
+c9d5398d-0bb7-429f-aecd-e4eb1d1aec3e,8,Israel,Closed,Client,Business,178,2023-05-22 06:55:20.253000 UTC,MASellSide
+00f06604-8fe6-4999-b46a-49ca681617ad,8,United Kingdom,Closed,Client,Business,237,2019-12-03 10:32:33.263000 UTC,Fundraising
+8af33d5c-329c-45c3-9a5f-553c1dfbd208,4,United States,Closed,Client,Pro,849,2021-01-26 18:01:44.740000 UTC,TenderingAndProcurement
+6d429ad8-7504-4ebb-a2c0-b2ad9823b4ed,4,United States,Closed,Client,Business,98,2022-07-19 02:53:48.587000 UTC,MASellSide
+4dfe1892-f91a-4a36-bc44-4cb91d54c7ab,4,United States,Closed,Client,Pro,229,2020-07-18 03:25:26.060000 UTC,Fundraising
+08de4c80-7621-76d7-ead6-06ef01000000,4,United States,Active,Client,Business,84,2026-01-05 17:32:55.702195 UTC,Audit
+08de0088-63ea-648d-be57-7b6e01000000,4,United States,Closed,Trial,Trial,7,2025-10-01 01:18:13.285265 UTC,
+08de89ed-aacd-54bd-22ab-ae2001000000,4,United States,Preparation,Client,Premier,6,2026-03-24 21:38:20.069693 UTC,
+08de580c-e6ac-cbb5-6e4b-649e01000000,2,France,Active,Client,Business,69,2026-01-20 10:15:56.818825 UTC,StrategicPartnership
+94299e60-1355-4452-bff4-d8013c0e6785,2,Israel,Closed,Trial,Trial,3,2022-11-19 19:16:12.703000 UTC,
+e4dd41bb-bc7b-43c2-a99d-315060ae36c6,5,Germany,Closed,Trial,Trial,30,2023-05-22 13:43:22.390000 UTC,IntellectualProperty
+08de2ced-7a58-b070-7a2f-dc4301000000,5,Germany,Active,Client,Business,124,2025-11-26 13:12:41.602087 UTC,Other
+08de181e-202b-ff02-2e68-bd2201000000,6,Australia,Active,Client,Enterprise,151,2025-10-31 01:38:00.427532 UTC,TenderingAndProcurement
+b3e91550-d400-4c88-8d2c-c18b72924cf4,3,French Polynesia,Closed,Trial,Trial,97,2021-11-04 21:52:51.387000 UTC,Fundraising
+920e363d-e02b-41eb-94f7-bcbcb648d66b,9,China,Closed,Trial,Trial,36,2021-05-25 07:15:54.290000 UTC,Fundraising
+08de0bfb-42d5-abc7-96c4-da5801000000,1,Spain,Active,Client,Premier,166,2025-10-15 14:58:12.123813 UTC,
+506723a4-5202-4a7c-bd65-125851e6655e,8,United Kingdom,Closed,Client,Business,42,2023-06-13 11:10:53.130000 UTC,MASellSide
+c6998325-82ed-487b-93fa-d447407240bc,4,United States,Closed,Trial,Trial,30,2023-05-03 14:32:11.447000 UTC,Undefined
+a94dd6cc-4377-40ab-9217-2c01a547676b,2,Netherlands,Closed,Client,Professional,763,2017-09-11 13:57:45.900000 UTC,Other
+757c43ac-9056-488b-a1de-b55c5cd2e446,5,Luxembourg,Active,Client,Enterprise,1097,2023-03-29 06:26:22.970000 UTC,StrategicPartnership
+223f5e96-a6eb-44cd-8ae7-a4b05a49af86,5,Czech Republic,Closed,Trial,Trial,75,2021-10-06 09:46:57.877000 UTC,MASellSide
+1755fce7-83a5-41bf-890c-c85e44793a66,7,Brazil,Active,Client,Business,616,2024-07-22 06:45:45.987000 UTC,
+08ddd9f0-2be5-7456-968f-1c0d01000000,7,Mexico,Active,Client,Enterprise,230,2025-08-12 22:32:50.987000 UTC,PortfolioManagement
+e23b8c13-757b-4f71-a8dd-eb6c253e9f0f,3,Pakistan,Closed,Trial,Trial,30,2024-07-27 00:48:55.260000 UTC,
+30f28df0-88fd-4072-9d09-8c58dce9a1ee,3,Indonesia,Closed,Trial,Trial,30,2024-07-02 07:44:15.820000 UTC,
+32d082cc-05e6-4a33-b2d1-4653c83fa34e,1,Spain,Closed,Client,Enterprise,496,2024-01-18 10:02:24.850000 UTC,Audit
+2a26649c-1d8e-43c7-9b08-230c4e295080,8,Germany,Closed,Client,Business,99,2023-08-14 12:56:06.420000 UTC,MASellSide
+3d0f39c6-a306-4ab6-af38-987afb91ed52,4,Brazil,Closed,Client,Business,1453,2016-08-05 15:23:01.647000 UTC,CorporateReporting
+c4e5f265-7dc5-4828-bfb5-f7e6ce481156,4,United States,Closed,Trial,Trial,30,2023-11-13 21:45:54.650000 UTC,Undefined
+60935c67-0475-4763-9393-ab3ca953ba46,4,United States,Active,Client,Pro,608,2024-07-30 18:05:55.427000 UTC,
+08ddeef7-84ea-a129-e6a5-bac201000000,4,Canada,Closed,Trial,Trial,7,2025-09-08 16:48:21.354257 UTC,
+08dd7368-9f59-f5d2-0e80-760001000000,2,United Arab Emirates,Closed,Trial,Trial,30,2025-04-04 11:05:34.757000 UTC,
+277a99c4-585e-4d12-96e7-2a407a69dcb9,2,Italy,Closed,Trial,Trial,32,2020-11-16 11:21:11.540000 UTC,Fundraising
+bb1cdc3e-3312-4c8c-aa00-c7205fcd0cce,5,Germany,Active,Client,Enterprise,901,2023-10-11 18:46:41.470000 UTC,MABuySide
+08de745e-346f-bb58-8296-ea6c01000000,5,Germany,Closed,Trial,Trial,7,2026-02-25 11:08:29.161872 UTC,
+08de5815-75fe-026c-6e4b-649e01000000,7,Dominican Republic,Closed,Trial,Trial,7,2026-01-20 11:17:13.223752 UTC,
+89237bda-abda-482b-b03b-d92c41a3b47f,3,Hong Kong,Closed,Trial,Trial,41,2023-11-08 14:17:23.070000 UTC,Fundraising
+08ddff01-57d6-28b1-f241-b7ca01000000,3,"Korea, Republic of",Closed,Trial,Trial,7,2025-09-29 02:38:59.917679 UTC,
+d303f616-ee68-495c-bf11-fb09ea7acaa0,3,Hong Kong,Closed,Trial,Trial,87,2022-07-05 02:51:29.580000 UTC,Fundraising
+b27ffe1b-c208-41e0-9616-f479e6227702,1,Ukraine,Closed,Trial,Trial,35,2020-05-14 11:01:51.553000 UTC,BoardCommunications
+08de6a4e-a3bb-f8d2-ca1e-e8c901000000,8,United Kingdom,Closed,Trial,Trial,7,2026-02-12 15:51:52.249112 UTC,
+febdd164-1df4-40bd-b6b5-ed98e020961a,4,United States,Closed,Client,Pro,1015,2019-12-05 21:27:21.873000 UTC,Fundraising
+1edea02a-d5c3-4cd2-adb4-4a8ca8296bd7,4,United States,Active,Client,Business,652,2024-06-16 18:56:25.233000 UTC,StrategicPartnership
+3b111c90-0acd-42f6-b786-181cc50729ef,4,United States,Closed,Client,Business,347,2023-09-14 19:49:20.510000 UTC,MASellSide
+08ddae5a-7679-c590-a27b-2cfa01000000,4,United States,Active,Client,Premier,285,2025-06-18 11:22:51.757000 UTC,Fundraising
+af817428-6205-4a95-b149-be9504c4e27d,4,United States,Active,Client,Premier,606,2024-08-01 17:28:52.343000 UTC,DebtFinancing
+a6e78826-70bd-4889-8d79-93d71da89513,2,France,Closed,Client,Business,202,2024-01-09 10:04:54.510000 UTC,BoardCommunications
+9c0e3c7b-e1a3-4b7c-8367-dc06aafc5ef4,2,Israel,Closed,Trial,Trial,30,2024-04-07 11:14:13.800000 UTC,
+2ae6ff8c-e604-4ec7-bcde-8d44b926b75d,5,Germany,Closed,Client,Business,67,2024-05-10 17:24:43.697000 UTC,MASellSide
+3ad0bbb1-20c7-477c-b51e-2895d71118e7,7,Peru,Closed,Trial,Trial,133,2022-02-16 23:00:30.137000 UTC,MASellSide
+9c9e432c-d135-44c2-9569-590f51d724a0,6,New Zealand,Closed,Client,Business,68,2022-02-16 03:36:26.263000 UTC,PortfolioManagement
+8db19e2b-89c2-4ecb-90b3-3d5a9a2be07e,9,Germany,Closed,Trial,Trial,30,2022-06-13 05:08:40.490000 UTC,Undefined
+924f3f57-5d90-4704-9527-98ff3b1d3ab4,9,China,Closed,Trial,Trial,51,2024-11-05 06:09:35.707000 UTC,StrategicPartnership
+cefb8b34-9905-4520-97b5-2c9e4ff98800,1,Russian Federation,Closed,Client,Business,954,2019-10-22 11:08:38.443000 UTC,MABuySide
+af4208a5-a152-4048-96d0-71862492f3a6,4,United States,Closed,Trial,Trial,0,2023-03-10 02:52:05.347000 UTC,InvestorReporting
+121e7be9-9198-4af2-a697-2f2c56995563,4,United States,Closed,Client,Business,7,2023-05-08 22:33:16.990000 UTC,MABuySide
+08ddd9c0-31a8-411d-e662-d3a501000000,4,United States,Closed,Trial,Trial,66,2025-08-12 16:49:25.653000 UTC,
+89b373bd-aeb4-40af-be27-50b29b1cb892,2,Hungary,Closed,Client,Pro,223,2020-10-20 09:22:13.897000 UTC,MASellSide
+0790f2cc-ce08-41b4-9b25-d8ef714ab463,2,United States,Closed,Client,Business,188,2022-06-24 19:50:30.473000 UTC,Other
+aafdf087-b428-4d26-a459-1363d560d7e5,5,Germany,Closed,Trial,Trial,30,2024-02-23 12:08:11.463000 UTC,StrategicPartnership
+ae6fd857-7367-4068-9254-b1206517eed8,5,Germany,Closed,Client,Business,321,2024-05-29 15:40:50.893000 UTC,MASellSide
+4a6ba8cb-c3f0-4ccc-b52a-4fe69c0f1379,5,Greece,Closed,Client,Business,396,2020-10-29 12:34:12.463000 UTC,Undefined
+af6b7a93-00d2-4403-9712-36f1200264c5,1,Spain,Closed,Client,Business,292,2024-06-19 10:47:04.763000 UTC,Undefined
+3305720a-f289-45ec-a3f4-175a888ef5fb,8,United Kingdom,Closed,Client,Pro,84,2024-05-07 16:49:23.157000 UTC,Undefined
+eb2b50ab-0288-4304-98ff-f8241f8e09ea,8,United Kingdom,Active,Client,Business,503,2024-11-12 13:45:12.077000 UTC,IPOExits
+08de498d-7fa2-97a8-ead6-06ef01000000,8,Israel,Active,Client,Premier,88,2026-01-01 23:28:43.205975 UTC,MASellSide
+986158ed-ddff-4528-bfb2-57e07bc65977,4,United States,Closed,Trial,Trial,81,2020-08-17 16:05:45.007000 UTC,Fundraising
+8975dd75-5773-4789-9887-a333b81162e0,4,India,Closed,Client,Business,6,2019-09-04 11:04:09.900000 UTC,MABuySide
+08ddaed5-40f3-f6d0-2aeb-12fe01000000,4,United States,Closed,Client,Premier,12,2025-06-19 02:01:49.947000 UTC,MABuySide
+f7665fc2-9c4a-430d-a698-2dd20cfea9f8,2,United States,Closed,Client,Business,333,2021-07-08 14:54:30.893000 UTC,InternalDocumentRepository
+afa0ab77-6b6c-4c38-9cef-3ffc66a089a6,2,France,Closed,Client,Enterprise,144,2022-08-26 13:19:56.590000 UTC,Fundraising
+5b1997ad-ac7c-422d-901d-9b1846ab9345,5,Lebanon,Active,Client,Enterprise,516,2024-10-30 09:36:22.223000 UTC,PortfolioManagement
+82e1e44e-e1fa-4433-8a7e-282c7ed13ce0,5,Spain,Locked,Client,Enterprise,1055,2023-05-10 07:45:57.830000 UTC,MASellSide
+a1720000-2e25-48ad-bd2b-0e019d379678,5,Germany,Closed,Client,Enterprise,196,2023-11-22 14:50:40.230000 UTC,InvestorReporting
+7438fbda-8068-488a-925a-d86ae912c6a8,5,Spain,Closed,Client,Enterprise,336,2024-07-24 14:39:27.780000 UTC,MASellSide
+158bc396-6f28-4363-b24d-7e30a1adbdb5,7,Mexico,Closed,Trial,Trial,30,2023-11-16 19:20:06.733000 UTC,Other
+bb5f678a-97a5-4f46-8a7b-af4ade87c5f0,1,Kazakhstan,Closed,Client,Enterprise,9,2017-10-24 08:17:18.517000 UTC,Undefined
+08ddf50e-a616-0424-7667-1d0301000000,1,Spain,Active,Client,Enterprise,195,2025-09-16 10:49:03.159126 UTC,CorporateReporting
+28afa628-1efd-403b-83ef-e56a0adb5094,8,United Kingdom,Closed,Trial,Trial,33,2020-11-25 18:33:51.400000 UTC,MASellSide
+6516545b-6cb9-4c9d-90ed-f1b05e51aeb4,4,United States,Closed,Client,Pro,20,2022-09-20 17:32:07.307000 UTC,MASellSide
+b3e388bf-5d71-456f-a007-fcc1ccc538b0,4,United States,Closed,Client,Pro,80,2022-10-04 10:20:25.127000 UTC,DebtFinancing
+08de5f4e-6e24-4f43-2e5f-d7d401000000,4,United States,Closed,Trial,Trial,7,2026-01-29 15:52:39.524792 UTC,
+b0200aa7-1c24-4bca-af9b-e335faf6db64,4,United States,Closed,Client,Enterprise,431,2019-09-11 19:25:28.383000 UTC,MASellSide
+c551f0dd-e95b-4b15-b4fe-7aaa46c46f52,2,United Arab Emirates,Closed,Trial,Trial,19,2021-12-08 17:47:51.307000 UTC,InternalDocumentRepository
+6549c6f5-c7ff-468f-8ce4-8847e95169ae,2,France,Closed,Trial,Trial,30,2024-07-04 06:52:17.647000 UTC,
+95206273-e2ab-47e5-bda1-c16620fb9239,5,Germany,Active,Client,Enterprise,748,2024-03-12 13:29:25.957000 UTC,MASellSide
+08ddda7a-dcfb-2c1f-968f-1c0d01000000,5,Germany,Locked,Client,Enterprise,229,2025-08-13 15:05:38.657000 UTC,MASellSide
+bef86ffd-4eb4-4e7d-b738-c228e3e00412,5,Ireland,Closed,Client,Enterprise,278,2023-06-07 09:18:02.100000 UTC,Fundraising
+08de6e23-2fc3-b3ae-de06-29ba01000000,14,India,Active,Client,Premier,41,2026-02-17 12:50:54.152387 UTC,Fundraising
+08de78c2-5b6d-8b06-267c-335101000000,6,Australia,Active,Client,Premier,28,2026-03-03 01:15:28.865267 UTC,StrategicPartnership
+08ddb1f1-2623-5441-2aeb-12fe01000000,6,Australia,Active,Client,Core,281,2025-06-23 00:59:04.433000 UTC,
+b0049d17-b820-4894-a5d5-84a4bda9b2e5,3,China,Closed,Trial,Trial,15,2020-07-15 11:30:55.727000 UTC,InternalDocumentRepository
+42e364c1-d795-4fc4-8551-e08f0b03a6a8,9,China,Closed,Trial,Trial,30,2023-02-09 06:26:40.627000 UTC,ClinicalTrials
+08dda72b-3ffb-dcab-5254-a85601000000,1,Spain,Active,Client,Enterprise,294,2025-06-09 07:57:15.870000 UTC,InternalDocumentRepository
+08ddacd4-6159-637d-36aa-915901000000,1,Ireland,Closed,Client,Core,205,2025-06-16 12:50:32.527000 UTC,Undefined
+08de1e1e-533e-42b0-e2f3-dec201000000,8,United Kingdom,Closed,Client,Business,31,2025-11-07 16:54:33.108923 UTC,MASellSide
+7825f73e-1ff9-4406-98c0-c660d9bbca51,8,Sweden,Closed,Client,Business,32,2019-01-17 14:22:45.453000 UTC,MASellSide
+c78641b3-b61b-44ca-9042-00b76183a62e,4,United States,Closed,Client,Enterprise,1909,2017-05-09 14:50:23.090000 UTC,MASellSide
+7db8b4c5-02d7-4157-9945-6398847cc741,4,Canada,Closed,Trial,Trial,180,2022-04-01 18:34:29.383000 UTC,DebtFinancing
+7873857e-d775-4726-a358-8bad56b8ad15,4,United States,Closed,Trial,Trial,30,2022-12-14 22:03:33.460000 UTC,MABuySide
+3e10fa6c-1600-4335-abb3-d05f7124345a,4,United States,Closed,Trial,Trial,30,2023-02-11 22:35:43.720000 UTC,
+08dda37b-c43b-93fd-f6fa-3a6201000000,4,United States,Closed,Client,Pro,0,2025-06-04 15:23:32.800000 UTC,BoardCommunications
+6036c9f1-7569-4740-851e-fca491bc1df7,4,United States,Closed,Client,Enterprise,195,2023-08-24 20:40:35.937000 UTC,MASellSide
+08de22c6-319f-792f-4227-721801000000,2,Belgium,Closed,Client,Premier,80,2025-11-13 15:06:16.740501 UTC,
+631010a3-ec86-4752-83fa-3d131207009c,2,Netherlands,Closed,Trial,Trial,1,2020-09-14 20:59:00.407000 UTC,Undefined
+c0c79e1c-a945-4e29-87c5-e40e8e1ca1bd,2,Saudi Arabia,Closed,Trial,Trial,2,2024-06-04 08:19:13.773000 UTC,
+08de389a-afb7-0542-d672-a1c201000000,5,Germany,Active,Client,Enterprise,109,2025-12-11 09:50:16.123131 UTC,RealEstate
+1520dac9-3209-4e43-be64-148d9edb25e0,5,Germany,Closed,Client,Pro,200,2023-03-01 13:46:29.323000 UTC,MASellSide
+08dde3ae-6dfe-60bd-e662-d3a501000000,5,Germany,Active,Client,Enterprise,217,2025-08-25 08:07:26.772833 UTC,MABuySide
+a62ee397-cf70-4375-8175-dde7dd6a7f61,6,Australia,Closed,Client,Business,42,2022-01-05 04:33:43.087000 UTC,MASellSide
+a8cfc0d5-4211-4bb2-a5aa-f37f9efe2945,8,Israel,Closed,Client,Enterprise,180,2019-06-05 12:17:15.547000 UTC,MABuySide
+3a9fe286-fe14-4e64-8c51-8121e9d168f9,4,United States,Closed,Trial,Trial,30,2022-08-23 23:03:36.883000 UTC,Fundraising
+702c87bb-92e6-4400-8a85-28c333b83d14,4,United States,Closed,Trial,Trial,30,2023-07-21 07:39:19.567000 UTC,
+8b864ff9-49fb-4827-a080-f65ac5947cb4,4,United States,Closed,Trial,Trial,30,2023-07-26 18:34:36.593000 UTC,Licensing
+f3477b39-3f7e-4828-9106-e6166b7b9f79,4,United States,Closed,Client,Business,616,2023-06-13 20:08:39.613000 UTC,Fundraising
+08de4ca6-8b0f-0788-ead6-06ef01000000,4,United States,Active,Client,Premier,84,2026-01-05 22:05:31.601481 UTC,MABuySide
+4488e592-78fd-4957-89ac-ef130520263e,4,United States,Active,Client,Enterprise,489,2024-11-26 23:33:07.623000 UTC,MASellSide
+08ddd9c2-70c1-6359-e662-d3a501000000,4,United States,Active,Client,Enterprise,230,2025-08-12 17:05:29.740000 UTC,MASellSide
+658e7973-ab29-4c00-b4d2-721b5da58e10,4,United States,Closed,Client,Enterprise,96,2023-05-02 14:24:25.180000 UTC,MABuySide
+fa28c2e8-2aa2-4a8e-b47f-b8f2128997ad,2,Nigeria,Closed,Client,Pro,6,2021-06-17 19:15:28.477000 UTC,Fundraising
+979dc1db-efc9-43e4-b3fd-78bc7372df84,2,Spain,Closed,Client,Enterprise,683,2021-03-18 17:46:44.617000 UTC,MASellSide
+08dd9dbd-3bc9-dc1b-ee27-1ae701000000,2,Reunion,Closed,Client,Enterprise,49,2025-05-28 07:57:03.623000 UTC,Other
+08dd638c-8d5b-8b84-a617-32c601000000,5,Austria,Closed,Trial,Trial,2,2025-03-15 06:42:27.810000 UTC,
+aa0c94b7-b650-4fe9-9ebc-851a1c5b5f30,5,Ireland,Closed,Client,Pro,89,2024-11-13 18:30:14.780000 UTC,MASellSide
+cfdb8773-fd81-44b4-a400-559ad341c191,5,Kuwait,Active,Client,Staging,427,2025-01-27 11:06:16.467000 UTC,
+d5dd2b0b-5064-4d22-a64b-5782e145e9f6,5,Germany,Closed,Client,Business,147,2023-06-07 12:58:25.377000 UTC,Other
+2827cdb6-82de-4507-bf1a-5ec6c0e5e32d,5,Switzerland,Closed,Client,Pro,139,2024-02-06 09:24:56.630000 UTC,TenderingAndProcurement
+08dd4edc-bfaf-5173-fef1-133c01000000,7,Colombia,Closed,Trial,Trial,30,2025-02-16 22:53:37.480000 UTC,
+32145bb4-609e-4a53-9808-c595c1e49532,6,Australia,Closed,Trial,Trial,30,2022-10-17 23:00:54.803000 UTC,Fundraising
+bfa55062-31cd-4e81-83b5-fec5420412de,9,China,Closed,Client,Enterprise,26,2024-03-07 01:51:03.407000 UTC,ClinicalTrials
+6072a8aa-d5c7-4495-aa56-c3d3f98f24e6,1,Kazakhstan,Closed,Client,Enterprise,503,2020-06-29 06:37:16.167000 UTC,CorporateReporting
+96d9c48d-9fe0-4e27-92ae-c72812a8a6ff,8,United Kingdom,Active,Client,Enterprise,1290,2022-09-17 13:29:51.330000 UTC,InternalDocumentRepository
+d619f749-bdd7-4a10-be89-ce3affa6dcc8,4,United States,Closed,Trial,Trial,38,2022-02-18 23:53:06.847000 UTC,Undefined
+fcc39835-bd02-40c3-9abb-1df2a4320eff,4,United States,Closed,Trial,Trial,30,2022-06-20 21:36:50.560000 UTC,Fundraising
+08ddaeb7-b8de-e0b7-2aeb-12fe01000000,4,United States,Active,Client,Premier,285,2025-06-18 22:30:26.197000 UTC,
+4d6c0528-23bb-4acc-841d-15458a2b2d30,4,United States,Closed,Client,Enterprise,345,2024-06-10 14:57:29.380000 UTC,
+20283e75-3183-4f25-b086-19762e075a38,2,United Arab Emirates,Closed,Client,Business,3024,2017-06-27 11:59:04.280000 UTC,Undefined
+08ddd5c9-fa48-5013-76b4-dff001000000,2,Greece,Active,Client,Premier,235,2025-08-07 15:49:22.280000 UTC,
+0dbd0e57-de25-4b16-91dd-29f3c989182b,5,Belgium,Closed,Client,Enterprise,591,2022-10-24 13:03:20.987000 UTC,MABuySide
+08dda539-2a80-b351-f6fa-3a6201000000,7,Ecuador,Closed,Trial,Trial,30,2025-06-06 20:31:50.297000 UTC,
+08ddd31e-a656-8612-aaea-c85501000000,9,China,Closed,Trial,Trial,31,2025-08-04 06:17:55.157000 UTC,
+08de0709-b6f5-c872-f639-e85d01000000,9,China,Closed,Client,Enterprise,41,2025-10-09 07:59:04.271698 UTC,Fundraising
+8e0c82eb-a725-482c-8bcd-cd37e73cb9f9,9,China,Closed,Client,Enterprise,386,2023-04-23 04:34:06.900000 UTC,InternalDocumentRepository
+aced7923-2947-46eb-8467-4751f367cea2,8,United Kingdom,Closed,Client,Enterprise,283,2021-06-18 16:08:54.420000 UTC,DebtFinancing
+edd7ed8f-9ea6-41c6-8431-6ea3759e6116,8,United Arab Emirates,Closed,Client,Professional,1093,2017-12-11 12:50:39.663000 UTC,MASellSide
+13319ce3-786e-4154-a38e-ecdaa5bfeb11,8,Qatar,Closed,Trial,Trial,31,2020-08-24 07:34:48.673000 UTC,MABuySide
+9a3e0df2-11d2-4a7c-bd7b-6370747790e6,4,United States,Closed,Client,Business,492,2018-09-17 15:26:31.620000 UTC,LegalExtranet
+1c9b1203-e225-437f-b3bc-b481fd6b4624,4,United States,Closed,Client,Business,264,2021-06-18 12:56:08.880000 UTC,MASellSide
+c3daaefc-4739-43f1-9522-5e2ae7b40456,4,Colombia,Closed,Client,Enterprise,215,2023-12-01 20:42:52.640000 UTC,Other
+08ddc406-f844-3f6d-8aeb-ac0c01000000,4,Canada,Closed,Trial,Trial,30,2025-07-16 01:20:37.317000 UTC,
+08de376c-aaad-2780-d672-a1c201000000,4,United States,Active,Client,Enterprise,111,2025-12-09 21:48:19.453921 UTC,MASellSide
+08dd50f6-0306-b3b6-7e92-781e01000000,4,Canada,Active,Client,Enterprise,404,2025-02-19 14:59:30.097000 UTC,MABuySide
+b5af4447-bdbd-46c1-8ab2-28db383800d5,2,Switzerland,Closed,Client,Business,1657,2020-06-26 13:21:19.370000 UTC,InternalDocumentRepository
+038b8e64-06f6-473d-9ccd-4e6ce2ff8da2,2,Belgium,Closed,Trial,Trial,4,2022-04-17 09:08:59.387000 UTC,Other
+08de1562-66de-781c-bee8-0d9b01000000,2,France,Closed,Trial,Trial,7,2025-10-27 14:09:11.387231 UTC,
+08dddbdf-f96e-b753-e662-d3a501000000,5,Germany,Active,Client,Enterprise,227,2025-08-15 09:41:56.733000 UTC,TenderingAndProcurement
+08de66b1-5c63-40f6-1eac-72e201000000,5,United States,Active,Client,Business,51,2026-02-08 01:28:28.091790 UTC,IntellectualProperty
+fb73db99-0f1d-41ef-84c9-152abf533eef,5,Switzerland,Closed,Client,Business,587,2023-06-01 13:35:22.987000 UTC,RealEstate
+96a57a23-58e0-4283-b421-aef2a1c20919,5,Germany,Closed,Client,Enterprise,148,2023-09-12 07:54:43.753000 UTC,Fundraising
+9b85be5e-fd9d-4cec-982e-741fc9683d62,6,South Africa,Closed,Client,Business,1894,2019-07-26 09:23:34.377000 UTC,InternalDocumentRepository
+56291d32-08f5-436b-87bf-fbe0a8150c5d,8,Italy,Closed,Client,Business,40,2021-08-03 16:19:49.963000 UTC,MABuySide
+4d140989-abc0-4682-a941-6bc0ab9e1e42,8,United Kingdom,Closed,Client,Enterprise,346,2021-09-17 15:18:17.893000 UTC,MASellSide
+e2930659-051f-4435-90ae-faa7aba17c65,8,Norway,Closed,Client,Business,461,2024-06-04 13:03:37.720000 UTC,InternalDocumentRepository
+7d608309-bed8-4aa5-84fb-463637e8e95f,4,United States,Closed,Client,Pro,44,2024-09-30 23:17:20.643000 UTC,MASellSide
+2c3de3e8-aca1-4008-8cce-25bad7e2a361,2,Netherlands,Closed,Client,Professional,1035,2019-01-28 14:24:51.220000 UTC,Other
+07fe4a50-18e9-4c62-8424-afceabefe638,2,United States,Closed,Client,Business,224,2021-09-28 12:44:18.590000 UTC,ClinicalTrials
+344bb10b-3098-495e-ab45-779a20beeb2d,2,Italy,Closed,Trial,Trial,50,2021-05-29 16:36:11.920000 UTC,Fundraising
+5affb1da-5a65-4ccd-be60-a2ed38aff445,5,Germany,Active,Client,Enterprise,524,2024-10-22 09:39:27.077000 UTC,MABuySide
+cd6da5d0-7006-440b-929a-8b913ca5a697,5,Germany,Closed,Client,Enterprise,140,2022-10-19 12:26:59.867000 UTC,InvestorReporting
+08dd5757-4f0f-3123-8618-c03001000000,5,United Kingdom,Active,Client,Enterprise,396,2025-02-27 17:51:05.877000 UTC,MASellSide
+7b31f0fb-f2f9-4bd3-8127-d32b6c0336ba,5,Germany,Closed,Trial,Trial,21,2020-12-01 13:56:33.497000 UTC,Undefined
+b4513c8d-4151-4e7a-b9e8-619428db0191,5,Iceland,Closed,Client,Pro,125,2023-10-31 14:48:25.880000 UTC,Undefined
+005a783a-7948-4d68-89aa-16938ef230e4,7,Mexico,Closed,Trial,Trial,30,2023-06-14 15:40:50.960000 UTC,
+fa2050a9-27ff-4bc2-8de0-4402b90d9343,3,Singapore,Closed,Trial,Trial,0,2023-06-05 03:13:42.193000 UTC,Fundraising
+09a848ee-7518-4ed9-a0e7-a6fdc6955e18,1,Ukraine,Closed,Trial,Trial,31,2020-11-16 14:54:55.110000 UTC,MABuySide
+08ddb13c-ea97-48e6-a27b-2cfa01000000,4,Canada,Closed,Trial,Trial,0,2025-06-22 03:28:55.820000 UTC,
+08dd6e17-2277-176d-6690-234d01000000,4,United States,Active,Client,Enterprise,367,2025-03-28 16:39:40.000000 UTC,StrategicPartnership
+35680f31-7e3b-4c03-8894-ef136332614b,2,Saudi Arabia,Closed,Client,Pro,209,2021-10-20 13:03:21.883000 UTC,Fundraising
+ff8e4f8d-f507-4b96-8e9c-5689974fceb1,2,Kenya,Closed,Trial,Trial,30,2022-09-28 07:33:57.420000 UTC,
+17902904-d488-4976-b2d3-94d8d74bff0c,5,Switzerland,Closed,Trial,Trial,23,2021-05-18 15:38:35.043000 UTC,MASellSide
+c4f37cbc-ce1d-4344-b56a-3509267c494a,5,France,Closed,Client,Basic,632,2018-11-20 13:57:31.340000 UTC,MASellSide
+16964825-4cba-4cce-8e07-8c75f805f863,6,New Zealand,Closed,Client,Business,225,2021-03-08 23:05:19.577000 UTC,InvestorReporting
+f46ee735-2d6a-4e9c-8bae-815efdc050ed,9,Germany,Active,Client,Core,1793,2021-05-02 09:54:35.713000 UTC,Fundraising
+aab6a282-cc15-45b0-b43c-01cfcfd00b96,1,Estonia,Closed,Trial,Trial,30,2022-08-29 06:50:07.310000 UTC,Fundraising
+255e3c48-d1fb-416f-9226-bf5cffbd3535,8,United Kingdom,Closed,Client,Pro,0,2021-07-29 10:25:29.197000 UTC,MASellSide
+d01bd637-9593-4cf7-9535-b083a74586fb,4,United States,Closed,Client,Pro,95,2021-01-21 19:47:29.903000 UTC,Fundraising
+14f037a0-b177-42d5-ba5c-ad2fb3a1d867,4,United States,Closed,Trial,Trial,43,2021-11-10 19:53:34.680000 UTC,InvestorReporting
+dd868662-10a4-4403-a650-24673deb6f1b,4,Cayman Islands,Closed,Client,Pro,1399,2022-03-08 12:23:50.267000 UTC,Fundraising
+a8f9fe48-46f8-4d3c-8d7a-48c25a1814a7,4,United States,Closed,Client,Business,13,2022-12-07 18:07:35.330000 UTC,Audit
+be766363-3509-4d6e-bf8a-a14ad4e484d9,4,United States,Closed,Client,Core,250,2024-11-14 13:57:01.790000 UTC,
+8bf6e2ca-bc45-442f-8031-a4389fa2c9e9,4,United States,Closed,Client,Enterprise,275,2019-12-18 20:20:53.743000 UTC,Fundraising
+08dd7aa0-c552-625d-e254-4dfc01000000,2,Egypt,Closed,Trial,Trial,0,2025-04-13 15:35:08.357000 UTC,
+7b842b6b-d708-433a-bf31-083d565e4cdf,2,Netherlands,Closed,Trial,Trial,25,2021-10-15 11:47:26.553000 UTC,Undefined
+08dd6228-f7cc-6b27-a617-32c601000000,5,Sweden,Closed,Client,Enterprise,104,2025-03-13 12:17:05.540000 UTC,MABuySide
+622d2d87-8ab6-4587-bff6-cfda72deb624,7,Uruguay,Closed,Client,Business,150,2021-05-25 01:58:07.420000 UTC,CorporateReporting
+80fefbe1-b53a-4a30-b9fe-8d1b14a2b40c,3,Vietnam,Closed,Client,Enterprise,368,2024-08-20 10:37:03.267000 UTC,MASellSide
+08de75be-edda-7e19-f605-1fcc01000000,3,Singapore,Closed,Trial,Trial,7,2026-02-27 05:13:24.752218 UTC,MASellSide
+08ddb545-ff4d-a81a-a27b-2cfa01000000,3,Vietnam,Closed,Trial,Trial,30,2025-06-27 06:44:00.853000 UTC,
+70e7db92-07f2-4cd9-99dd-2378b4d5562a,9,China,Closed,Client,Business,1188,2022-01-19 09:45:16.193000 UTC,Fundraising
+08de275d-c293-0821-da67-6da701000000,9,China,Closed,Trial,Trial,7,2025-11-19 11:21:18.501850 UTC,
+08dd5b0e-3834-d295-c246-998301000000,8,Turkey,Closed,Client,Enterprise,245,2025-03-04 11:17:58.890000 UTC,IPOExits
+0786b19a-2945-475c-b0b1-3dfdc10743fe,8,South Africa,Closed,Client,Enterprise,1255,2021-10-22 14:41:39.843000 UTC,Fundraising
+8de5f7f7-4bc8-464d-9d22-2b4eb6873da9,8,Ireland,Closed,Client,Business,1210,2021-07-16 12:51:48.933000 UTC,InternalDocumentRepository
+08de21fa-1415-a1b3-36f2-d9a601000000,8,United Kingdom,Active,Client,Enterprise,138,2025-11-12 14:45:09.784168 UTC,RealEstate
+ff525512-0ebd-43b0-9357-84c755c9ca5a,8,United Kingdom,Closed,Client,Business,448,2022-10-26 20:18:28.590000 UTC,MASellSide
+0a66e0ff-a027-4e2f-bcac-53f19128531f,8,Israel,Closed,Trial,Trial,27,2021-10-19 07:36:45.657000 UTC,Undefined
+08de41c5-5cb9-3924-ead6-06ef01000000,4,United States,Active,Client,Enterprise,98,2025-12-23 01:48:25.509628 UTC,DebtFinancing
+e28cb429-1571-4564-907a-7da47335664a,4,United States,Closed,Client,Enterprise,157,2022-01-10 17:59:07.313000 UTC,DebtFinancing
+08ddda6e-25a6-b4aa-968f-1c0d01000000,2,Algeria,Closed,Trial,Trial,30,2025-08-13 13:34:37.170000 UTC,
+08de7b17-a79a-dcc2-b28e-0cd401000000,2,France,Preparation,Trial,Trial,25,2026-03-06 00:31:06.171346 UTC,
+36a6953a-28f2-4e9c-9e4e-228e83ff68a6,5,Finland,Closed,Client,Pro,85,2024-08-14 13:47:11.580000 UTC,
+e1b09d1c-8336-4544-bb66-b6d9117f4dde,5,Greece,Closed,Client,Pro,313,2024-09-25 09:25:18.283000 UTC,
+e7446dd9-fa2e-4a1b-8c14-2f4b5bd88a8a,5,Germany,Closed,Client,Business,161,2024-02-07 08:33:22.450000 UTC,MASellSide
+1b2ed06a-7d77-43e8-aabf-22cf78336d3a,5,Germany,Closed,Client,Enterprise,319,2024-10-04 10:27:54.250000 UTC,Audit
+08de1c68-91b1-00fe-9af4-a65401000000,5,Germany,Active,Client,Core,145,2025-11-05 12:40:58.244816 UTC,
+08de03b1-753f-4543-8e48-3a9101000000,3,United Arab Emirates,Closed,Client,Enterprise,174,2025-10-05 01:49:44.591815 UTC,InvestorReporting
+063d0c83-2769-4082-b0d4-077e4e57fafc,1,Spain,Closed,Client,Business,203,2024-03-28 12:55:25.050000 UTC,MASellSide
+08de3d81-eb46-7c90-3296-9c1d01000000,8,United Kingdom,Active,Client,Business,103,2025-12-17 15:35:34.245275 UTC,Fundraising
+0ff2d802-4195-416c-a6d5-90a44b3f1a90,4,United States,Closed,Client,Business,563,2021-04-22 16:25:19.313000 UTC,CorporateReporting
+61a88dd0-d9b5-4d0b-b5de-c2c9be3d44e4,4,United States,Active,Client,Business,563,2024-09-13 20:28:14.897000 UTC,ClinicalTrials
+08dd7605-11c7-0d0f-0e80-760001000000,4,United States,Closed,Client,Core,93,2025-04-07 18:50:30.353000 UTC,MABuySide
+5abf4948-6374-41cf-8e39-447f717494a4,2,Italy,Closed,Trial,Trial,149,2020-10-28 10:53:49.267000 UTC,MASellSide
+08ddd9b7-3638-344a-968f-1c0d01000000,5,Switzerland,Closed,Client,Premier,195,2025-08-12 15:45:07.140000 UTC,
+644821f4-92a3-41f0-bb72-60d53b2cc70f,7,Brazil,Closed,Client,Enterprise,946,2019-10-02 20:21:12.170000 UTC,DebtFinancing
+9d16b195-f0dd-43a9-a12d-363f5c38337a,3,Malaysia,Closed,Trial,Trial,30,2024-05-11 13:16:10.050000 UTC,Other
+aa57a105-b208-4ee4-8583-d522e89f7479,9,Germany,Closed,Client,Business,713,2022-04-20 08:56:48.963000 UTC,Fundraising
+6d4dbc62-f707-4ecc-8fd4-115209eacd7d,9,China,Closed,Client,Business,394,2024-11-13 01:10:16.817000 UTC,
+4bc41979-901e-4ad1-aa10-a18aa855a069,1,Russian Federation,Closed,Client,Enterprise,230,2020-06-22 09:39:15.987000 UTC,InternalDocumentRepository
+937960e0-379f-4114-bb02-e4a9a8b9fd0a,1,Germany,Closed,Trial,Trial,7,2023-09-12 09:17:28.313000 UTC,PortfolioManagement
+139ae20b-6621-4b58-8648-cc62da9f4e63,8,United Kingdom,Closed,Client,Core,404,2024-11-19 17:15:30.017000 UTC,
+08dd6248-e140-bf07-a617-32c601000000,8,United Kingdom,Frozen,Client,Business,368,2025-03-13 16:05:31.460000 UTC,Fundraising
+80b22bbc-031d-482f-9f1a-314ad28e1834,8,United Kingdom,Active,Client,Enterprise,704,2024-04-25 13:46:04.143000 UTC,InternalDocumentRepository
+379a03ee-f09b-4684-a750-8e264228829f,4,Canada,Closed,Client,Business,0,2016-06-07 12:48:41.613000 UTC,Undefined
+af2c1c6b-cb40-4c40-b294-dbe04e0685e9,4,United States,Closed,Client,Business,97,2020-05-13 14:35:45.400000 UTC,MABuySide
+08dd6e3a-3da4-6d51-0e80-760001000000,4,Trinidad and Tobago,Active,Client,Business,367,2025-03-28 20:50:57.963000 UTC,LegalExtranet
+3c574161-fbc4-4aec-876a-fded6712856b,4,United States,Closed,Client,Business,1363,2020-04-15 18:36:37.603000 UTC,MABuySide
+08ddd5ee-ed0f-b843-76b4-dff001000000,4,United States,Active,Client,Core,235,2025-08-07 20:13:51.497000 UTC,
+f5712212-6ce0-4760-8c05-d714b3b485a3,5,Germany,Closed,Client,Business,1976,2020-06-29 07:21:52.200000 UTC,InternalDocumentRepository
+08de3752-5ec5-d6ca-d672-a1c201000000,5,Canada,Active,Client,Business,111,2025-12-09 18:40:05.210986 UTC,MABuySide
+08dd86ff-42a3-03a7-5ec7-fc2f01000000,5,India,Preparation,Trial,Trial,335,2025-04-29 09:21:45.140000 UTC,MABuySide
+26b40d0d-59b8-418a-980e-edf2333bfbcf,5,Netherlands,Closed,Trial,Trial,30,2024-04-03 09:14:36.863000 UTC,
+08de7db2-612b-8580-b28e-0cd401000000,3,Singapore,Closed,Trial,Trial,7,2026-03-09 08:03:42.333289 UTC,
+08de3cb5-18a1-d0ec-d672-a1c201000000,8,United States,Active,Client,Enterprise,104,2025-12-16 15:09:23.524943 UTC,IntellectualProperty
+8e5dd1e8-5b6e-4c0f-858c-0cf200dcb9f8,8,United Kingdom,Closed,Client,Business,105,2022-01-18 14:41:34.990000 UTC,MASellSide
+08dd8c81-c073-24ef-3ea7-12d701000000,8,United Kingdom,Closed,Client,Enterprise,80,2025-05-06 09:38:26.700000 UTC,
+d3420e2f-8597-405a-a505-349ebba7a9e7,4,India,Closed,Trial,Trial,5,2021-08-13 13:51:33.230000 UTC,Undefined
+bed5b41b-ee09-45f5-acd8-305eb4e3e2c1,4,United States,Closed,Trial,Trial,30,2023-01-15 08:59:28.573000 UTC,
+78fd6e8c-915c-4ab7-84b4-a50b26b2d2ee,4,United States,Closed,Client,Business,229,2024-10-24 13:07:15.597000 UTC,
+d702b9f5-7615-4a9e-8256-4c7c366547a5,4,Canada,Active,Client,Enterprise,1260,2022-10-17 14:49:57.093000 UTC,MABuySide
+f5461dd6-609c-410b-9d4f-dc97b77e6d55,4,United States,Active,Client,Enterprise,1263,2022-10-14 14:28:38.423000 UTC,DebtFinancing
+4dce0daf-32e4-4554-b5a6-27b14793e931,4,United States,Closed,Client,Enterprise,1014,2021-05-19 19:47:28.660000 UTC,MABuySide
+dd49fa54-21d5-48b5-8f5d-cd5837f9d348,4,United States,Closed,Client,Enterprise,367,2024-11-08 17:25:48.577000 UTC,StrategicPartnership
+06fd0dbd-88e9-416d-ae5a-900155b69da4,2,Spain,Closed,Trial,Trial,30,2024-03-06 12:06:01.060000 UTC,MASellSide
+cf6fff2c-e8bd-48b3-a4d2-afd7c4a0bc23,5,Germany,Closed,Client,Enterprise,118,2019-07-02 12:34:59.890000 UTC,MABuySide
+08de185c-fdee-066d-2e68-bd2201000000,5,Russian Federation,Active,Client,Enterprise,150,2025-10-31 09:08:01.134387 UTC,MASellSide
+08ddb490-8262-61c3-2aeb-12fe01000000,5,Germany,Closed,Trial,Trial,30,2025-06-26 09:04:51.510000 UTC,
+e47aea77-03ac-473f-a67b-9cbb495d6867,5,United Arab Emirates,Closed,Client,Business,474,2023-09-08 07:22:26.383000 UTC,InternalDocumentRepository
+0d3e3e5e-a0e3-43a6-909c-a39e4a87e003,5,Germany,Closed,Client,Business,721,2021-03-29 09:40:08.863000 UTC,InternalDocumentRepository
+bf3322bf-e628-4cd6-9f3e-99d0b2fa7f07,6,New Zealand,Closed,Client,Pro,10,2023-03-20 17:24:56.483000 UTC,
+4469030c-05e5-4272-827b-837b291a601e,4,United States,Closed,Client,Business,130,2019-09-27 09:16:46.550000 UTC,MABuySide
+1b0340e2-897c-4aa1-8eaa-dd3d82d96764,2,Israel,Closed,Trial,Trial,33,2021-05-13 04:52:21.247000 UTC,IPOExits
+385df3b9-34eb-497e-aaaa-03728867e956,2,France,Active,Client,Business,705,2024-04-24 07:00:02.953000 UTC,Licensing
+8f916335-0f1d-477f-ac45-6e2dbf973b61,2,United Arab Emirates,Closed,Client,Business,138,2016-09-26 07:01:33.880000 UTC,MASellSide
+7aef31a4-a6bb-455b-8f0a-3ea1a5ce07c7,5,United States,Active,Client,Business,1389,2022-06-10 12:18:33.863000 UTC,ClinicalTrials
+0d242d53-d832-40e8-bb10-ef3b62577567,5,Switzerland,Closed,Trial,Trial,30,2023-02-02 15:48:53.370000 UTC,BoardCommunications
+6b6d7057-8ef5-44f1-83ff-06be1f9fd0bc,5,Austria,Closed,Client,Business,1142,2022-07-05 12:17:34.817000 UTC,Undefined
+7ad4ae0e-9842-4a2e-9240-39c275660a08,5,Israel,Closed,Client,Enterprise,283,2017-06-14 08:01:20.553000 UTC,Undefined
+a36d6ba2-6f9d-4978-b822-39a1522ddb70,5,United States,Closed,Client,Enterprise,178,2024-06-03 14:19:10.960000 UTC,Other
+08dd6991-f93c-b0c6-1e3f-257d01000000,6,Australia,Closed,Client,Business,22,2025-03-22 22:36:23.823000 UTC,TenderingAndProcurement
+5a5169de-4228-4794-8e9d-27fc1966aedd,6,Australia,Closed,Trial,Trial,78,2020-12-10 23:46:11.770000 UTC,Fundraising
+08dde6a7-e09b-a9b1-7699-75b101000000,6,Australia,Closed,Trial,Trial,7,2025-08-29 02:58:06.068161 UTC,
+b6daa13e-d8de-43de-9b29-ecd070e6614f,8,United Kingdom,Closed,Client,Pro,128,2023-11-06 11:42:41.150000 UTC,MASellSide
+08de7f8f-4507-d4e1-466c-78f701000000,4,United States,Active,Client,Business,19,2026-03-11 16:57:25.131562 UTC,MABuySide
+a81e0725-4832-4770-ab9e-e27d714ca8bd,4,United States,Closed,Trial,Trial,21,2021-08-16 20:14:59.637000 UTC,MASellSide
+d8ff6275-85e3-4c39-9f71-76a1f65cd8f6,4,United States,Closed,Trial,Trial,50,2022-03-17 00:52:42.950000 UTC,InternalDocumentRepository
+e63fea1e-13c5-461e-9539-e66afe22395f,4,Canada,Closed,Client,Business,382,2024-06-20 16:47:49.790000 UTC,Fundraising
+62cc3073-2a69-4d1d-a0e2-6498f060b4bd,4,United States,Closed,Client,Enterprise,439,2022-06-01 11:03:16.370000 UTC,InternalDocumentRepository
+63bc0b7e-1007-45c9-b8ac-ea7f96768327,2,Switzerland,Closed,Client,Enterprise,157,2021-02-11 12:41:11.647000 UTC,TenderingAndProcurement
+fd708ea3-9c8c-47a5-8674-800994145b90,2,Sweden,Closed,Client,Business,1371,2022-01-27 13:53:44.923000 UTC,PortfolioManagement
+aae12019-291d-43cb-a4ce-834f1a944f62,2,Switzerland,Closed,Trial,Trial,30,2024-12-05 22:50:24.873000 UTC,Fundraising
+355c1deb-b4e8-4e86-9095-b6bb367410fa,5,United States,Closed,Client,Business,326,2022-07-21 15:40:49.160000 UTC,InternalDocumentRepository
+2adeecdb-a24c-4bf3-a7e6-31eb3fe551e6,5,Germany,Closed,Trial,Trial,21,2022-04-21 11:13:08.867000 UTC,MASellSide
+08dd9dc4-26d8-297b-ee27-1ae701000000,5,Slovenia,Closed,Client,Business,209,2025-05-28 08:46:34.973000 UTC,MASellSide
+08de2e8c-f34c-72de-bab3-678901000000,5,Germany,Closed,Trial,Trial,7,2025-11-28 14:46:45.362797 UTC,
+08dd60af-b2c0-7c1a-a617-32c601000000,5,Austria,Closed,Trial,Trial,30,2025-03-11 15:16:29.387000 UTC,MASellSide
+aa8cba19-4d62-42c9-b42c-75c7404b391a,7,United States,Active,Client,Staging,615,2024-07-23 15:18:59.920000 UTC,
+c26cd6e2-815e-41a7-a329-9bfda0be62ca,6,Australia,Closed,Client,Enterprise,310,2024-07-15 04:26:09.000000 UTC,MASellSide
+5fb2a441-05b4-4caa-85cb-3804464b91d4,6,Australia,Closed,Client,Pro,550,2020-01-17 00:41:21.293000 UTC,MASellSide
+2d14c8ac-e5b1-4651-8ea9-f18b7ef3d584,3,Thailand,Closed,Trial,Trial,30,2024-05-28 04:32:39.953000 UTC,
+40aa3766-fb68-49e8-b20d-12fc179751c4,8,United Kingdom,Closed,Trial,Trial,42,2024-05-10 11:21:43.993000 UTC,InternalDocumentRepository
+6f0ef362-8265-42f9-8caa-e852a39c3e2b,4,United States,Closed,Client,Business,388,2020-12-15 15:58:10.877000 UTC,DebtFinancing
+d83b49ec-fa8a-44ef-b4d6-3731118ad12d,4,United States,Closed,Client,Business,1140,2019-05-23 16:16:20.733000 UTC,Other
+0499bf72-24b0-4908-8121-a05f2c93b277,4,India,Closed,Client,Business,122,2022-10-29 10:47:09.697000 UTC,
+e676aed3-cefe-4698-b1be-2e536e150aef,4,United States,Active,Client,Business,1420,2022-05-10 18:35:23.430000 UTC,PortfolioManagement
+66bdeb60-fad0-431c-9c7c-b4f30080c0df,4,United States,Closed,Client,Business,301,2020-06-13 00:13:11.427000 UTC,MASellSide
+46f5ee59-99f4-424e-b99d-7b1b7c12e045,4,United States,Closed,Client,Business,455,2022-05-19 13:42:23.733000 UTC,MASellSide
+8b9e77c1-9156-48cb-bb97-20ba3e2629e3,4,United States,Closed,Trial,Trial,0,2024-07-23 21:22:41.240000 UTC,
+1aedf918-9219-4ad0-af40-a19ce17f186a,4,United States,Active,Client,Premier,552,2024-09-24 19:48:15.170000 UTC,
+bf481a88-c594-4661-8189-8afdbe9f0851,2,France,Closed,Client,Enterprise,72,2023-09-11 13:19:59.957000 UTC,MABuySide
+887b1371-b281-45fc-b1ef-2a06558be954,2,Switzerland,Closed,Client,Enterprise,210,2024-02-19 15:38:37.733000 UTC,RealEstate
+c904f9d2-4a58-4eb1-ba3d-5eb82ff24cde,5,Germany,Active,Client,Enterprise,1363,2022-07-06 10:11:08.630000 UTC,Other
+4aa43a9a-326b-4afc-a4b1-6cf2cfb5303f,5,Germany,Closed,Client,Enterprise,240,2024-09-27 18:40:36.120000 UTC,MABuySide
+8b6d9a02-e732-4676-b3fa-39ac4ed35580,5,Serbia,Closed,Client,Professional,1533,2017-08-22 13:07:23.040000 UTC,DebtFinancing
+08ddb31d-4ebf-9af4-2aeb-12fe01000000,7,Brazil,Closed,Trial,Trial,30,2025-06-24 12:47:41.680000 UTC,
+9567d8bd-4b71-4bb9-8a09-6fef49c278ba,3,India,Closed,Client,Pro,161,2023-05-03 05:26:59.960000 UTC,Undefined
+08dda0f5-470f-0dc4-36e8-304b01000000,9,China,Closed,Client,Enterprise,137,2025-06-01 10:15:49.363000 UTC,Other
+c37c2c2d-a053-4895-a7ac-d8c3ba6be1ae,1,Russian Federation,Closed,Client,Business,54,2022-04-07 09:13:19.513000 UTC,MASellSide
+d73eb5c8-5478-4f34-89fa-049ecab38680,8,Croatia,Closed,Client,Professional,140,2018-12-04 16:00:45.823000 UTC,MASellSide
+08dd8965-05a8-def2-de78-284001000000,8,United Kingdom,Closed,Trial,Trial,30,2025-05-02 10:35:13.800000 UTC,
+a6cce529-e0bd-4b50-afcc-72d059f6d8cc,8,United Kingdom,Closed,Client,Enterprise,197,2024-10-08 13:15:42.717000 UTC,MASellSide
+ee4e4961-4b67-454a-9329-a8bdde92d7dc,8,United Kingdom,Active,Client,Enterprise,893,2023-10-19 14:14:41.633000 UTC,Other
+3f179ec7-60d2-46af-8af5-56694b3234f6,4,United States,Closed,Trial,Trial,17,2021-10-21 15:42:54.337000 UTC,Fundraising
+a4a5cb0f-770a-4865-abc3-937b436972c0,2,France,Closed,Client,Pro,849,2022-11-12 09:45:24.360000 UTC,BoardCommunications
+b2cb036f-5b0a-42f7-a826-c443c5a8df12,5,Germany,Closed,Client,Pro,117,2023-08-01 08:02:04.900000 UTC,
+bd4f7027-1ec1-45d4-b640-b1887370a774,5,Italy,Closed,Client,Business,176,2020-04-28 07:05:58.830000 UTC,DebtFinancing
+08de6e37-d17c-8e48-6a7a-555401000000,5,Germany,Active,Client,Enterprise,41,2026-02-17 15:18:35.280450 UTC,MABuySide
+08ddb004-8353-6e49-2aeb-12fe01000000,9,China,Closed,Client,Enterprise,45,2025-06-20 14:12:38.790000 UTC,Fundraising
+c3e48c77-d19d-4590-82e8-a8cd7c2ad14b,1,Russian Federation,Closed,Client,Business,177,2020-10-02 11:27:13.387000 UTC,Fundraising
+00544d15-2ce2-4f10-ae22-87b2cc747877,8,Ireland,Closed,Client,Business,825,2021-12-20 15:06:09.143000 UTC,Fundraising
+509b83c3-0dad-4681-bc76-46918a67b3d5,8,United Kingdom,Closed,Client,Pro,398,2023-11-09 12:06:32.967000 UTC,MASellSide
+9689d10f-5075-4f7d-a192-cfedacd18ec5,4,United States,Closed,Trial,Trial,0,2022-09-14 04:59:45.560000 UTC,BoardCommunications
+189a2b68-ffc7-46fa-98b9-9b50e8913aac,4,United States,Closed,Trial,Trial,30,2022-10-20 15:33:40.347000 UTC,
+d85494df-7f8f-45fb-98b2-cd4c129c2e69,4,United States,Active,Client,Business,1615,2021-10-27 21:28:18.663000 UTC,InternalDocumentRepository
+fd1e655d-49b6-405a-bd99-311bdcd61ce2,2,France,Closed,Client,Pro,1,2023-01-04 13:56:04.570000 UTC,
+08de328a-6afb-e255-761b-770b01000000,2,Belgium,Closed,Client,Premier,0,2025-12-03 16:38:42.609734 UTC,
+08dd9472-6a4f-0f1f-4a95-c8ec01000000,2,Reunion,Closed,Client,Enterprise,61,2025-05-16 12:08:49.000000 UTC,TenderingAndProcurement
+5a045054-c9c3-46e8-8701-e0e35d803000,2,Netherlands,Closed,Trial,Trial,30,2020-10-12 09:28:26.863000 UTC,Fundraising
+8f214d41-afe8-4a76-ab15-e762d454ffab,2,South Africa,Closed,Trial,Trial,30,2023-09-08 08:26:08.613000 UTC,Other
+8b4dc83c-4417-4c7a-baa4-ce7a1930a1fa,2,Ecuador,Closed,Trial,Trial,29,2022-10-12 11:09:01.937000 UTC,Other
+08de0c92-29d5-7ad6-96c4-da5801000000,5,Belgium,Closed,Client,Enterprise,33,2025-10-16 08:58:24.296401 UTC,MABuySide
+725fc935-a16f-492e-a3c0-7b8973fa1ef8,5,Belgium,Closed,Client,Business,387,2023-07-31 12:48:46.130000 UTC,LegalExtranet
+08de68ba-47e8-79ba-f693-655801000000,5,Germany,Active,Client,Enterprise,48,2026-02-10 15:37:21.594653 UTC,MABuySide
+87f4d880-96d4-480b-ab32-f8b1eabb8af3,8,United Kingdom,Active,Client,Enterprise,794,2024-01-26 16:41:28.020000 UTC,InternalDocumentRepository
+a7f9ec04-793a-4996-b5b9-c56ef16dc115,8,Canada,Closed,Client,Pro,341,2021-10-09 14:42:56.310000 UTC,Fundraising
+31db6e54-7a22-4ad5-9583-67d8e25dedcd,8,United Kingdom,Closed,Trial,Trial,17,2022-07-12 08:18:51.193000 UTC,Undefined
+196ccd49-34ed-437e-a6f8-90f808d40350,4,United States,Closed,Trial,Trial,48,2022-05-31 11:54:38.930000 UTC,Undefined
+71d70dbc-a887-4e1c-b497-9964af4a2e94,4,United States,Closed,Client,Business,121,2023-10-30 18:42:22.083000 UTC,MASellSide
+4fc4ea74-46d8-4fd1-a703-71e2ae389a57,4,United States,Closed,Client,Business,503,2023-08-04 15:57:30.907000 UTC,MASellSide
+08dd92c7-7b1b-286b-9693-1f5001000000,4,Canada,Closed,Trial,Trial,30,2025-05-14 09:12:42.127000 UTC,
+1f84b923-ecf3-42d2-a2eb-7ca1070af1cd,4,Mexico,Active,Client,Business,1194,2022-12-22 19:27:35.420000 UTC,TenderingAndProcurement
+afad2804-fcf3-45d1-8974-f705ee3d788d,4,United States,Closed,Client,Enterprise,308,2024-06-10 18:52:47.277000 UTC,MASellSide
+a828caef-34ff-4b98-9058-5c2e707d4435,2,Tunisia,Closed,Trial,Trial,0,2024-09-11 23:40:11.520000 UTC,
+b01e00ee-500d-4c33-9c70-129f5f865dce,2,Israel,Closed,Trial,Trial,30,2024-12-10 06:36:37.307000 UTC,
+7e05b227-27d2-4a32-81a1-403f00c5315c,5,Italy,Closed,Client,Business,700,2022-11-24 07:23:21.073000 UTC,MASellSide
+651065fa-889b-4abf-b480-405f8133585d,5,Italy,Closed,Client,Enterprise,621,2023-05-11 13:21:03.740000 UTC,MASellSide
+b6a8926e-2abb-4671-80b0-fff69c8f7063,5,United Kingdom,Closed,Client,Enterprise,99,2024-04-08 09:48:35.787000 UTC,MABuySide
+6b687f02-0d56-4110-a31f-8f127481b11c,3,India,Closed,Trial,Trial,12,2021-05-19 06:40:13.400000 UTC,Undefined
+08dd5479-2792-154a-9abe-940c01000000,9,China,Closed,Client,Business,216,2025-02-24 02:15:49.097000 UTC,Fundraising
+6dc3f51e-6f4b-4667-9d2e-02f4a014140c,9,China,Active,Client,Premier,1286,2022-09-21 10:19:44.363000 UTC,Undefined
+7a76d3a4-88d0-46b8-92dd-f7294ca93146,9,China,Closed,Client,Business,321,2024-08-17 10:25:17.867000 UTC,MASellSide
+73e88626-64a9-4c97-b652-a0849cf7e04b,8,Italy,Closed,Client,Business,256,2020-09-04 16:02:10.313000 UTC,MASellSide
+9b3c25ed-8196-4810-ac68-ad67d537fde8,8,United States,Closed,Client,Enterprise,644,2024-03-13 19:09:48.473000 UTC,Fundraising
+3ebe77dd-a52e-4863-b2f3-2313734006dd,8,Israel,Closed,Client,Pro,25,2021-01-20 12:34:43.520000 UTC,Fundraising
+60694872-b1b5-4d7d-8076-1fd3f11b967f,4,India,Closed,Client,Business,39,2020-07-10 16:33:26.443000 UTC,MABuySide
+7b9b907b-98ea-4d33-914b-bc5053227dc2,4,United States,Closed,Trial,Trial,33,2021-03-17 21:13:12.847000 UTC,Undefined
+fd63cb56-0661-4c74-8577-bcb51ee3e45d,4,United States,Closed,Trial,Trial,22,2022-04-28 05:38:42.723000 UTC,Undefined
+c2f095f2-aef9-4857-88f3-c841b1172b54,4,United States,Closed,Client,Business,26,2024-01-19 00:24:47.840000 UTC,MABuySide
+08de7650-71dc-b82f-f605-1fcc01000000,4,United States,Active,Client,Premier,31,2026-02-27 22:35:01.561520 UTC,Licensing
+77f7d269-13d6-4b1d-aace-e02575ea2a70,4,United States,Closed,Client,Enterprise,85,2022-12-06 22:35:37.623000 UTC,MABuySide
+08ddcfa3-2d0d-488d-86e2-10da01000000,4,United States,Closed,Client,Enterprise,84,2025-07-30 19:56:30.083000 UTC,InternalDocumentRepository
+287121d5-26bc-454d-8e2b-89d853267103,5,Switzerland,Closed,Client,Professional,1720,2020-11-05 22:20:34.847000 UTC,Other
+65e8c516-beff-4e59-8fad-c6c2ff6676a8,5,Saudi Arabia,Closed,Client,Business,234,2023-11-05 08:53:28.970000 UTC,MASellSide
+6dc3f49e-1e13-4c06-81eb-e92b33cdb0bd,5,Spain,Closed,Trial,Trial,30,2022-07-08 11:05:55.900000 UTC,MASellSide
+08ddaa50-263c-5681-025b-34df01000000,7,Guatemala,Closed,Trial,Trial,30,2025-06-13 07:58:57.440000 UTC,
+015b28a2-662c-46fe-8f90-288ad8eed16f,3,Canada,Active,Client,Enterprise,643,2024-06-25 15:46:59.010000 UTC,MASellSide
+6b408b10-936d-474e-97d2-2232c3435157,9,China,Active,Client,Business,476,2024-12-10 02:34:54.420000 UTC,Audit
+1931a3b9-dc11-4e74-bb04-371e72b0d9a9,1,Germany,Closed,Client,Business,105,2023-07-31 16:13:28.260000 UTC,MASellSide
+8f8f977a-62b9-440c-b0f6-0e2814e2a57c,1,Italy,Closed,Client,Business,384,2023-09-19 11:15:55.710000 UTC,Other
+8860f908-48ec-4c50-9580-55d6b0991093,8,United Kingdom,Closed,Client,Business,527,2020-09-07 13:39:57.913000 UTC,MASellSide
+b2c90ad1-3cda-4ff3-9ad9-c149c61aec61,8,United Kingdom,Closed,Client,Basic,902,2019-05-24 12:00:40.870000 UTC,Fundraising
+08de2084-2a86-b62f-36f2-d9a601000000,4,United States,Active,Client,Core,140,2025-11-10 18:08:35.690107 UTC,
+631d4917-c3b8-454c-91e2-e8bdf61dae3b,2,Spain,Closed,Client,Business,82,2021-03-25 10:55:48.723000 UTC,MASellSide
+2d7ba32a-2587-49b8-a35d-2876f4eda65e,5,Germany,Active,Client,Business,1158,2023-01-27 14:12:58.837000 UTC,MASellSide
+08ddadb5-9325-5eac-5e46-85b201000000,5,Czech Republic,Locked,Client,Business,286,2025-06-17 15:42:32.760000 UTC,MABuySide
+6c439335-6a52-42ad-8d1c-a9bf01f12504,5,Switzerland,Closed,Client,Pro,132,2022-10-11 12:54:54.817000 UTC,MASellSide
+dd122ebd-c147-4de3-9ad5-5fff82296160,7,Brazil,Closed,Trial,Trial,30,2024-04-16 13:59:23.203000 UTC,IntellectualProperty
+08de82fe-5859-b5d1-466c-78f701000000,3,Papua New Guinea,Closed,Trial,Trial,7,2026-03-16 01:50:05.165411 UTC,
+499614f1-6cb9-4508-8022-bf9498558fb8,8,United Kingdom,Closed,Client,Enterprise,21,2023-02-28 15:08:25.490000 UTC,InvestorReporting
+cd9603fd-d169-4a66-9498-3ee2225d7695,8,Ukraine,Closed,Client,Pro,5,2023-11-22 08:35:18.607000 UTC,
+cc719211-d83c-4277-8736-a45bc30f6205,4,Canada,Closed,Trial,Trial,89,2020-11-30 20:34:46.503000 UTC,Fundraising
+c6d146b7-9a66-4328-8647-6789593765f7,4,United States,Closed,Trial,Trial,30,2023-09-07 20:48:00.207000 UTC,Undefined
+34a8fc33-038a-4de9-8904-f503ce7d924a,4,United States,Closed,Trial,Trial,30,2024-04-10 14:56:22.590000 UTC,MABuySide
+1a8d6f66-fddd-4ada-b82a-ce58d24d6aae,4,United States,Closed,Trial,Trial,30,2024-07-14 03:07:57.670000 UTC,
+4f5b9da2-8659-4b08-a46a-84a887949b4b,4,United States,Closed,Client,Enterprise,620,2023-09-28 20:18:52.967000 UTC,Other
+bf149c2e-7dd5-4b98-8eef-44907c1e36af,2,Italy,Closed,Client,Business,428,2020-07-30 17:37:16.113000 UTC,MASellSide
+f4d34a46-f424-479f-bf75-9f83bbfbe00d,2,France,Closed,Client,Pro,198,2021-04-21 06:46:12.403000 UTC,MASellSide
+1cd07628-cce3-437a-80b2-d3fa121f6011,2,Luxembourg,Closed,Trial,Trial,3,2021-02-01 12:18:51.970000 UTC,MASellSide
+1c780dc3-f397-47b6-926a-49a5f8c5755e,5,Germany,Closed,Trial,Trial,29,2022-02-22 11:22:56.400000 UTC,CorporateReporting
+08de7557-ee69-107e-3eda-9bc001000000,5,Poland,Closed,Trial,Trial,14,2026-02-26 16:56:05.783822 UTC,
+08de3d06-f74a-dbde-d672-a1c201000000,3,"Korea, Republic of",Active,Client,Premier,104,2025-12-17 00:55:26.325802 UTC,
+0fded8e1-394e-4ff4-b9ed-cc1a004fac2d,9,China,Closed,Client,Business,145,2024-04-17 07:18:20.830000 UTC,Fundraising
+c0c0a6e0-1d68-497d-aeb2-5fe7bd082159,9,China,Closed,Client,Business,84,2021-09-13 03:54:03.413000 UTC,Fundraising
+57c1f7be-8108-4126-96ea-90a19a17cee4,1,Sweden,Closed,Trial,Trial,30,2024-09-18 10:59:26.810000 UTC,
+ce219cb3-638b-4151-8d84-3f9309e4579b,8,United Kingdom,Closed,Trial,Trial,30,2024-10-03 06:35:46.387000 UTC,
+963cac4c-5fd4-4995-9525-081b58627edf,4,United States,Closed,Trial,Trial,35,2021-02-09 16:19:45.543000 UTC,Fundraising
+01012af4-b352-4f0b-8ba6-051770840a8d,4,United States,Closed,Trial,Trial,37,2021-09-11 16:09:38.343000 UTC,MASellSide
+75232e3a-c5d6-4fe1-b4a8-f7efcff69f70,4,United States,Active,Client,Business,2548,2019-04-08 21:39:44.617000 UTC,DebtFinancing
+7f4629f2-27a6-4163-bbc0-ab21ac2ee8e3,4,United States,Closed,Client,Business,444,2018-11-22 14:37:52.970000 UTC,Fundraising
+4919270f-e9ea-44a1-b673-29552727cd5a,4,United States,Closed,Client,Business,560,2022-02-02 19:21:20.910000 UTC,MASellSide
+08ddd04c-680f-a3f3-86e2-10da01000000,4,United States,Closed,Client,Enterprise,62,2025-07-31 16:07:54.043000 UTC,MASellSide
+a59e71f1-a51c-4c94-ad97-2cfe3316c2af,4,United States,Closed,Trial,Trial,35,2024-11-29 15:12:19.380000 UTC,MASellSide
+08de718d-a266-ad8d-ce42-21dc01000000,4,United States,Closed,Trial,Trial,7,2026-02-21 21:10:27.577331 UTC,
+08dd8e42-4f02-a086-3ea7-12d701000000,4,Belgium,Active,Client,Enterprise,326,2025-05-08 15:09:20.313000 UTC,MABuySide
+548a144b-0bf3-44c3-9857-19210f83dcb0,2,Italy,Closed,Client,Business,1135,2020-10-13 12:06:37.703000 UTC,Other
+6bdba60e-c05e-468a-b2d8-b3564e81f869,2,France,Closed,Client,Professional,535,2017-11-21 08:27:36.147000 UTC,Fundraising
+4ced9bbd-618f-4147-b187-c77b2951634e,5,United States,Closed,Client,Enterprise,62,2022-07-15 16:36:46.300000 UTC,Fundraising
+fd947114-86ac-4295-a6b7-f809179a4bac,5,Germany,Closed,Client,Business,3,2021-11-19 09:07:14.583000 UTC,Fundraising
+08de6e8c-a17d-4d92-6a7a-555401000000,6,United Kingdom,Active,Client,Enterprise,41,2026-02-18 01:25:42.050953 UTC,MABuySide
+7730bf13-acaf-4350-ba2b-440c64a3ef6c,1,Norway,Closed,Trial,Trial,30,2024-09-23 12:43:51.990000 UTC,
+91716ef6-86cf-4819-ada1-2e41ad3ce30d,8,India,Active,Client,Enterprise,588,2024-08-19 09:20:51.683000 UTC,
+1f6a44dc-2c5d-478b-a98f-50bd6c9aaa96,4,United States,Closed,Trial,Trial,30,2022-11-22 07:15:56.097000 UTC,Undefined
+fbcb2276-c197-40df-a0c6-bd3ed1bfbef2,4,United States,Closed,Trial,Trial,30,2023-10-22 19:48:34.453000 UTC,MABuySide
+7b3c6ca2-68ad-40ae-8492-8c970b903c6b,4,United States,Closed,Client,Business,503,2022-01-03 21:59:15.983000 UTC,InternalDocumentRepository
+8234d2b2-4d98-484a-8622-e00ea0c43d77,2,Israel,Closed,Client,Pro,456,2024-05-12 11:42:44.543000 UTC,Other
+f814f453-8102-40e5-b0c6-74b3326f4341,2,Belgium,Closed,Client,Enterprise,273,2018-07-09 08:14:12.710000 UTC,MASellSide
+08dda5d5-4b0e-87dc-f6fa-3a6201000000,2,Israel,Closed,Trial,Trial,30,2025-06-07 15:09:26.420000 UTC,
+2a5e3b88-7da5-405a-9c8f-3b7ccdd3ff5d,5,United Kingdom,Closed,Client,Business,532,2023-06-26 15:46:53.657000 UTC,StrategicPartnership
+08dd7b76-0255-7b89-caa3-6d5a01000000,2,Spain,Closed,Client,Premier,223,2025-04-14 17:01:33.543000 UTC,
+91b36c8a-c06b-4bf7-80a7-2816bfe22a8c,2,Togo,Closed,Trial,Trial,30,2025-01-17 23:05:10.670000 UTC,
+70d5d9fd-12ef-4ff0-a38d-cec98dfd053e,2,Turkey,Closed,Trial,Trial,186,2020-06-19 14:28:42.993000 UTC,DebtFinancing
+08ddf9da-fda9-94cb-f241-b7ca01000000,5,Switzerland,Closed,Trial,Trial,0,2025-09-22 13:21:51.317748 UTC,
+1f4f2d6e-52be-4f7f-8349-ac7416d55c09,5,Switzerland,Closed,Trial,Trial,30,2022-11-29 09:51:13.547000 UTC,Undefined
+88b5dfbf-5dde-475c-8d0f-187a7763b91b,6,New Zealand,Closed,Client,Enterprise,124,2019-12-12 21:39:30.630000 UTC,CorporateReporting
+4a0e92a6-1541-4025-89c1-ba9123272e11,9,China,Closed,Trial,Trial,30,2023-03-22 08:29:41.807000 UTC,
+e0ffc97b-12cc-4be3-a9ff-eb1e0046fc4c,8,United Kingdom,Closed,Client,Business,488,2024-06-05 17:07:17.240000 UTC,DebtFinancing
+452fee98-c292-4ca4-949a-a5940e7c9462,8,United Kingdom,Active,Client,Enterprise,794,2024-01-26 13:10:47.990000 UTC,LegalExtranet
+16754c35-b1f5-4354-9902-82c87404ac94,4,Canada,Active,Client,Staging,458,2024-12-27 11:01:49.770000 UTC,
+889e1ccb-86f5-4655-b6ed-d4d11dcddf11,2,United States,Closed,Client,Business,551,2020-12-02 18:12:53.297000 UTC,Undefined
+1d7b2de6-ce2a-45f2-a6fa-309e24d62571,2,France,Closed,Trial,Trial,23,2021-05-28 13:26:37.907000 UTC,MASellSide
+ccffbc8f-ce17-410f-b02c-82823c8563ef,2,United States,Closed,Client,Business,576,2021-08-26 23:45:31.103000 UTC,MABuySide
+e1f7b639-87e1-4d71-a37e-59391cb1037e,5,Israel,Closed,Client,Business,378,2020-10-22 11:24:37.610000 UTC,IPOExits
+7d46e200-a7a2-4c3c-9657-9ba45f4a4c6d,5,Denmark,Closed,Client,Enterprise,212,2023-06-13 10:55:55.233000 UTC,Other
+ac4a423b-2946-4caf-906b-3dbe7cf36ddf,7,Brazil,Closed,Trial,Trial,30,2024-06-11 13:21:55.747000 UTC,
+d8c7097f-1ae1-4321-bc7e-5d9d61b2d57b,6,Australia,Closed,Trial,Trial,151,2020-09-29 04:11:45.700000 UTC,PortfolioManagement
+9c723741-84f7-467b-a8f4-43fb754e245e,3,"Korea, Republic of",Active,Client,Business,552,2024-09-24 10:07:29.857000 UTC,Other
+08dd7382-91ef-b4fd-0e80-760001000000,9,China,Closed,Client,Premier,284,2025-04-04 14:11:19.513000 UTC,
+823f132b-d88d-42e0-b456-be2f6bb71d4d,8,United Kingdom,Closed,Client,Business,199,2024-09-20 15:25:12.963000 UTC,MASellSide
+76f72602-4ed6-4e36-9fb3-26e977f8dfd2,8,,Closed,Trial,Trial,30,2024-08-12 09:41:35.010000 UTC,
+7468de0e-234c-42a8-9d79-f14664d7a717,4,United States,Closed,Client,Business,241,2023-09-18 13:58:35.883000 UTC,MASellSide
+06fb8c27-ec30-4846-b3f4-9930fec205c8,4,United States,Closed,Client,Enterprise,392,2024-07-03 21:28:06.320000 UTC,MASellSide
+08de57fd-0b2a-a5f8-6e4b-649e01000000,2,France,Active,Client,Enterprise,69,2026-01-20 08:22:26.882971 UTC,MASellSide
+30689ef9-2318-496b-a505-11fb212c80e3,7,Chile,Closed,Client,Enterprise,1192,2022-03-29 19:16:57.643000 UTC,MASellSide
+08ddea09-fb7b-eb3e-3e2a-8aa901000000,1,Spain,Closed,Client,Pro,37,2025-09-02 10:17:55.912134 UTC,Other
+8a3fc8bc-1a5b-462c-b36a-58c560c99606,8,United Kingdom,Closed,Client,Business,120,2021-02-18 11:04:49.803000 UTC,MASellSide
+d5f0d73d-5141-446b-a85b-6c03e3460f2a,8,United Kingdom,Closed,Client,Business,195,2023-08-16 08:47:12.380000 UTC,MASellSide
+08dda422-2da2-a6e6-5254-a85601000000,8,United Kingdom,Locked,Client,Enterprise,298,2025-06-05 11:14:45.967000 UTC,MASellSide
+08de1e17-b743-118d-e2f3-dec201000000,8,United Kingdom,Active,Client,Enterprise,143,2025-11-07 16:07:14.404288 UTC,MASellSide
+fe319edf-a192-4296-8c63-a4e9f0fcbff1,8,Malta,Closed,Trial,Trial,30,2024-12-20 15:00:41.507000 UTC,Other
+60756314-7756-4f8b-8b8f-0f6ef549b785,4,United States,Closed,Client,Business,306,2021-07-08 23:58:05.513000 UTC,MASellSide
+0234f427-02a0-4e3a-9080-7a4ccdb131c9,4,United States,Closed,Client,Enterprise,411,2022-01-25 22:40:46.487000 UTC,Undefined
+e7f23990-da8a-407a-8cd5-3be6fe669c23,4,United States,Closed,Client,Enterprise,327,2023-08-11 13:56:02.467000 UTC,Other
+08ddb2ea-353c-f327-a27b-2cfa01000000,2,France,Active,Client,Core,279,2025-06-24 06:41:54.530000 UTC,MASellSide
+3f4dd66c-168b-481f-ac79-d63217dae36c,2,Yemen,Closed,Trial,Trial,0,2024-03-21 02:19:31.537000 UTC,
+a9303cb3-8cc9-48ef-9597-6b291a23b909,2,United States,Closed,Client,Pro,32,2021-05-10 15:18:50.617000 UTC,InternalDocumentRepository
+530f209e-72fe-46e7-8ebd-26eea8e6d4c7,2,United States,Closed,Client,Business,356,2022-06-20 21:13:55.360000 UTC,InternalDocumentRepository
+ddbe1c0d-f186-432d-a76d-dd610880f8c0,5,Iceland,Closed,Client,Enterprise,159,2024-08-29 13:56:12.560000 UTC,MASellSide
+3a4c9669-9d79-4c88-8640-bf2d769ec8fd,5,Germany,Closed,Client,Pro,102,2023-07-10 12:18:47.607000 UTC,
+5401ad59-b74f-4337-8479-278cf7351050,5,Germany,Closed,Client,Enterprise,94,2021-03-02 05:39:16.137000 UTC,MASellSide
+ef24674b-3038-4424-bd22-cd176a5dbfc5,5,Austria,Closed,Trial,Trial,46,2020-07-24 06:16:06.590000 UTC,BoardCommunications
+015fb876-cec5-4e81-a620-af3792200fd3,6,New Zealand,Closed,Client,Business,312,2022-10-13 22:14:35.377000 UTC,InvestorReporting
+a7d99e78-2d14-490b-94c6-f2f71c3257ad,8,United Kingdom,Closed,Client,Pro,162,2022-05-03 08:36:17.960000 UTC,MASellSide
+36175470-4fc0-4062-84c3-a70dfe60d4c3,8,United Kingdom,Closed,Trial,Trial,30,2023-04-21 13:32:27.847000 UTC,StrategicPartnership
+2b254412-719a-41ef-8d30-6968bf2403dc,4,United States,Closed,Client,Business,214,2019-01-18 01:10:46.817000 UTC,PortfolioManagement
+08dd922c-1f52-1e2c-9693-1f5001000000,4,United States,Active,Client,Business,321,2025-05-13 14:40:36.020000 UTC,RealEstate
+08ddd456-cbf4-a996-9ab2-4ec101000000,4,United States,Closed,Trial,Trial,7,2025-08-05 19:32:21.253000 UTC,
+67003eef-4965-4fe8-9162-dc5c31da635e,5,Germany,Closed,Trial,Trial,0,2022-08-30 18:45:28.040000 UTC,Undefined
+08de2454-0e7c-acc0-4227-721801000000,7,Brazil,Closed,Client,Premier,7,2025-11-15 14:34:17.445931 UTC,
+26946fd2-2248-485e-9631-23909b014ee5,6,Australia,Closed,Trial,Trial,104,2021-12-13 01:58:14.350000 UTC,TenderingAndProcurement
+0c18fb54-1382-4a8c-9848-8e27f4cb71d5,3,Singapore,Closed,Trial,Trial,30,2022-07-19 03:05:22.920000 UTC,InvestorReporting
+65864239-6c95-4eec-ace9-518a8f989d44,8,United Kingdom,Active,Client,Enterprise,881,2023-10-31 11:50:32.360000 UTC,InternalDocumentRepository
+97bdf503-1464-4452-959f-42eecb7a3cd6,8,Israel,Closed,Client,Pro,32,2021-03-19 09:35:25.307000 UTC,MASellSide
+2af2fa90-7d50-44a5-9329-4707a9dda7e5,4,United States,Closed,Client,Business,478,2018-11-07 17:16:52.447000 UTC,Fundraising
+f3efa01b-91d3-4085-a0fe-def7a837f8f0,4,Canada,Closed,Client,Enterprise,320,2023-03-21 23:54:31.610000 UTC,InternalDocumentRepository
+c24ca6d0-f52f-4c98-8d58-3a1d0d4dd0ff,4,United States,Closed,Client,Enterprise,203,2019-06-04 15:24:54.060000 UTC,InternalDocumentRepository
+6a2a4620-3db6-4ed4-8619-41c5da8f01a4,2,Belgium,Closed,Client,Business,159,2024-03-06 08:31:43.463000 UTC,Undefined
+38dc944c-881a-4dfd-acd0-38c6cf89ef52,2,France,Closed,Trial,Trial,30,2024-02-28 21:36:20.383000 UTC,Other
+74265ce9-4f3f-4c5c-aa67-d01b995db61a,5,Germany,Closed,Client,Enterprise,110,2021-10-28 13:15:37.170000 UTC,PortfolioManagement
+08de7931-ae45-b5f6-267c-335101000000,5,Germany,Active,Client,Business,27,2026-03-03 14:32:22.051340 UTC,MASellSide
+873ec9be-c434-4ac1-b8bb-d4f305236bec,5,Switzerland,Closed,Client,Pro,46,2023-09-10 15:58:24.847000 UTC,Fundraising
+72862234-dbdc-4f85-8627-5a2dec1af8c5,5,Netherlands,Closed,Trial,Trial,30,2024-09-19 11:11:22.330000 UTC,
+08dd6882-a7c6-ec65-9aca-1ec001000000,7,Brazil,Closed,Client,Business,61,2025-03-21 14:14:13.570000 UTC,MASellSide
+08dde60b-9b71-3f3f-7699-75b101000000,3,Japan,Closed,Client,Enterprise,187,2025-08-28 08:19:29.165427 UTC,Fundraising
+8ca54eff-be27-424f-b657-d53ba85b187f,3,India,Closed,Client,Pro,196,2024-01-17 11:19:42.493000 UTC,MASellSide
+db34c605-2928-4bf4-b0af-3ecd6e19a5a8,1,Russian Federation,Closed,Client,Business,1097,2019-05-31 17:07:37.160000 UTC,MASellSide
+6ede5489-19f7-4f40-8cdf-7e5613c85d77,8,United Kingdom,Closed,Client,Business,56,2023-01-24 13:24:27.933000 UTC,MASellSide
+2d7b0950-ac12-450e-8000-8de1427b9cdc,8,United Kingdom,Closed,Trial,Trial,10,2020-10-02 11:15:55.690000 UTC,MASellSide
+772c8380-42bc-4d0d-9e5a-5d32b5720d11,4,United States,Closed,Client,Pro,2048,2019-02-01 16:04:20.577000 UTC,Fundraising
+dca02056-6f98-4b98-920d-d46b307aaca6,4,United States,Closed,Trial,Trial,30,2023-03-05 05:22:21.940000 UTC,
+4123891f-d022-453c-b113-79b599a69639,4,United States,Closed,Trial,Trial,26,2024-09-07 16:35:50.230000 UTC,Other
+924f859d-6467-4428-b0ab-fba41fb3f63b,4,United States,Closed,Client,Enterprise,280,2024-09-09 18:28:41.483000 UTC,PortfolioManagement
+404146d8-1c03-4a90-acc3-fa833547f06d,4,United States,Closed,Client,Enterprise,1554,2021-08-11 19:13:23.543000 UTC,MASellSide
+e3b55000-19ae-4528-9cfe-8a117586e4f3,2,Israel,Closed,Client,Pro,219,2021-02-21 17:28:22.697000 UTC,Fundraising
+c7510373-c85c-4ed2-aee8-e075625d78b3,2,Belgium,Closed,Trial,Trial,7,2023-02-02 20:07:49.910000 UTC,RealEstate
+45974d33-c4c6-4973-9b99-35d768fcfe2b,2,France,Closed,Trial,Trial,30,2024-09-07 12:01:08.357000 UTC,Other
+852ae0e9-a7d2-467a-9671-930d68a71026,2,Israel,Closed,Trial,Trial,30,2021-08-15 04:12:11.957000 UTC,Fundraising
+08dd78c5-82e3-1f5f-caa3-6d5a01000000,5,Germany,Closed,Client,Enterprise,248,2025-04-11 06:53:05.793000 UTC,MASellSide
+d3cd98d1-b00b-4952-aa87-7953ad9a5557,5,Belgium,Closed,Client,Enterprise,259,2025-02-06 11:47:59.660000 UTC,MABuySide
+08ddfb88-75dd-3187-f241-b7ca01000000,7,Ecuador,Closed,Trial,Trial,7,2025-09-24 16:36:07.036224 UTC,
+fb9895ee-6f63-4c6b-b91b-9929b5d98058,3,Thailand,Closed,Client,Pro,27,2022-09-26 12:27:56.730000 UTC,Fundraising
+f4c880a1-c8ae-4f7b-be77-b5eaa34163e4,9,China,Closed,Client,Business,272,2022-08-26 07:07:38.790000 UTC,DebtFinancing
+4642be01-d636-4f5d-8a03-f71cfd4518b4,1,Russian Federation,Closed,Client,Business,532,2020-12-17 09:15:00.033000 UTC,MASellSide
+cab7e420-39fb-4537-976c-f93d553821bb,8,United Kingdom,Active,Client,Enterprise,1216,2022-11-30 10:48:02.663000 UTC,
+dbce7238-f7bf-4039-a857-e070bcc1af9e,8,United Kingdom,Closed,Client,Business,89,2024-09-18 13:57:37.423000 UTC,RealEstate
+d170fee1-1240-456b-b0f2-67d1e90249f9,4,United States,Closed,Client,Business,374,2019-08-18 21:29:39.037000 UTC,DebtFinancing
+1a0b87ab-0c14-46fa-a140-a3c46657102f,4,Canada,Closed,Trial,Trial,30,2020-08-18 19:57:10.727000 UTC,Fundraising
+3a02cc58-96da-4d02-94da-6f604197fe80,4,United States,Closed,Client,Business,0,2022-07-28 11:11:26.883000 UTC,MABuySide
+fd9ac478-9af8-4b15-9910-aab0efc91c2e,4,Canada,Closed,Client,Business,0,2021-09-14 18:33:36.603000 UTC,Other
+e52f45fe-9a59-496b-b95b-836a50e7204f,4,United States,Closed,Client,Enterprise,102,2024-10-23 19:42:47.640000 UTC,
+18ee4e22-7d0c-4588-bb73-483006b2ade8,4,United States,Active,Client,Enterprise,775,2024-02-14 23:15:53.273000 UTC,
+7be78ab4-7b0b-4d62-b17e-702bbc55749f,4,United States,Closed,Client,Enterprise,83,2021-05-06 14:25:23.223000 UTC,MABuySide
+8c6238df-8148-4360-bc14-6ac403e791be,2,United States,Active,Client,Business,648,2024-06-20 15:29:25.393000 UTC,BoardCommunications
+ed7d85ff-1c03-42c8-8930-5dde9fdab0de,5,Germany,Closed,Client,Pro,748,2019-11-01 15:47:21.883000 UTC,Fundraising
+12b0b4f0-5f27-4617-a529-2b1e0119d0a9,5,Switzerland,Closed,Trial,Trial,62,2024-09-25 14:27:46.560000 UTC,
+11506f06-a632-4103-9a61-67b87c81a9bb,5,Switzerland,Active,Client,Enterprise,451,2025-01-03 08:45:39.560000 UTC,LegalExtranet
+e5a518e3-0969-41e2-893a-b96b266c8d17,5,Germany,Closed,Client,Enterprise,108,2024-09-13 10:40:09.780000 UTC,MASellSide
+08dd9121-2304-26f6-8699-e51c01000000,3,India,Closed,Trial,Trial,7,2025-05-12 06:49:26.713000 UTC,
+4497d139-4cf2-45d6-955b-e0f7804756a3,4,United States,Closed,Client,Business,72,2024-12-17 22:13:53.563000 UTC,Other
+08de5f4f-e66b-4f9b-2e5f-d7d401000000,4,United States,Active,Client,Business,60,2026-01-29 16:03:11.017797 UTC,MABuySide
+edf9dfa2-6c7a-4a36-bd1b-2a76ddd08ff4,4,United States,Closed,Client,Business,246,2021-06-07 21:07:38.983000 UTC,MABuySide
+d3fa2d66-24b8-4036-b9d0-9e3239164650,4,United States,Closed,Client,Business,367,2024-09-27 21:07:57.983000 UTC,Fundraising
+f013439a-5606-4284-9a68-2f3fd133e2aa,4,United States,Closed,Client,Enterprise,534,2024-06-11 21:05:07.970000 UTC,MASellSide
+703eb373-321d-4b60-bd18-20e3e51f8abe,2,Netherlands,Closed,Client,Enterprise,263,2018-02-21 09:53:23.417000 UTC,Other
+73ce9ebe-661f-42ba-9e55-74fcf8137dd4,5,Czech Republic,Closed,Trial,Trial,30,2024-12-05 09:53:51.697000 UTC,
+08de3d4b-e812-f6fc-f654-561001000000,5,Germany,Active,Client,Business,103,2025-12-17 09:08:56.133983 UTC,MASellSide
+21aa11ac-de4d-4b3b-91dc-32426eb0f840,5,Switzerland,Closed,Client,Enterprise,259,2024-07-11 13:53:30.873000 UTC,MASellSide
+2099607e-7be1-49c4-9b0f-88548ce00aac,7,Chile,Closed,Trial,Trial,51,2022-03-18 01:48:40.753000 UTC,MASellSide
+08ddc003-47cd-0f4b-7e81-afd801000000,6,Australia,Closed,Trial,Trial,7,2025-07-10 22:44:08.840000 UTC,
+3e0072dd-0b97-4d8d-885f-deb0dca9ba22,9,Germany,Closed,Client,Business,652,2023-05-03 20:15:20.380000 UTC,StrategicPartnership
+9bf03b12-ae2a-4695-87b3-6dae8ea1ed2b,9,China,Closed,Client,Pro,364,2022-08-31 05:50:26.413000 UTC,Fundraising
+bfba3f55-834b-4b62-ba26-c11d8254a882,1,Russian Federation,Closed,Client,Business,671,2019-12-18 08:26:19.283000 UTC,Other
+08ddc07d-5060-920b-7e81-afd801000000,8,United Kingdom,Active,Client,Enterprise,262,2025-07-11 13:17:41.060000 UTC,MABuySide
+c382c9b0-98fe-4efe-8dc2-68e69d989f2f,4,United States,Closed,Trial,Trial,10,2020-08-31 22:28:58.127000 UTC,MASellSide
+2e3d2a2e-b33d-4f76-9dfd-bfc567b39968,4,United States,Closed,Trial,Trial,0,2023-01-30 05:10:41.403000 UTC,
+f623818e-d0ed-44f2-8ea5-4b35d0ff3bf0,4,United States,Closed,Client,Enterprise,348,2024-03-31 16:24:05.433000 UTC,Licensing
+08de5915-2d1a-240e-5ae3-009d01000000,4,United States,Active,Client,Enterprise,68,2026-01-21 17:47:42.128205 UTC,InternalDocumentRepository
+08ddcb97-6b70-56fc-5e88-15cc01000000,2,Portugal,Closed,Client,Core,4,2025-07-25 16:22:17.740000 UTC,
+cddd5770-4ece-461b-b381-be2167b2367b,2,France,Closed,Client,Enterprise,357,2023-10-17 08:11:47.247000 UTC,MASellSide
+08dd979f-c6b2-7d07-9693-1f5001000000,7,Brazil,Closed,Client,Premier,188,2025-05-20 13:11:04.903000 UTC,
+1b9a3f4b-4518-4d60-8b7a-a943058bab6e,1,Russian Federation,Closed,Client,Business,2039,2016-10-10 10:28:39.470000 UTC,InternalDocumentRepository
+e4b425bb-616e-4b0d-b9e5-65f0d155c76b,1,Russian Federation,Closed,Client,Enterprise,210,2019-09-11 01:46:18.780000 UTC,InternalDocumentRepository
+77d76e67-3373-4601-ac41-c4e336fdb796,4,United States,Closed,Trial,Trial,17,2023-09-22 15:02:50.770000 UTC,Fundraising
+08dd6ca0-25ac-d259-6690-234d01000000,4,United States,Active,Client,Premier,369,2025-03-26 19:55:25.087000 UTC,
+182facd8-ce2b-4220-aa24-2b531f49646d,4,China,Active,Client,Enterprise,468,2024-12-18 02:30:01.780000 UTC,Licensing
+f223f7f9-e31a-48df-826f-4712f717e3eb,4,United States,Active,Client,Enterprise,413,2025-02-10 14:27:29.057000 UTC,InternalDocumentRepository
+61cb9440-0457-4122-bb18-38d0ee36417f,4,United States,Active,Client,Enterprise,497,2024-11-19 03:26:48.047000 UTC,MASellSide
+f6d4c124-20b4-4cd4-a49d-648830fae62a,4,Germany,Closed,Client,Enterprise,148,2023-08-21 00:33:59.867000 UTC,MASellSide
+08de237b-fa39-a82e-4227-721801000000,2,Belgium,Closed,Trial,Trial,7,2025-11-14 12:47:32.285373 UTC,
+58d09b56-1460-469f-abcf-dfe471a90d32,5,Switzerland,Closed,Client,Staging,343,2024-05-23 12:39:18.780000 UTC,
+08ddcf4d-d5b2-082d-86e2-10da01000000,5,Poland,Closed,Trial,Trial,7,2025-07-30 09:45:37.280000 UTC,MASellSide
+c6eaa3a1-4f53-4212-bc1a-c48f200891c0,5,Poland,Closed,Client,Business,80,2023-04-04 10:35:22.220000 UTC,MABuySide
+75eb057a-538c-42dd-abdb-c7211ea7c968,6,Australia,Closed,Client,Pro,176,2021-09-22 10:31:24.530000 UTC,Fundraising
+04b40c6e-2945-429c-9c4c-95f54b5c2ef4,3,Singapore,Closed,Client,Professional,738,2020-08-18 14:16:34.683000 UTC,Fundraising
+e889876e-3e70-4d73-a2fe-47eda4a96798,3,China,Closed,Client,Enterprise,0,2024-07-11 07:28:27.700000 UTC,StrategicPartnership
+2a03b290-8f3f-4f15-9ed4-96c5ea5ea7d0,3,Poland,Closed,Trial,Trial,2,2024-08-21 17:46:10.620000 UTC,MABuySide
+607887ea-4150-4cda-afe9-aa49d23b3336,8,United Kingdom,Closed,Client,Pro,470,2022-04-18 13:23:05.767000 UTC,Fundraising
+06afdc02-7184-4f3d-927f-5e78d4934afb,8,United States,Closed,Client,Enterprise,175,2024-04-10 08:27:03.897000 UTC,MASellSide
+0c57c9a7-1822-4371-adef-e5484b85e54c,8,Poland,Closed,Trial,Trial,0,2021-02-17 12:26:26.977000 UTC,Undefined
+8ecc14e3-0beb-412c-8dd4-69374765dec0,4,United States,Closed,Trial,Trial,53,2021-11-19 11:23:49.303000 UTC,MABuySide
+0341548a-3fd4-4ef5-9db4-3a464d021f00,4,United States,Active,Client,Enterprise,731,2024-03-29 13:49:41.517000 UTC,DebtFinancing
+8808f3f0-dd2c-4b07-9383-098c607ae960,4,United States,Active,Client,Enterprise,1088,2023-04-07 15:09:24.390000 UTC,Other
+08dd6175-0ed2-5491-22ec-2ea901000000,2,France,Closed,Trial,Trial,6,2025-03-12 14:49:14.570000 UTC,
+d27ed967-d776-4d97-a12a-92a8342b11f7,5,Denmark,Closed,Trial,Trial,30,2025-01-08 16:16:49.097000 UTC,Fundraising
+54a209e5-ad3b-4297-819f-770191887268,5,Germany,Closed,Client,Pro,12,2021-08-26 17:11:14.363000 UTC,MASellSide
+fc3437e2-8d4f-4245-8b25-7d185a5085dd,5,Germany,Closed,Client,Business,118,2022-10-14 13:17:43.700000 UTC,MASellSide
+08de3db7-afbd-9886-3296-9c1d01000000,5,Netherlands,Active,Client,Enterprise,103,2025-12-17 22:00:27.153206 UTC,MASellSide
+d05e58eb-8285-4438-a365-5cc0984a6988,5,Hungary,Closed,Client,Business,267,2024-04-30 14:56:09.440000 UTC,InternalDocumentRepository
+3d8ab745-c561-49b6-8c4c-45e92376b9f3,5,Israel,Active,Client,Pro,733,2024-03-28 04:29:22.443000 UTC,Fundraising
+51980b4a-726e-4e42-b453-1cbc33f41d96,3,Singapore,Closed,Trial,Trial,30,2024-12-14 23:44:17.883000 UTC,
+c2f0f559-66c0-4139-b826-afb98e5ae398,3,Indonesia,Closed,Trial,Trial,28,2021-04-19 00:51:08.477000 UTC,MASellSide
+8af1d414-810f-4c5e-ab24-c8dd6fa09e0f,8,United Kingdom,Closed,Trial,Trial,30,2023-05-12 09:54:20.970000 UTC,
+9af776cd-d3ef-4a83-8b4a-74a671be729d,8,United Kingdom,Closed,Trial,Trial,30,2024-03-06 12:03:01.617000 UTC,Undefined
+73fd5372-1628-48b6-8bbd-981b4d8b2349,8,United Kingdom,Closed,Client,Business,132,2022-10-12 11:14:37.980000 UTC,MASellSide
+c94cf973-de5b-4e00-802e-13e6292b918d,8,Kazakhstan,Closed,Client,Pro,184,2019-04-16 04:04:01.250000 UTC,MASellSide
+2e2eeef6-3648-476f-8eea-546253949c42,8,United Kingdom,Closed,Client,Business,144,2020-10-22 22:46:30.187000 UTC,Fundraising
+4138d917-c09e-4a26-875e-e830e95a5086,4,United States,Closed,Client,Enterprise,290,2024-02-22 15:42:32.687000 UTC,MASellSide
+d2b1c4de-0c45-455d-a70d-e406855b8e24,4,United States,Closed,Client,Enterprise,194,2025-01-17 19:58:10.053000 UTC,StrategicPartnership
+08dd9c66-7415-2bfb-92a5-204f01000000,2,Italy,Closed,Trial,Trial,30,2025-05-26 15:03:20.800000 UTC,
+4a8c7c86-b2ce-4e15-988a-5bbacac41892,5,Canada,Closed,Client,Enterprise,75,2023-11-22 16:16:12.670000 UTC,InternalDocumentRepository
+ca9f8d7c-f7b4-4b1d-ad3e-11533b1de8e7,5,Germany,Closed,Client,Business,1171,2020-11-23 11:40:51.690000 UTC,Fundraising
+ffbed147-3a80-4ef4-9db6-e30df78d6fa7,1,Spain,Closed,Client,Enterprise,118,2024-03-22 09:13:08.790000 UTC,StrategicPartnership
+a3547424-0d70-42d5-be77-c657df668fb1,8,United Kingdom,Closed,Client,Pro,248,2021-07-05 07:57:55.430000 UTC,Fundraising
+08de20ab-a40a-2cc1-36f2-d9a601000000,4,United States,Closed,Client,Business,107,2025-11-10 22:51:10.065645 UTC,MABuySide
+8e4489c6-6683-479c-a07e-99aecb4513fe,4,Canada,Closed,Client,Enterprise,15,2024-09-10 17:23:33.970000 UTC,MABuySide
+1462e453-6991-4ca4-b690-f3ba24baf30d,2,Morocco,Closed,Trial,Trial,30,2021-05-16 10:12:25.720000 UTC,LegalExtranet
+97a37cf5-94e4-4b7b-9243-43d0470a78ec,2,France,Closed,Trial,Trial,30,2024-04-02 13:10:16.637000 UTC,MABuySide
+1fec22a6-20bf-4760-8d73-fd12c77b90e2,5,Turkey,Closed,Trial,Trial,30,2022-07-06 07:58:32.890000 UTC,InternalDocumentRepository
+52434092-73d5-4e1e-883f-c11400216b65,5,Morocco,Closed,Client,Business,498,2019-05-08 09:36:33.010000 UTC,Fundraising
+08ddacd9-9389-cf12-36aa-915901000000,5,Czech Republic,Active,Client,Business,287,2025-06-16 13:27:44.213000 UTC,MABuySide
+08ddafc1-90e0-cb8d-a27b-2cfa01000000,5,Spain,Active,Client,Enterprise,284,2025-06-20 06:13:25.373000 UTC,MASellSide
+17bea882-5b80-4208-81b8-3d856470e807,7,Brazil,Closed,Client,Pro,117,2022-01-20 18:00:33.760000 UTC,MASellSide
+08ddb27a-eb99-d708-a27b-2cfa01000000,7,Brazil,Closed,Client,Enterprise,154,2025-06-23 17:25:17.820000 UTC,Other
+12f21931-3218-41be-a662-73f7c1aab880,3,Vietnam,Active,Client,Business,1268,2022-10-10 02:37:34.490000 UTC,InternalDocumentRepository
+08ddf46d-e1aa-8461-7667-1d0301000000,8,Ireland,Closed,Client,Business,7,2025-09-15 15:38:13.366092 UTC,Other
+1f564342-5ca8-4422-a683-fe58728d866f,8,United Kingdom,Closed,Client,Professional,1099,2019-01-30 09:20:07.210000 UTC,Fundraising
+56709507-c9d9-46fb-88c7-be480fe94870,4,United States,Active,Client,Pro,1222,2022-11-24 21:02:05.027000 UTC,Fundraising
+6827f61d-8809-489d-8c68-e845d5a82ee8,4,United States,Closed,Trial,Trial,30,2023-03-21 05:50:28.577000 UTC,
+08de5cf3-b04e-9832-deed-3d4e01000000,4,United States,Closed,Client,Business,41,2026-01-26 15:58:04.233311 UTC,MABuySide
+f72a3ea2-cca2-4723-9265-f37926b891ad,4,United States,Closed,Client,Enterprise,0,2024-06-07 19:56:06.303000 UTC,MASellSide
+259cf24b-a9b1-4009-907e-7d05117f0338,2,Portugal,Closed,Client,Business,1060,2021-01-25 15:40:14.020000 UTC,MASellSide
+ac21376c-7ecc-43b2-880b-26dc6b573297,2,Luxembourg,Closed,Trial,Trial,13,2022-04-11 10:53:06.483000 UTC,MABuySide
+3e7440f3-453d-4040-9820-4f9a49753816,2,Qatar,Closed,Trial,Trial,30,2024-10-24 21:40:45.423000 UTC,
+cf476d6b-400a-4942-b434-d9b3ee71be2d,2,Ukraine,Closed,Trial,Trial,20,2022-05-09 15:53:51.237000 UTC,Undefined
+e4faccd1-bdf8-4d24-8ff9-f295c1627eda,2,Switzerland,Closed,Client,Business,681,2021-06-07 16:44:44.250000 UTC,Undefined
+877d8dbf-9707-4dd6-a8e7-18eb30700601,5,Germany,Closed,Client,Core,1167,2022-11-30 16:53:48.033000 UTC,Audit
+dd1834ea-6fdb-4e69-8eff-d78b3e34c5cb,6,Australia,Active,Client,Business,2820,2018-07-10 08:06:41.933000 UTC,Fundraising
+75dd8135-f175-4429-aa83-7fbf2bbec974,6,Australia,Closed,Client,Professional,55,2023-12-07 02:25:19.463000 UTC,Other
+24d19c06-a988-4003-a58e-41dd68caf026,1,Azerbaijan,Closed,Trial,Trial,30,2024-11-03 14:25:29.130000 UTC,
+08de2e69-16a3-1f6c-bab3-678901000000,8,United Kingdom,Closed,Trial,Trial,7,2025-11-28 10:30:03.168032 UTC,
+8d91fb6b-62c2-495f-83a4-6a58183c0b31,8,United Kingdom,Closed,Client,Enterprise,277,2024-04-15 09:54:32.573000 UTC,MASellSide
+a77967a2-3efa-46d8-8bd0-3439d9999a2c,8,United Kingdom,Closed,Trial,Trial,30,2022-05-17 19:33:18.447000 UTC,IPOExits
+eac56452-83f8-46cc-81c9-8d7c1b2950a4,4,United States,Active,Client,Pro,818,2024-01-02 17:09:56.517000 UTC,MASellSide
+2cfe12cc-4de6-4de8-8722-25072495eaf0,4,United States,Closed,Client,Enterprise,105,2024-06-03 23:12:19.317000 UTC,MASellSide
+60af118f-2d89-4c48-9c30-603d37e70d2f,4,Puerto Rico,Closed,Client,Enterprise,93,2025-02-03 20:18:20.317000 UTC,Audit
+db0e6995-2090-48bc-904a-bde45b56f841,2,Spain,Closed,Trial,Trial,91,2022-03-31 07:39:56.907000 UTC,InternalDocumentRepository
+08ddfa7b-b31a-fd60-f241-b7ca01000000,2,Italy,Closed,Client,Enterprise,17,2025-09-23 08:32:15.910214 UTC,
+08ddf096-45f6-81ab-f651-b14c01000000,2,United States,Active,Client,Business,201,2025-09-10 18:17:16.854041 UTC,BoardCommunications
+88680ad9-00a7-437a-b2e5-7f2828625331,2,Belgium,Closed,Client,Enterprise,124,2021-12-23 20:42:57.730000 UTC,MABuySide
+32a17f8d-c4dd-4045-a0ba-d286bbd8f319,5,Netherlands,Closed,Client,Business,250,2022-12-15 07:51:03.637000 UTC,MABuySide
+81c4261e-aab1-499c-ace6-3bd2f9fa1856,6,New Zealand,Closed,Client,Enterprise,161,2021-06-24 01:38:26.367000 UTC,MASellSide
+88853c87-14b5-41e0-a24a-5f049c236700,3,India,Closed,Trial,Trial,30,2022-11-23 07:20:08.693000 UTC,Undefined
+286c8e68-1ee4-4d6c-a50c-056bb68af61a,9,Netherlands,Closed,Trial,Trial,0,2021-05-02 09:15:13.883000 UTC,Undefined
+08de169b-3299-da8d-8ed4-de7e01000000,9,China,Closed,Trial,Trial,7,2025-10-29 03:28:15.974523 UTC,DebtFinancing
+fdb8a526-4cfb-4975-bb64-625feb822642,1,Russian Federation,Closed,Trial,Trial,24,2020-12-21 13:39:29.250000 UTC,MASellSide
+928dc5ca-f510-47ab-a266-d023fdc82309,8,United Kingdom,Closed,Client,Business,61,2022-06-16 08:41:19.260000 UTC,Undefined
+55a9108c-d822-4b09-9762-7f6dea83ca4d,8,United Kingdom,Closed,Trial,Trial,0,2023-03-30 09:32:03.587000 UTC,MASellSide
+c1e0c2ec-85b8-42b2-b84d-76c2744fb592,4,United States,Closed,Trial,Trial,42,2021-10-19 20:49:11.040000 UTC,MASellSide
+96b8df7e-d294-4b7d-addc-37911404ad9c,4,United States,Closed,Trial,Trial,30,2022-10-17 01:15:01.647000 UTC,
+29e04708-530f-470e-9ab2-4697b80d9cbe,4,United States,Closed,Trial,Trial,30,2023-03-12 15:06:48.100000 UTC,
+17c678ee-b423-4c29-8ca9-dd7c2e1f1db3,4,United States,Closed,Client,Business,160,2024-03-19 04:58:01.937000 UTC,Other
+735e3783-33a9-47cb-a97d-2a7d39f6b41b,2,Jordan,Closed,Trial,Trial,12,2022-01-12 14:47:59.980000 UTC,IPOExits
+3b1d81df-c8c8-42b4-9ad9-66a4e1f2bb46,2,France,Closed,Trial,Trial,33,2020-12-27 10:34:06.287000 UTC,DebtFinancing
+eeca3dca-7bf0-4de3-9548-c56f0a492748,5,Germany,Closed,Trial,Trial,3,2022-02-10 13:56:32.220000 UTC,MASellSide
+08dd57f6-b111-3708-c246-998301000000,5,Netherlands,Active,Client,Enterprise,395,2025-02-28 12:52:00.293000 UTC,MASellSide
+08de16d1-864a-295b-8ed4-de7e01000000,8,United Kingdom,Active,Client,Enterprise,152,2025-10-29 09:57:09.268848 UTC,InternalDocumentRepository
+5cb84db1-f86f-4852-a1fa-9c6cd54c2ae7,8,United Kingdom,Closed,Client,Business,193,2024-05-27 15:16:58.950000 UTC,MASellSide
+e9811fa1-5018-49bd-8b5d-2a7588648f02,4,United States,Closed,Client,Enterprise,450,2024-05-06 19:46:00.703000 UTC,MASellSide
+b3e858ae-7288-4fda-96a9-3946aed594f7,2,France,Closed,Client,Pro,92,2022-09-13 08:34:44.627000 UTC,Undefined
+b36fbd7e-72d7-4c0c-a99a-2a340308aa31,2,Malta,Closed,Client,Pro,207,2021-06-23 14:30:15.150000 UTC,CorporateReporting
+88be6f77-3f3d-445f-8a82-3b01d37dd923,2,United States,Active,Client,Business,760,2024-02-29 13:04:16.297000 UTC,BoardCommunications
+dea501d9-10e3-4b51-b9db-eb341df6635d,5,Austria,Closed,Client,Enterprise,219,2024-11-18 08:57:00.800000 UTC,MABuySide
+ae091c99-7a10-40e8-a57c-065331bdb8db,7,Spain,Closed,Client,Enterprise,236,2021-09-14 18:25:48.737000 UTC,MASellSide
+1f9ed974-faf1-4086-90fa-17c30413fb68,7,Brazil,Closed,Trial,Trial,245,2020-07-23 17:31:38.023000 UTC,TenderingAndProcurement
+762ea98b-cc92-4ef3-85f1-8ed6f6a333af,6,Australia,Closed,Client,Enterprise,798,2020-01-21 01:31:31.097000 UTC,MASellSide
+7031bdc7-530e-4707-9641-ddb90c3f6470,1,Kazakhstan,Closed,Client,Enterprise,1270,2020-12-28 11:40:40.773000 UTC,MASellSide
+c855afa1-f7f3-4548-9938-f69675e2b6d2,8,United Kingdom,Closed,Trial,Trial,30,2023-10-14 12:42:03.640000 UTC,
+5bd27180-9b3b-4ed0-9ab0-74325569a9fc,8,United Kingdom,Closed,Client,Enterprise,0,2021-01-13 13:21:03.583000 UTC,MASellSide
+391c9070-c460-4e3e-8cd4-f20fdaf40069,4,United States,Closed,Client,Pro,120,2022-06-13 21:46:11.890000 UTC,MASellSide
+e0a5c65b-b64b-44ed-a321-fa1d3ea184e5,4,Mexico,Frozen,Client,Enterprise,460,2024-07-04 00:14:52.930000 UTC,IPOExits
+cc7ae30f-004c-4dec-a1b9-3db334fa34a6,4,United States,Closed,Trial,Trial,30,2024-07-30 20:54:01.937000 UTC,PortfolioManagement
+08ddf465-7024-e6e9-7667-1d0301000000,4,United States,Closed,Trial,Trial,107,2025-09-15 14:37:46.965847 UTC,
+747c732e-5761-4fbd-8870-4428491d8fc9,2,Belgium,Active,Client,Business,511,2024-11-04 13:06:53.553000 UTC,MABuySide
+91d085bd-f6b1-4bc5-8733-4e1c8d73128d,2,France,Closed,Client,Enterprise,273,2024-07-04 10:40:48.150000 UTC,MASellSide
+08de2294-0034-e4b0-4227-721801000000,5,Romania,Active,Client,Premier,137,2025-11-13 09:06:58.928814 UTC,
+8539d714-acd4-420a-89d0-89a25007de06,5,Germany,Closed,Client,Pro,216,2023-05-04 14:50:48.467000 UTC,MASellSide
+08ddd5ab-0142-71d6-a289-918b01000000,5,Poland,Closed,Trial,Trial,30,2025-08-07 12:07:40.143000 UTC,
+34f0010a-f3f1-4016-b105-ded224626f80,6,Australia,Closed,Trial,Trial,30,2024-02-07 02:46:41.910000 UTC,
+3bf2290b-fdbd-4fb9-a298-af92d08d841b,1,Russian Federation,Closed,Client,Business,196,2017-01-17 12:46:31.247000 UTC,Undefined
+2881c136-e9e1-4f6e-b9ce-340cec49fa73,8,United Kingdom,Closed,Client,Business,259,2024-03-26 16:17:53.653000 UTC,MASellSide
+a97edfdd-f00f-4ff6-a2d4-964cd67bc66e,8,Taiwan,Closed,Client,Business,1936,2020-07-30 04:21:50.563000 UTC,Other
+f9604426-61b4-4453-8531-31bd4006e6db,4,United States,Active,Client,Premier,766,2024-02-23 18:14:56.520000 UTC,MASellSide
+4e0334c5-0355-4326-85f9-33b089fe02fd,2,United Arab Emirates,Closed,Client,Professional,31,2021-03-24 09:11:30.520000 UTC,Fundraising
+9b13065c-dda4-416a-a674-85387d2f44fc,5,Switzerland,Closed,Trial,Trial,30,2024-02-15 08:44:03.450000 UTC,Fundraising
+08dd4cf2-a2de-4d75-fef1-133c01000000,5,Denmark,Active,Client,Business,409,2025-02-14 12:25:15.693000 UTC,InvestorReporting
+0328f0d2-6b90-4115-b0bc-38f7577e6821,5,Israel,Active,Client,Enterprise,777,2024-02-12 12:33:03.367000 UTC,
+b56c2ac5-ffa3-46a0-8abd-564401cd5918,7,Brazil,Closed,Trial,Trial,30,2022-10-24 20:49:45.197000 UTC,Fundraising
+dfb50b32-0746-4d07-8b7c-d38157543373,9,China,Closed,Client,Pro,424,2024-06-05 08:03:13.123000 UTC,Fundraising
+818ec302-b15d-406b-b99c-7d44a73496ff,9,China,Closed,Client,Business,433,2021-05-31 07:07:54.353000 UTC,CorporateReporting
+cc63d8d5-5684-4681-b304-dc44063763c8,9,China,Closed,Client,Enterprise,367,2022-04-25 15:16:47.980000 UTC,IPOExits
+0675ab89-d6e0-4be7-8d66-1d2d8de80d00,8,Albania,Active,Client,Enterprise,899,2023-10-13 15:24:11.023000 UTC,InternalDocumentRepository
+45b2bd3a-1a7c-46ef-8d6a-b4060c4d7b8a,8,United Kingdom,Active,Client,Enterprise,888,2023-10-24 16:11:44.453000 UTC,InternalDocumentRepository
+08dd5740-cfc7-d8b2-c246-998301000000,8,Ireland,Closed,Client,Business,0,2025-02-27 15:10:03.370000 UTC,Other
+3b3158c9-e18c-4678-8609-9c6111e1566d,4,United States,Closed,Client,Business,601,2023-05-31 00:15:05.513000 UTC,StrategicPartnership
+08de6a61-6cc2-af62-ca1e-e8c901000000,4,United States,Active,Client,Enterprise,46,2026-02-12 18:06:20.438486 UTC,MASellSide
+08dd9cf2-f656-89d3-8606-994e01000000,5,India,Closed,Trial,Trial,0,2025-05-27 07:49:08.713000 UTC,MASellSide
+af46d908-eb5d-4c39-9209-6f9489679c9b,6,Australia,Closed,Trial,Trial,120,2022-03-03 01:15:37.570000 UTC,Undefined
+3f54bba3-b189-4811-b508-15edf53343f6,9,Hong Kong,Closed,Client,Pro,0,2021-01-07 11:58:24.320000 UTC,Undefined
+e7629644-5b57-40a9-9f58-b2f4cf6210cf,8,United Kingdom,Closed,Client,Business,221,2020-12-11 15:18:59.757000 UTC,DebtFinancing
+240d86db-b802-4caf-b0ae-d886b8677a8b,8,United Kingdom,Closed,Trial,Trial,30,2023-11-28 12:56:56.080000 UTC,BoardCommunications
+b92a240c-cc04-4ac2-a8b4-ddaa817b1522,8,Albania,Active,Client,Enterprise,899,2023-10-13 13:31:17.197000 UTC,InternalDocumentRepository
+bb39670f-eca4-4d3e-882e-af1f5b16e164,8,United Kingdom,Closed,Trial,Trial,76,2020-11-30 12:26:11.960000 UTC,Fundraising
+adae10be-7cad-4bfe-ab85-974574309171,8,United Kingdom,Closed,Client,Business,230,2022-08-25 14:49:28.693000 UTC,MASellSide
+3fb2a3f3-3fd0-4cb1-a7b5-477db4cf086f,4,United States,Closed,Client,Professional,2778,2016-02-05 22:58:37.513000 UTC,InternalDocumentRepository
+cf6b288e-e785-4da7-b327-25cd70837de5,4,United States,Closed,Client,Pro,670,2020-05-27 21:51:14.683000 UTC,Fundraising
+a528ac22-8c7e-4246-9195-b35929cb11c2,4,United States,Closed,Trial,Trial,30,2024-04-23 19:03:21.700000 UTC,
+08dd94ee-604f-1d66-9693-1f5001000000,4,United States,Closed,Trial,Trial,0,2025-05-17 02:56:09.807000 UTC,
+08ddbaad-db46-0354-7e81-afd801000000,4,United States,Closed,Trial,Trial,7,2025-07-04 03:50:02.930000 UTC,
+7230349b-0489-459f-bed2-44a3484eb316,2,France,Active,Client,Enterprise,1879,2021-02-05 15:23:41.437000 UTC,Other
+b183c6ac-0eb0-43e8-bf31-644af1010ad4,2,United Arab Emirates,Closed,Trial,Trial,30,2024-02-12 08:40:10.367000 UTC,
+d70c5a03-effa-4761-83a4-5df691bd3a43,2,Oman,Closed,Client,Pro,252,2023-05-04 06:27:58.320000 UTC,RealEstate
+08ddbef1-f93d-2680-7e81-afd801000000,5,Other,Active,Client,Enterprise,264,2025-07-09 14:07:43.787000 UTC,
+b9134fff-144e-4faa-84c1-38ebbb5f9d13,5,Germany,Closed,Trial,Trial,1,2022-04-30 11:21:51.607000 UTC,Undefined
+08ddaf97-d8cc-f6c6-2aeb-12fe01000000,3,Japan,Closed,Trial,Trial,30,2025-06-20 01:14:47.067000 UTC,
+9d04bb15-4bb3-4f3b-8df1-806ffe95f1ed,9,China,Closed,Client,Enterprise,168,2024-12-25 02:46:13.513000 UTC,Licensing
+dfad94f6-2bf6-4bda-94ea-0004e090b07f,8,United Kingdom,Closed,Client,Enterprise,384,2021-11-30 14:17:49.400000 UTC,InternalDocumentRepository
+f860bcb6-a6f9-4bb5-92b8-bd3d8645cdbe,8,Israel,Closed,Client,Pro,518,2021-06-20 13:05:24.673000 UTC,BoardCommunications
+fae668f7-a05c-49f0-b430-6bb10c329396,4,United States,Closed,Client,Business,5,2019-09-20 17:17:56.897000 UTC,MABuySide
+b6f2ccad-32f4-4abc-bbde-f3630d443e9e,4,United States,Closed,Client,Business,210,2020-01-21 14:53:28.533000 UTC,MABuySide
+1689c9f8-959a-4826-8c21-eef024f8ce96,4,United States,Closed,Client,Business,362,2024-03-19 22:16:47.133000 UTC,MASellSide
+11f11a97-bb52-4c8e-8086-1b69550fe304,2,Switzerland,Closed,Client,Business,1891,2019-11-05 09:11:48.063000 UTC,Fundraising
+c5812eaf-ca0d-4ddb-b49b-060665a64de6,7,Brazil,Closed,Client,Enterprise,252,2023-01-09 14:21:52.227000 UTC,MASellSide
+9dbed070-d0f1-4e6b-87b2-b5540c956a33,6,Australia,Closed,Trial,Trial,103,2021-10-13 00:57:35.633000 UTC,Undefined
+0a110bcf-5fdb-413d-8aba-a9027608cda2,3,Taiwan,Closed,Client,Business,147,2019-05-30 06:04:11.287000 UTC,Undefined
+e7deb3f3-4271-42b7-bf90-65c7e53da1f0,8,United Kingdom,Closed,Trial,Trial,215,2021-06-01 12:09:12.277000 UTC,InternalDocumentRepository
+e06267ad-24b5-4640-b381-632d8085496b,8,United Arab Emirates,Closed,Client,Business,1539,2020-01-19 11:48:03.800000 UTC,TenderingAndProcurement
+fce5761f-5c07-4571-b7e0-5c052781153a,4,United States,Active,Client,Enterprise,1008,2023-06-26 17:44:45.180000 UTC,Fundraising
+08de7df2-6718-aac3-466c-78f701000000,4,Dominican Republic,Active,Client,Enterprise,21,2026-03-09 15:42:00.029026 UTC,MASellSide
+68ee1ebb-25e7-4244-96c2-642350b0282e,2,South Africa,Closed,Client,Business,32,2021-08-13 07:09:11.917000 UTC,CorporateReporting
+ccc3e00b-ca76-4c65-a294-2165a32fdbe1,5,Germany,Closed,Client,Enterprise,1170,2021-03-30 06:14:16.140000 UTC,LegalExtranet
+7e628ac6-984c-4457-8901-f328c22e260b,5,United Kingdom,Closed,Client,Business,162,2024-06-27 11:15:41.350000 UTC,MASellSide
+08dd895e-62de-5e5e-de78-284001000000,5,Denmark,Active,Client,Enterprise,332,2025-05-02 09:47:44.317000 UTC,Licensing
+b2a848d7-967f-4c56-875d-4788b65cc9b1,7,Brazil,Closed,Client,Business,148,2023-04-03 19:22:56.157000 UTC,MABuySide
+08617c58-109b-47d3-a30a-e222649f2bdf,1,Russian Federation,Closed,Client,Business,244,2021-09-30 11:42:23.040000 UTC,Undefined
+dd8a914c-320d-4dc6-a975-b8cf94b4dbba,4,India,Closed,Client,Business,0,2022-06-28 10:53:45.157000 UTC,MABuySide
+36d5ca81-3a32-4e97-a289-855370250123,4,India,Closed,Client,Business,0,2022-09-15 09:24:38.363000 UTC,
+a6e2e423-b35a-4b9d-9ee7-b4b67498b6bb,4,United States,Closed,Client,Enterprise,33,2022-01-15 02:11:08.200000 UTC,MABuySide
+1c69b3e4-b362-43ed-856f-5b9bb9c92791,4,United States,Closed,Client,Enterprise,377,2021-10-29 16:55:21.620000 UTC,MASellSide
+f4b4ffa8-2cab-4f85-8fd2-3719252024b4,4,United States,Closed,Client,Enterprise,859,2021-10-29 18:51:16.937000 UTC,MABuySide
+67b5d49a-9b42-4173-9244-8de3b14e452e,2,Denmark,Active,Client,Business,1788,2021-05-07 07:43:34.793000 UTC,PortfolioManagement
+26c74167-8d8d-483b-b68b-c9fb9849473d,2,United Kingdom,Closed,Client,Pro,32,2022-07-05 17:26:05.863000 UTC,MASellSide
+224b6269-7566-4b0d-a235-330dbf0bbc87,5,Spain,Active,Client,Enterprise,1055,2023-05-10 14:51:14.107000 UTC,MASellSide
+db3c1602-c8d7-421d-886a-9119efbf8b9b,5,France,Closed,Client,Business,987,2020-06-15 09:19:10.467000 UTC,Fundraising
+b24af509-6bb5-49b0-841c-6f4ddb8dcbff,8,Iceland,Active,Client,Enterprise,685,2024-05-14 12:54:57.820000 UTC,BoardCommunications
+3aac86e8-0740-4661-a156-d083a7dbc69f,4,United States,Closed,Client,Pro,641,2020-07-17 22:24:59.920000 UTC,Fundraising
+2d30ca0c-dce5-486d-b09b-dd3c298c585c,4,Canada,Closed,Trial,Trial,30,2024-06-14 04:59:51.997000 UTC,
+08dd6717-b18d-b110-e289-84b301000000,4,Canada,Closed,Client,Core,182,2025-03-19 18:56:01.877000 UTC,
+70466131-18af-442c-b64c-0fc7ded29244,4,United States,Active,Client,Enterprise,2643,2019-01-03 18:22:13.220000 UTC,MASellSide
+08ddde8b-8770-8a21-968f-1c0d01000000,4,United States,Closed,Client,Enterprise,198,2025-08-18 19:15:01.277000 UTC,MASellSide
+08ddfc2f-beed-82fe-46e2-1faf01000000,2,France,Closed,Trial,Trial,7,2025-09-25 12:33:35.675020 UTC,
+3ca8ad1c-6d5d-4196-8b44-2dccc1f5eabe,2,South Africa,Closed,Trial,Trial,4,2024-11-06 13:03:06.743000 UTC,
+08de599b-e391-5aff-5ae3-009d01000000,5,Ireland,Closed,Client,Core,39,2026-01-22 09:52:00.996905 UTC,
+f24e021c-7719-4b9e-9332-f887280bf0ec,5,Austria,Closed,Client,Business,11,2021-04-28 17:28:12.737000 UTC,Undefined
+9caa7259-c313-4ca2-9b1f-bf6a8de5434d,5,Germany,Closed,Client,Core,109,2024-10-14 12:24:23.340000 UTC,MASellSide
+a5d4e7e7-2a1e-43c1-aad2-aeae9a6294e6,7,Brazil,Closed,Trial,Trial,115,2022-05-26 21:32:03.040000 UTC,MABuySide
+08de6fa3-3388-ce23-a6b7-0cfc01000000,7,Brazil,Active,Client,Premier,39,2026-02-19 10:39:47.105088 UTC,
+54cced8d-f692-492a-a836-5c35ee5ae66d,4,United States,Closed,Client,Business,90,2023-09-12 14:33:53.967000 UTC,MASellSide
+08dd8db2-6dc9-ab31-3ea7-12d701000000,4,United States,Closed,Trial,Trial,7,2025-05-07 21:59:24.550000 UTC,
+a0b2e76f-0511-49bc-9e28-2117e5590a12,4,United States,Closed,Client,Business,229,2025-01-29 14:34:50.277000 UTC,DebtFinancing
+08de89ba-4c36-1cdc-0e8f-24ab01000000,4,United States,Active,Client,Premier,6,2026-03-24 15:30:37.058984 UTC,MASellSide
+08de791f-7f8c-0a61-8211-193e01000000,4,United States,Active,Client,Enterprise,27,2026-03-03 12:22:13.491033 UTC,StrategicPartnership
+ce5befc9-a886-49e8-a65c-317751b3f099,2,Belgium,Closed,Trial,Trial,30,2024-04-04 10:45:49.250000 UTC,MABuySide
+fed68906-1b6c-4f8f-95d8-50878ba43885,2,Netherlands,Closed,Client,Enterprise,1156,2020-05-04 09:44:20.793000 UTC,MABuySide
+6a1abb1d-38e8-4ed9-b48b-339c3a9777d4,5,Germany,Closed,Client,Enterprise,137,2023-10-13 20:35:09.913000 UTC,MABuySide
+2005487c-de8f-4b32-af23-30e9bb57b9a9,5,Germany,Active,Client,Enterprise,501,2024-11-14 10:40:23.510000 UTC,TenderingAndProcurement
+04236070-6198-4297-8633-5c60e3c9ae7b,5,United Kingdom,Active,Client,Enterprise,725,2024-04-04 08:21:08.927000 UTC,RealEstate
+8269f992-e6f9-44d6-bf2a-26753c9a76f2,5,South Korea,Active,Client,Enterprise,803,2024-01-18 00:25:25.147000 UTC,Licensing
+aabaec21-a589-4911-92de-eddee9340820,7,Brazil,Closed,Trial,Trial,205,2020-09-01 22:27:51.827000 UTC,Undefined
+65df73d8-473e-4942-9897-170ec58c3559,3,Singapore,Closed,Trial,Trial,73,2020-12-15 15:24:40.600000 UTC,InternalDocumentRepository
+ad57a124-17d0-4bcd-9d64-35ce9efca74f,3,Singapore,Closed,Trial,Trial,30,2024-05-17 01:28:40.070000 UTC,Undefined
+08de8176-ea88-f124-b28e-0cd401000000,9,China,Active,Client,Enterprise,17,2026-03-14 03:08:07.641003 UTC,Other
+08ddef59-d22c-da63-d2f1-707c01000000,9,China,Closed,Trial,Trial,3,2025-09-09 04:32:01.571028 UTC,Licensing
+36bda7f3-a761-45f8-b28b-02879aaf829c,8,United Kingdom,Closed,Client,Enterprise,832,2022-08-15 14:39:30.507000 UTC,PortfolioManagement
+ccf590a9-17fe-4151-a409-62ded0c2e534,4,United States,Closed,Client,Pro,1076,2019-10-05 03:48:26.860000 UTC,Fundraising
+3ad23698-00b0-47ad-b6df-1fde80710f3d,4,United States,Closed,Trial,Trial,0,2022-06-02 12:38:38.423000 UTC,Undefined
+dff28912-c06d-4492-a365-b7b6dae80b12,4,United States,Closed,Client,Business,180,2024-05-10 18:22:48.840000 UTC,StrategicPartnership
+08de8c4e-11f4-35bc-4629-925101000000,4,United States,Preparation,Trial,Trial,3,2026-03-27 22:13:27.188544 UTC,
+08de73c1-2a14-48b0-ce42-21dc01000000,4,United States,Closed,Trial,Trial,7,2026-02-24 16:24:21.475086 UTC,
+4eeacd45-bd52-4caa-b48e-3415eeb72c37,2,France,Closed,Client,Business,114,2024-01-02 10:20:34.750000 UTC,MABuySide
+b6ff450a-2de9-4927-b876-3cb5af7d5442,2,Morocco,Closed,Trial,Trial,30,2023-03-01 10:46:02.673000 UTC,Fundraising
+08de1c48-dd45-27b9-9af4-a65401000000,5,Austria,Active,Client,Enterprise,145,2025-11-05 08:54:01.112429 UTC,CorporateReporting
+ccbb0f60-4816-43fe-83d8-3ca82fef0d8f,5,Germany,Closed,Trial,Trial,30,2023-08-15 11:58:38.473000 UTC,InternalDocumentRepository
+08ddc828-c989-67c6-9ea2-9c2801000000,5,Germany,Closed,Trial,Trial,30,2025-07-21 07:32:46.367000 UTC,RealEstate
+08de16f2-ce7d-9b18-1e3c-daff01000000,5,Germany,Active,Client,Enterprise,152,2025-10-29 13:55:23.760352 UTC,RealEstate
+7c8f6be3-3feb-4650-9c30-61fccfa77d7c,5,United Kingdom,Active,Client,Enterprise,661,2024-06-07 08:53:39.333000 UTC,MASellSide
+08dd7c63-6960-4b2a-caa3-6d5a01000000,3,New Zealand,Closed,Client,Enterprise,79,2025-04-15 21:20:57.140000 UTC,DebtFinancing
+603b0d63-3fef-4a8f-a47b-f50338e7af81,8,Kuwait,Closed,Trial,Trial,30,2024-12-12 10:16:01.993000 UTC,DebtFinancing
+55cfef42-3f72-4ecc-9d3e-9b4a3071f0f3,8,United Kingdom,Closed,Client,Enterprise,1147,2020-01-29 16:27:49.617000 UTC,Fundraising
+8b24ce9f-9865-41d1-882c-50bacd5f9c2d,2,Spain,Closed,Client,Pro,155,2021-02-09 15:55:27.237000 UTC,Other
+dbc4b83e-1e81-4226-87d0-48b55e19d2f9,2,United States,Closed,Client,Enterprise,41,2022-01-25 15:39:30.310000 UTC,MABuySide
+7d05d691-9007-4882-9c30-6c5f78135a4e,2,United Arab Emirates,Closed,Trial,Trial,1,2021-08-14 17:04:23.797000 UTC,Fundraising
+b61d3d87-bc91-4cfd-b8e0-c09001a7fd2b,5,Germany,Closed,Client,Pro,770,2019-09-05 10:33:29.237000 UTC,MASellSide
+39e4b8b6-69cd-4bb8-a7b5-980a751428ba,5,Luxembourg,Closed,Client,Business,246,2023-07-10 08:53:39.390000 UTC,Fundraising
+81b1c33e-4edd-4df0-ad87-6aed46f27ea4,5,Switzerland,Closed,Trial,Trial,30,2024-11-04 11:44:30.993000 UTC,
+8a1474e9-ba23-4085-a800-f233c495b1e6,6,Australia,Closed,Client,Professional,115,2022-04-22 01:00:28.240000 UTC,Fundraising
+08de3e02-a318-63ac-02d2-325001000000,3,Taiwan,Closed,Trial,Trial,7,2025-12-18 06:56:58.274648 UTC,ClinicalTrials
+06590fb5-8971-49ad-82d7-8443c7106ea9,3,Singapore,Closed,Trial,Trial,129,2020-07-17 07:48:25.533000 UTC,Fundraising
+775edabe-55d9-4a8b-ab9c-728b6fcc3a51,3,Malaysia,Closed,Trial,Trial,30,2023-07-21 02:42:03.443000 UTC,Fundraising
+97969bb7-4adc-4db0-a9a8-1b954011d745,9,Germany,Closed,Client,Enterprise,704,2023-09-28 02:02:21.460000 UTC,Licensing
+e0e7a1d2-05dc-4154-92d8-6a76203b7ae4,9,China,Closed,Client,Enterprise,321,2023-06-19 11:35:27.553000 UTC,StrategicPartnership
+a203d0a8-63ef-42aa-8c49-b08072af216b,9,China,Closed,Trial,Trial,30,2024-11-18 07:07:55.593000 UTC,
+08de446e-ac4c-2887-5a13-793501000000,1,Spain,Closed,Client,Enterprise,68,2025-12-26 11:05:26.265961 UTC,CorporateReporting
+1cdc323b-54ac-4576-87c4-fdaa5e1cae5f,1,Russian Federation,Closed,Trial,Trial,27,2020-10-30 13:01:36.240000 UTC,Other
+a47f1dc8-3acc-4261-9958-943391a92671,8,United Kingdom,Closed,Client,Enterprise,172,2024-06-27 23:10:21.800000 UTC,MASellSide
+918fa6ab-d279-468d-8711-7b6c0d0e3d4a,4,Canada,Closed,Client,Business,130,2021-08-09 21:17:35.533000 UTC,Licensing
+c0ae4b88-d5d5-46c4-bf12-7f2a5d97ea7d,4,Germany,Closed,Client,Business,547,2023-08-14 20:35:02.880000 UTC,MASellSide
+ee202ad7-fae4-46a6-9eee-2866fd65889b,5,Belgium,Closed,Client,Enterprise,145,2024-10-08 20:52:33.617000 UTC,MABuySide
+408ade29-05da-4f87-9f97-dbe2869149b3,5,Lithuania,Closed,Client,Pro,138,2022-11-18 10:11:54.573000 UTC,
+77be2f1e-bcda-4339-bbe1-ea21cef79f30,7,Colombia,Closed,Trial,Trial,136,2020-11-10 02:11:19.863000 UTC,InvestorReporting
+dffa18c0-661b-435c-9974-cd305707548a,7,Colombia,Closed,Trial,Trial,30,2023-08-14 15:47:39.960000 UTC,
+04851e27-9113-465f-a510-56b57c9b72ba,3,Hong Kong,Closed,Trial,Trial,0,2023-06-19 00:16:12.863000 UTC,
+8031a177-f312-4af2-95d5-8c6687aa97a5,9,China,Active,Client,Enterprise,805,2024-01-15 07:28:14.907000 UTC,InternalDocumentRepository
+6a4e072d-835e-49a1-b44d-6d6e9474fe23,1,Belgium,Closed,Client,Enterprise,55,2022-08-16 08:25:01.877000 UTC,MABuySide
+1ec6d427-89fb-4e01-b8e4-60f2f38f0a0a,1,United States,Closed,Client,Pro,196,2024-06-28 12:35:30.557000 UTC,
+93fca499-7937-45fd-aee4-f469b37caba1,8,United Kingdom,Closed,Trial,Trial,99,2020-11-09 15:31:40.417000 UTC,LegalExtranet
+60fa231a-1e28-464b-a3c8-9ae7d1d4f1c4,8,United Kingdom,Active,Client,Business,1796,2021-04-29 06:26:33.023000 UTC,CorporateReporting
+5adb8af6-cfd5-47cd-ba34-aff7361191e0,4,United States,Closed,Client,Business,213,2023-03-14 18:55:35.570000 UTC,Other
+b660ad17-0c34-4b04-a648-3b817947077d,4,United States,Closed,Client,Business,808,2021-11-01 17:59:58.387000 UTC,MABuySide
+800439b2-e641-4ef1-8c0c-246a09a05bcb,4,United States,Closed,Client,Business,236,2023-10-20 16:12:37.980000 UTC,MASellSide
+08de1d9d-5cb2-b829-e2f3-dec201000000,5,China,Active,Client,Enterprise,144,2025-11-07 01:31:23.734879 UTC,StrategicPartnership
+08de88e4-26dc-1544-22ab-ae2001000000,5,Belgium,Active,Client,Core,7,2026-03-23 13:57:42.179181 UTC,MASellSide
+eea6782d-c3b6-438f-9f2f-371444406aef,5,Romania,Closed,Client,Business,2888,2017-04-20 15:27:51.600000 UTC,MASellSide
+9c989daf-7d1e-4997-8b52-5b899f582b4a,5,Germany,Closed,Client,Business,482,2022-05-13 07:24:22.920000 UTC,MABuySide
+1cd6b387-1063-4e64-8498-bb4a9dfab323,3,"Virgin Islands, British",Closed,Trial,Trial,30,2023-04-04 14:43:22.627000 UTC,CorporateReporting
+5ff060d2-d09f-49bb-9250-cde566df0acb,8,Burundi,Closed,Trial,Trial,0,2021-08-27 12:49:53.030000 UTC,Undefined
+4a0f567f-2b52-40fc-a5df-b7829d9d81fe,8,Norway,Closed,Client,Business,401,2022-02-02 10:06:31.483000 UTC,CorporateReporting
+15e77a2a-5818-411a-a1c1-7cf5aa0a6941,4,United States,Closed,Client,Business,328,2023-06-28 18:20:00.387000 UTC,Fundraising
+c8306e7c-c1fa-4183-9d70-6b985cbff433,2,Belgium,Closed,Client,Enterprise,629,2023-06-14 15:01:44.507000 UTC,Fundraising
+ecda949b-91a9-40a1-b8d4-0dcadb537f94,5,Italy,Closed,Trial,Trial,30,2022-06-06 15:18:55.823000 UTC,Undefined
+f0592325-17d1-40ec-8d5c-03c2fce107c2,5,France,Closed,Client,Enterprise,651,2022-05-05 11:39:31.150000 UTC,MASellSide
+0fca5db8-8e2c-4e49-a110-4f18afc4b4a5,5,Germany,Closed,Client,Business,379,2021-06-22 10:32:35.980000 UTC,MASellSide
+08dd7bf0-f6f2-318e-caa3-6d5a01000000,5,Kyrgyzstan,Active,Client,Enterprise,349,2025-04-15 07:41:42.370000 UTC,Other
+abaecda8-7d37-4ec5-b3d6-faf63581605b,9,China,Closed,Trial,Trial,118,2022-05-24 07:45:51.507000 UTC,Undefined
+08dda832-9601-3722-f224-575d01000000,1,Spain,Closed,Client,Enterprise,190,2025-06-10 15:22:17.743000 UTC,StrategicPartnership
+1f65ec0f-2102-441f-b5b3-9c29cc1f275b,8,United Kingdom,Active,Client,Enterprise,1139,2023-02-15 18:23:02.570000 UTC,
+c6a56cdb-6956-4a4d-8876-3db2d597ce74,8,United Kingdom,Closed,Client,Business,433,2019-03-07 16:51:34.930000 UTC,MASellSide
+6ea1973d-3eff-4fe1-a825-d8bed32e2177,4,United States,Closed,Client,Business,217,2022-02-10 17:02:08.917000 UTC,InternalDocumentRepository
+6bb1d7ce-da11-45b5-8375-808e259c45c8,4,Mexico,Closed,Trial,Trial,45,2021-11-30 18:25:24.620000 UTC,MASellSide
+08dda2e0-f926-867b-a244-d70701000000,4,United States,Active,Client,Business,300,2025-06-03 20:55:30.103000 UTC,MABuySide
+2a5d96ac-c8a6-48d4-abb7-9cdafce1d81a,4,United States,Closed,Client,Business,157,2019-12-30 22:23:51.270000 UTC,PortfolioManagement
+9f261017-710c-4217-a3fe-ece0f83d7036,2,Switzerland,Closed,Client,Business,936,2020-08-05 08:31:34.693000 UTC,Other
+a854ac0d-d2f4-45f8-a935-b26f83d58e30,2,Croatia,Closed,Trial,Trial,22,2021-03-03 15:39:38.840000 UTC,MASellSide
+cdff21e7-3fe3-4f81-a72d-f9eef3747996,2,United Arab Emirates,Closed,Trial,Trial,18,2022-01-14 11:26:28.407000 UTC,DebtFinancing
+72215fcf-00a7-484c-9eae-d37d37af8906,2,United States,Active,Client,Business,958,2023-08-15 15:00:39.933000 UTC,BoardCommunications
+fd72b3a6-a180-4b78-af55-63a9afe09f92,6,Australia,Closed,Client,Business,405,2020-02-10 21:59:57.533000 UTC,DebtFinancing
+1ec373e1-d1be-491a-83f8-fb87990db786,3,Hong Kong,Closed,Trial,Trial,31,2022-08-02 01:22:43.367000 UTC,Undefined
+91fd2eb3-aeb4-4faa-9eeb-1191657c6881,8,United Kingdom,Closed,Client,Business,85,2024-06-12 14:34:26.047000 UTC,CorporateReporting
+41792415-cb5c-47e5-a183-27e29e83e55e,8,United Kingdom,Closed,Client,Professional,337,2020-12-03 12:36:30.560000 UTC,MASellSide
+195c2bca-c12f-4ef9-a6e2-073e146e21d2,8,Finland,Closed,Trial,Trial,18,2020-08-06 15:47:37.230000 UTC,Undefined
+e7451a9f-9ef0-4772-8d5d-548c3bc7c8b6,4,United States,Closed,Client,Business,944,2019-01-03 20:38:59.170000 UTC,InternalDocumentRepository
+9fffe4da-4f6a-471e-81d8-f4f38ae6802a,4,United States,Active,Client,Enterprise,805,2024-01-16 00:59:36.417000 UTC,Other
+08dd5d82-a406-90dc-de95-1ff601000000,4,United States,Active,Client,Business,388,2025-03-07 14:16:23.860000 UTC,StrategicPartnership
+08de0d62-d796-27a8-96c4-da5801000000,2,Portugal,Suspended,Client,Premier,137,2025-10-17 09:52:11.059496 UTC,
+98e483fa-3326-4018-b106-4e2f2af4d116,2,Lebanon,Closed,Client,Basic,1012,2019-06-21 11:06:14.530000 UTC,Fundraising
+84bc4b96-7bd0-4279-aed8-66ddbadabaed,5,Germany,Closed,Client,Enterprise,96,2021-11-10 10:46:26.033000 UTC,PortfolioManagement
+c1ae6881-0bef-4894-a351-918d7b6bbd97,7,Brazil,Closed,Client,Enterprise,530,2021-09-17 20:36:56.020000 UTC,Undefined
+08ddcf4b-ec98-8e87-86e2-10da01000000,3,India,Closed,Trial,Trial,7,2025-07-30 09:31:55.843000 UTC,
+dc71a95e-364f-4507-a352-cbe93dd58476,3,Malaysia,Closed,Client,Professional,1025,2016-05-17 07:06:11.603000 UTC,DebtFinancing
+c28fd002-873c-434a-beb5-059c4928ad45,3,Japan,Closed,Client,Enterprise,656,2023-01-12 11:36:26.617000 UTC,MABuySide
+9d590b6a-cc31-4ed2-ae23-ff92cd0c2408,9,China,Closed,Client,Business,312,2024-12-18 10:27:45.120000 UTC,Fundraising
+07eb0bf9-b02e-4c42-bf35-f039c9fdd5f9,8,United Kingdom,Closed,Client,Business,617,2024-02-02 16:03:39.370000 UTC,
+5ac5af24-e091-45ca-ac82-b88097264811,4,United States,Closed,Client,Business,643,2021-07-01 13:11:53.360000 UTC,MASellSide
+2a0afe7d-2d62-4f8d-97ae-95b54a2d2ae7,4,United States,Active,Client,Premier,2140,2020-05-20 16:03:38.223000 UTC,InvestorReporting
+08de627c-7414-d26c-a678-dba601000000,4,United States,Active,Client,Enterprise,56,2026-02-02 16:59:39.788556 UTC,MABuySide
+7dfc8156-0e4d-449c-9a48-864d798ed662,4,Germany,Closed,Client,Enterprise,371,2023-07-24 15:31:21.033000 UTC,Fundraising
+c337a96c-d4be-4f41-8d5f-1fcebbde04e2,2,Kuwait,Closed,Client,Enterprise,1589,2017-09-18 06:38:13.913000 UTC,Undefined
+bdfcf8dc-dc8c-43ac-96c5-fe606856032b,2,Portugal,Closed,Trial,Trial,30,2024-01-29 08:50:49.740000 UTC,
+c5228758-568b-421b-9493-1f4b6a4ab32e,5,Poland,Closed,Client,Business,415,2023-10-09 07:49:11.457000 UTC,MASellSide
+1b87f22a-114b-4ff6-bfbc-9457b54fd944,3,Bangladesh,Closed,Client,Pro,477,2024-09-19 17:52:10.720000 UTC,InvestorReporting
+3c27d339-5ca0-445c-8c72-a365b3d89dfd,3,Singapore,Closed,Trial,Trial,74,2021-09-13 03:52:53.000000 UTC,MASellSide
+23197d84-72b9-4146-be50-6721df7197f2,8,France,Closed,Client,Business,1289,2020-06-01 14:25:13.393000 UTC,Other
+625a44a3-ef94-48dc-a935-0f82c6d6faad,4,United States,Closed,Client,Business,101,2022-12-15 16:46:56.060000 UTC,InternalDocumentRepository
+0f45e76b-838f-4581-9d0c-a7692b56e993,4,United States,Closed,Trial,Trial,17,2023-02-25 14:45:53.073000 UTC,Fundraising
+78069cff-11d0-4ff1-b4c6-aa5cd2705064,4,United States,Active,Client,Business,2485,2019-06-10 20:15:47.260000 UTC,MASellSide
+d9ac4371-354a-48cb-8074-c0a5e31b3a41,2,Spain,Closed,Trial,Trial,41,2021-08-26 12:20:04.460000 UTC,Undefined
+6158fe7c-0e05-49d2-8e50-a8e264495d79,5,France,Closed,Client,Business,273,2024-12-20 08:31:30.770000 UTC,MABuySide
+844c15d3-1663-4dc4-ad18-331749215659,5,Germany,Closed,Client,Pro,201,2020-07-01 09:01:30.980000 UTC,MASellSide
+ed8e340c-6544-457a-b70a-06609cb30fbc,5,Spain,Closed,Client,Pro,115,2022-12-19 21:01:24.950000 UTC,MASellSide
+08ddec43-826d-9d9d-3e2a-8aa901000000,6,Australia,Active,Client,Enterprise,207,2025-09-05 06:14:45.388181 UTC,RealEstate
+8a16447a-51a0-4a5d-9d86-cbce05870158,9,China,Closed,Client,Enterprise,49,2024-10-17 04:28:21.610000 UTC,Audit
+08de766f-a63d-9c49-f605-1fcc01000000,9,China,Active,Client,Enterprise,31,2026-02-28 02:18:24.696430 UTC,StrategicPartnership
+35c3d5fc-0dc4-4eec-a595-3e11e1759973,1,Denmark,Closed,Trial,Trial,70,2025-01-15 09:13:09.593000 UTC,
+db7be8fd-a78b-4509-8a80-6d8bf39b9c02,8,United Kingdom,Active,Client,Enterprise,2106,2020-06-23 09:57:51.563000 UTC,TenderingAndProcurement
+9ed1deef-01f8-4f40-a1b8-589e91d3b783,8,United Kingdom,Closed,Client,Enterprise,197,2024-04-30 14:06:16.817000 UTC,MASellSide
+47fc55ef-6d63-4640-bc07-098487c49728,4,Canada,Closed,Trial,Trial,21,2020-11-24 11:17:17.553000 UTC,MABuySide
+08de68bd-648f-8a81-1eac-72e201000000,4,United States,Closed,Client,Business,15,2026-02-10 15:59:38.181278 UTC,MABuySide
+12a15423-77ea-4bd7-8b8c-fd77a1282d5a,4,United States,Closed,Client,Enterprise,193,2020-03-30 17:18:15.727000 UTC,InternalDocumentRepository
+08de8b29-226e-cde0-0e8f-24ab01000000,2,Spain,Preparation,Trial,Trial,4,2026-03-26 11:16:32.259990 UTC,
+9213bffb-5a29-4b47-a1b0-6adbfd818d32,5,Dominican Republic,Closed,Client,Enterprise,163,2023-09-04 22:10:03.147000 UTC,DebtFinancing
+0b7b7570-b895-4370-bcbc-f01cd13d1623,5,Germany,Closed,Trial,Trial,26,2022-03-04 18:36:30.600000 UTC,PortfolioManagement
+08de8335-9e97-51aa-466c-78f701000000,5,Israel,Active,Client,Enterprise,14,2026-03-16 08:25:45.221568 UTC,Fundraising
+25011164-3337-4a6a-9e90-3dc39a61595e,5,Switzerland,Closed,Trial,Trial,29,2021-08-25 14:29:16.390000 UTC,InternalDocumentRepository
+2a4d886d-a004-4189-80c7-9458bde54188,5,United Kingdom,Active,Client,Enterprise,633,2024-07-05 15:42:24.173000 UTC,MASellSide
+79cdf87c-3845-46d2-b4b5-6adb18aabb32,5,Finland,Closed,Client,Enterprise,334,2024-03-27 09:04:46.647000 UTC,MASellSide
+1a88c442-41df-472b-94e6-ab446fff0ba8,7,Brazil,Closed,Client,Enterprise,1595,2021-01-19 17:12:55.700000 UTC,PortfolioManagement
+f06576ff-bb74-4deb-9177-9c785be723a5,6,Australia,Active,Client,Enterprise,418,2025-02-05 07:04:31.713000 UTC,Other
+08ddb8ad-3e2d-b597-a6d4-fcee01000000,9,China,Active,Client,Enterprise,272,2025-07-01 14:40:37.680000 UTC,InternalDocumentRepository
+08de188d-32c5-f953-2e68-bd2201000000,4,Canada,Active,Client,Staging,150,2025-10-31 14:53:05.627290 UTC,
+47f6b6fd-1da9-4b21-a5df-252d39ebdaa8,2,Croatia,Closed,Client,Pro,78,2021-01-07 08:38:06.130000 UTC,MASellSide
+0e8e2687-6fe8-4b18-bfef-32910ac3f484,2,South Africa,Closed,Client,Business,1102,2019-12-02 13:49:32.227000 UTC,MASellSide
+0a78c91d-74e7-4b69-9cb5-deaaab5b3cf7,2,France,Closed,Trial,Trial,30,2024-02-27 13:54:45.230000 UTC,InternalDocumentRepository
+c6e87e1f-648c-41c2-a4b1-d1aadc70e7d7,5,Germany,Closed,Client,Pro,240,2022-06-13 04:54:11.653000 UTC,MASellSide
+08dd7907-516b-ff53-caa3-6d5a01000000,5,Spain,Active,Client,Premier,353,2025-04-11 14:44:09.680000 UTC,
+08dd87b4-71ec-c2eb-326b-5e7001000000,5,Switzerland,Closed,Client,Enterprise,195,2025-04-30 06:58:43.333000 UTC,MASellSide
+d2379a1c-3592-499e-9fd7-08c4784b3588,5,Germany,Closed,Trial,Trial,37,2020-10-25 10:11:42.690000 UTC,Fundraising
+a18a8eb0-b344-4a8d-9c82-26809001f7de,6,Australia,Closed,Trial,Trial,28,2021-06-04 00:40:03.870000 UTC,DebtFinancing
+08ddd0f3-54dd-cca1-86e2-10da01000000,3,Australia,Closed,Client,Core,220,2025-08-01 12:02:48.710000 UTC,
+4426d6fc-34b3-43b1-b9e5-2fad7b3ec186,9,China,Closed,Client,Enterprise,51,2023-07-11 08:22:34.117000 UTC,StrategicPartnership
+08ddde3c-f7f4-c98f-968f-1c0d01000000,9,China,Active,Client,Enterprise,224,2025-08-18 09:52:39.783000 UTC,
+b029f8e7-8368-41af-b834-5669c77e5124,9,China,Closed,Client,Business,405,2022-10-31 09:53:17.143000 UTC,Fundraising
+80f3d138-ceb0-40b4-8f43-3dd324712603,9,Germany,Closed,Client,Enterprise,455,2021-06-16 13:09:56.347000 UTC,ClinicalTrials
+0defcc1e-3878-4929-8450-b082bc8d2bde,1,Sweden,Closed,Client,Business,1220,2022-06-28 07:26:55.693000 UTC,PortfolioManagement
+08de5a7b-6bb9-948a-4265-ea6f01000000,8,United Kingdom,Active,Client,Enterprise,66,2026-01-23 12:32:07.128396 UTC,
+06d6658b-22f8-4452-bd51-b11a673e05f8,8,United Kingdom,Closed,Trial,Trial,30,2024-05-01 09:54:06.223000 UTC,Audit
+dfdb07ab-881b-4eb9-8e86-ba2f8c89a264,4,United States,Closed,Client,Business,687,2019-02-13 15:15:35.537000 UTC,Other
+8305ae71-e701-4c59-82bf-6cd1b4e58ed9,4,United States,Closed,Client,Business,338,2023-01-13 17:20:22.830000 UTC,MASellSide
+8246396b-d956-4a1d-af4b-bba520e3c4b8,4,United States,Frozen,Client,Enterprise,1687,2021-04-05 23:25:27.710000 UTC,IPOExits
+59b9ccec-044a-4037-a0df-690376b6fa0a,4,United States,Active,Client,Premier,907,2023-10-05 16:29:45.637000 UTC,Undefined
+08ddda4f-9fb6-6ece-e662-d3a501000000,2,Belgium,Closed,Client,Core,120,2025-08-13 09:56:07.513000 UTC,
+e361f3f3-6c5e-4ba8-9a31-0bf3026fb1ef,2,Portugal,Closed,Trial,Trial,18,2022-02-25 10:35:30.597000 UTC,CorporateReporting
+44ee9179-f912-486f-9c65-59d6a765ee32,5,Germany,Closed,Trial,Trial,7,2020-11-04 12:48:39.910000 UTC,TenderingAndProcurement
+868106f9-d5d5-4811-9b49-d9fe55330c78,5,Netherlands,Closed,Client,Pro,233,2023-05-10 09:23:55.160000 UTC,MASellSide
+a1b3fae0-cb81-40f2-8f8c-679127d69dc0,5,Germany,Closed,Trial,Trial,9,2022-07-18 10:46:49.783000 UTC,MASellSide
+7976d981-8fa0-481c-b227-d06368ec117f,5,Switzerland,Closed,Client,Business,611,2023-05-08 14:34:11.410000 UTC,RealEstate
+bd0af3bf-4628-41e7-b44a-72e8da975445,7,Mexico,Closed,Trial,Trial,31,2022-04-07 15:16:33.940000 UTC,DebtFinancing
+af4a459c-17d1-48da-9dcc-30e2391b1f64,9,China,Closed,Client,Business,28,2023-11-13 12:00:42.220000 UTC,Fundraising
+33b028bf-d300-4a56-a89d-7659e5c745c0,9,China,Closed,Client,Business,303,2024-05-06 01:31:05.923000 UTC,Fundraising
+4450760f-1175-4e91-9f74-dc5449501152,9,China,Closed,Trial,Trial,30,2024-08-07 14:35:15.557000 UTC,InternalDocumentRepository
+f0d56134-30af-44d2-a920-cc657a7dafec,1,Russian Federation,Closed,Trial,Trial,20,2021-09-02 09:01:01.260000 UTC,InternalDocumentRepository
+08dd6562-fe9a-17e0-c26b-26cd01000000,8,United Kingdom,Closed,Client,Business,28,2025-03-17 14:50:01.157000 UTC,MASellSide
+08de0bec-0d89-1e8f-f639-e85d01000000,8,United Kingdom,Locked,Client,Enterprise,166,2025-10-15 13:09:20.263805 UTC,MABuySide
+97557fc7-337a-48e7-8174-f76a1579fc5c,8,United Kingdom,Closed,Trial,Trial,20,2021-10-19 10:24:18.887000 UTC,MASellSide
+74f89d41-b84c-4222-9956-7146e8437930,4,India,Closed,Client,Business,126,2019-10-01 12:42:49.537000 UTC,MABuySide
+79fed103-9a48-4cb3-8154-42375b51b930,4,United States,Closed,Trial,Trial,57,2021-04-25 09:14:37.227000 UTC,Other
+cb21e205-1b9a-417c-b48d-4f73f358035a,4,United States,Closed,Trial,Trial,30,2023-01-10 02:10:52.153000 UTC,StrategicPartnership
+08de3114-71a7-6a9f-5284-b3c501000000,4,United States,Closed,Client,Business,37,2025-12-01 20:01:41.155048 UTC,MABuySide
+09b2aa14-0d9d-49e8-b598-7a1c9aa54b9c,2,France,Closed,Client,Enterprise,95,2021-06-04 07:44:34.110000 UTC,MASellSide
+02712c12-a14b-44ad-ba27-c57e2513427c,5,United Kingdom,Active,Client,Enterprise,836,2023-12-15 16:04:43.573000 UTC,Other
+cee940b3-5840-447a-8c20-dcd07aef0cc0,5,Germany,Closed,Client,Business,65,2025-01-28 16:16:39.710000 UTC,MASellSide
+7108876f-3956-4054-b33f-28481bcff931,6,Australia,Closed,Trial,Trial,114,2022-05-25 00:45:01.870000 UTC,DebtFinancing
+d2bcb5b9-7a26-480e-be80-6dfe96a70cb4,3,India,Closed,Client,Business,139,2022-01-21 13:53:47.000000 UTC,InternalDocumentRepository
+ffeb322e-13a2-43f9-9287-9831b7a46f21,1,Spain,Closed,Client,Business,303,2024-10-16 13:31:12.110000 UTC,Other
+2ad1d1c9-7986-47d1-9955-4db44f6a2fd9,8,United Kingdom,Closed,Trial,Trial,30,2024-07-28 15:58:52.040000 UTC,
+070789fe-359e-4eb5-8b56-85eb8f7c4b53,4,United States,Active,Client,Business,1125,2023-03-02 01:12:00.527000 UTC,InvestorReporting
+2e997666-ebd2-4661-b2f0-35bb20db61b4,4,United States,Closed,Client,Business,105,2024-11-27 22:11:22.387000 UTC,MABuySide
+08ddb26a-266e-78ae-a27b-2cfa01000000,4,United States,Closed,Trial,Trial,7,2025-06-23 15:25:13.950000 UTC,
+08ddd92a-55c3-c630-968f-1c0d01000000,4,United States,Closed,Trial,Trial,7,2025-08-11 22:56:41.090000 UTC,
+347709f4-7a03-41f2-bdc1-6ea0747857b8,2,Portugal,Closed,Trial,Trial,30,2024-06-18 22:44:01.310000 UTC,MASellSide
+08dd4f2a-2a5c-5abc-fef1-133c01000000,2,Kenya,Closed,Trial,Trial,30,2025-02-17 08:07:47.763000 UTC,
+08ddf5e9-98ce-17c0-7667-1d0301000000,2,Italy,Closed,Trial,Trial,30,2025-09-17 12:56:19.982987 UTC,
+1ac523bf-1542-4ec1-a4d3-fea7b9280351,2,France,Closed,Trial,Trial,30,2024-11-08 10:34:03.400000 UTC,
+9dcb52e6-82b6-440d-a8b6-20ded8a57b18,5,Germany,Closed,Client,Pro,463,2022-07-19 20:58:30.357000 UTC,Fundraising
+a25219e5-1055-422a-a9c1-00f4cdecb4d5,3,China,Closed,Trial,Trial,0,2020-12-16 04:03:14.893000 UTC,IPOExits
+08ddcf29-953e-6644-86e2-10da01000000,3,India,Closed,Trial,Trial,7,2025-07-30 05:26:06.450000 UTC,
+ab5ba4ff-afd4-46e9-964f-27a1d82c99f4,3,"Korea, Republic of",Closed,Trial,Trial,30,2024-09-12 09:40:28.000000 UTC,
+ceabc6bb-9942-40ea-a3a4-7aadacfbbf1d,8,Iceland,Closed,Client,Enterprise,353,2022-05-23 11:28:56.633000 UTC,MASellSide
+28787be0-b907-4715-a75e-41c5500fd96f,8,United Kingdom,Closed,Client,Business,8,2023-12-06 15:57:08.420000 UTC,MASellSide
+89c42b4c-8a5d-4d96-9719-9fd24a456846,8,Ukraine,Closed,Trial,Trial,30,2024-12-05 10:38:07.933000 UTC,
+4716077f-767b-4005-9dcb-bcf9ff0481e0,8,South Africa,Closed,Client,Business,355,2020-01-30 05:53:56.867000 UTC,PortfolioManagement
+3ae7823c-40b6-41ea-a8df-b8e4d33035c5,4,United States,Closed,Client,Business,13,2019-08-28 17:27:33.547000 UTC,MABuySide
+90e5c996-7931-4f71-bfbd-94aeac39fcd6,4,India,Closed,Client,Business,0,2022-09-13 18:13:54.043000 UTC,MABuySide
+4441a51a-6530-4446-b8eb-5447acbe6d3f,4,United States,Closed,Trial,Trial,30,2024-03-20 12:37:04.230000 UTC,
+54a1b5f6-c5be-460f-93cf-ca34522a3ed8,4,United States,Closed,Client,Core,37,2024-10-18 19:51:28.427000 UTC,InternalDocumentRepository
+08dddf62-e3fe-7bd7-e662-d3a501000000,4,United States,Closed,Client,Enterprise,190,2025-08-19 20:56:38.403000 UTC,MASellSide
+245624d1-2f9a-454c-9b43-78c6fe3d61c2,5,United Kingdom,Active,Client,Enterprise,591,2024-08-16 13:31:04.807000 UTC,MASellSide
+3d2a187a-86af-4a41-9c47-cc9cdc799319,5,Estonia,Active,Client,Enterprise,643,2024-06-25 08:39:46.560000 UTC,Audit
+97115ef8-aab9-4899-acf4-91a27f119c9f,3,Papua New Guinea,Closed,Trial,Trial,30,2024-06-14 03:23:39.873000 UTC,
+f0e14852-0353-4e82-9c12-5ed25d35c9ce,9,China,Active,Client,Business,725,2024-04-04 07:25:01.297000 UTC,StrategicPartnership
+a7a8618e-2b0f-40b0-8d4c-3112e0a25bdb,9,China,Closed,Trial,Trial,15,2021-06-17 03:40:18.320000 UTC,Undefined

@@ -1,0 +1,119 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  gap: 0;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+.nav__logo-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  display: block;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+  flex: 1;
+}
+
+.nav__link {
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s;
+}
+.nav__link:hover { color: #fff; }
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.nav__signin {
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  border: none;
+  transition: color 0.15s;
+}
+.nav__signin:hover { color: #fff; }
+
+.nav__cta {
+  background: #fff;
+  color: #0a0a0a;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: var(--radius-md);
+  border: none;
+  transition: opacity 0.15s;
+}
+.nav__cta:hover { opacity: 0.9; }
+
+.nav__mobile-toggle {
+  display: none;
+  background: transparent;
+  color: #fff;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  margin-left: auto;
+}
+
+.nav__mobile {
+  border-top: 1px solid var(--dark-border);
+  padding: 12px 0 20px;
+}
+.nav__mobile-link {
+  display: block;
+  padding: 10px 0;
+  color: rgba(255,255,255,0.7);
+  font-size: 15px;
+  border-bottom: 1px solid var(--dark-border);
+}
+.nav__mobile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+@media (max-width: 860px) {
+  .nav__links, .nav__actions { display: none; }
+  .nav__mobile-toggle { display: flex; }
+}

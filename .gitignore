@@ -31,3 +31,12 @@ ENV/
 
 # Logs
 *.log
+
+# Node / front-end projects
+node_modules/
+dist/
+.cache/
+*.local
+
+# Screenshots / temp images
+react_charts_generation/Screenshot*.png

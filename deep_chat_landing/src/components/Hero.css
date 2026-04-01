@@ -1,0 +1,165 @@
+.hero {
+  background: var(--dark-bg);
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 100px;
+  text-align: center;
+}
+
+.hero__glow {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center,
+    rgba(255, 100, 20, 0.75) 0%,
+    rgba(220, 60, 10, 0.4) 35%,
+    rgba(150, 30, 0, 0.1) 65%,
+    transparent 80%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.75);
+  padding: 5px 12px 5px 6px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.hero__badge:hover { background: rgba(255,255,255,0.1); }
+
+.hero__badge-tag {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 2px 9px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.hero__heading {
+  font-size: clamp(44px, 6.5vw, 78px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -2.5px;
+  color: #fff;
+  max-width: 760px;
+}
+
+.hero__sub {
+  font-size: 16px;
+  color: var(--dark-text-secondary);
+  line-height: 1.65;
+  max-width: 460px;
+}
+
+.hero__cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.hero__btn-main {
+  padding: 13px 26px;
+  font-size: 14px;
+}
+
+.hero__trust {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--dark-text-secondary);
+}
+
+.hero__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero__check { color: rgba(255,255,255,0.6); }
+
+.hero__trust-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.15);
+}
+
+.hero__trust-trustpilot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero__trust-stars {
+  display: flex;
+  gap: 1px;
+}
+
+.hero__star {
+  color: #00b67a;
+  font-size: 14px;
+}
+
+.hero__trustpilot-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+}
+
+.hero__logos {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__logos-label {
+  font-size: 13px;
+  color: var(--dark-text-muted);
+}
+
+.hero__logos-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__logo-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 100px 0 70px; }
+  .hero__heading { letter-spacing: -1.5px; }
+  .hero__cta-row { flex-direction: column; width: 100%; }
+  .hero__cta-row button { width: 100%; justify-content: center; }
+  .hero__trust { flex-wrap: wrap; justify-content: center; gap: 10px; }
+}

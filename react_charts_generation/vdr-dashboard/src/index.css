@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --green-900: #1a472a;
+  --green-800: #2d6a4f;
+  --green-700: #40916c;
+  --green-500: #52b788;
+  --green-400: #74c69d;
+  --green-200: #b7e4c7;
+  --green-50:  #f0faf4;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #f1f5f2;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #e8f5e9; }
+::-webkit-scrollbar-thumb { background: #40916c; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #2d6a4f; }
+
+.recharts-default-tooltip {
+  border-radius: 10px !important;
+  border: 1px solid #d1fae5 !important;
+  box-shadow: 0 10px 25px -5px rgba(26,71,42,0.15) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+}
+
+.recharts-tooltip-label {
+  font-weight: 600 !important;
+  color: #1a472a !important;
+  margin-bottom: 4px !important;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  fill: #6b7280;
+}
+
+.recharts-legend-item-text {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  color: #374151 !important;
+}
