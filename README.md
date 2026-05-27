@@ -2,6 +2,21 @@
 
 Personal experiments with AI models, tools, and front-end projects.
 
+## Running Front-end Projects
+
+### Vite + React projects (deep_chat_landing, react_charts_generation/vdr-dashboard)
+```bash
+cd <project-folder>
+npm install   # first time only
+npm run dev
+```
+Opens at `http://localhost:5173` (or the next available port).
+
+### Static HTML projects (fruit_market_landing, react_charts_generation)
+Open the `index.html` directly in a browser — no build step needed.
+
+---
+
 ## Front-end Projects
 
 ### [deep_chat_landing](deep_chat_landing/)

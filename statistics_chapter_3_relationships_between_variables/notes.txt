@@ -1,0 +1,72 @@
+Chapter 3: Relationships Between Variables
+==========================================
+Started: 2026-04-16
+
+---
+
+TOPIC OVERVIEWS
+---------------
+
+1. COVARIANCE (intuition)
+   - Measures how two variables move together.
+   - Cov(X, Y) = E[(X - μx)(Y - μy)]
+   - Positive: both go up together. Negative: one goes up, other goes down. Zero: no linear relationship.
+   - Problem: scale-dependent. Comparing cov(height_cm, weight_kg) vs cov(height_m, weight_kg) gives different numbers.
+   - That scale problem is exactly why Pearson correlation was invented.
+
+2. PEARSON CORRELATION
+   - Covariance normalized by the product of standard deviations.
+   - r = Cov(X,Y) / (σx * σy)
+   - Always between -1 and +1. Scale-free.
+   - Measures LINEAR association only.
+   - Assumptions: both variables roughly normal, no extreme outliers, relationship is linear.
+   - r = 0 does NOT mean independent — a curved relationship can have r ≈ 0.
+
+3. SCATTER PLOTS
+   - The single most important visualization for two continuous variables.
+   - Always plot before computing a correlation — Anscombe's quartet famously shows four datasets with identical r but completely different shapes.
+   - Look for: linearity, outliers, clusters, heteroscedasticity (fan shapes).
+
+4. SPEARMAN CORRELATION
+   - Replace raw values with their ranks, then compute Pearson on those ranks.
+   - Works for ordinal data and monotonic (not just linear) relationships.
+   - More robust to outliers than Pearson.
+   - Use when: data is skewed, contains outliers, or is ordinal.
+
+5. KENDALL'S TAU (optional)
+   - Counts concordant vs discordant pairs.
+   - τ = (C - D) / (C + D), where C = concordant pairs, D = discordant pairs.
+   - Slower to compute (O(n²)) but more interpretable as a probability.
+   - Better than Spearman on small samples or data with many ties.
+
+6. CORRELATION MATRICES
+   - Extend pairwise correlation to all variable pairs in a dataset.
+   - Visualized as a heatmap.
+   - Watch out for: multicollinearity (for regression prep), spurious correlations, and the multiple comparisons problem.
+
+7. QQ PLOTS (Quantile-Quantile plots)
+   - Compare the distribution of your data to a theoretical distribution (usually normal).
+   - Plot: sorted sample quantiles (y-axis) vs theoretical quantiles (x-axis).
+   - If data is normal → points fall on a straight diagonal line.
+   - Deviations: S-curve = heavy tails; bend at ends = skew.
+   - Used to validate the normality assumption before using Pearson correlation.
+
+8. ODDS & ODDS RATIOS
+   - Odds = P(event) / P(no event). E.g., P(win)=0.75 → odds = 0.75/0.25 = 3.
+   - Odds Ratio (OR) = odds in group A / odds in group B.
+   - OR = 1: no association. OR > 1: higher odds in group A. OR < 1: lower odds.
+   - Common in medicine, logistic regression output, and A/B testing.
+   - Note: OR is NOT the same as relative risk (RR). They converge when the event is rare.
+
+9. CONTINGENCY TABLES
+   - A cross-tabulation of counts for two categorical variables.
+   - Used to see if two categories are associated (e.g., gender × survival).
+   - Chi-squared test of independence is the standard statistical test on these.
+   - Expected counts = (row total × col total) / grand total.
+   - Odds ratios can be computed directly from the 2×2 cell counts.
+
+---
+
+RESOURCES
+---------
+(add links as you go)
